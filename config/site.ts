@@ -8,55 +8,43 @@ export const siteConfig = {
 			label: "Home",
 			href: "/",
 		},
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    }
-	],
-	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "Services",
+			href: "/services",
 		},
 		{
-			label: "Dashboard",
-			href: "/dashboard",
+			label: "About Us",
+			href: "/about",
 		},
 		{
-			label: "Projects",
-			href: "/projects",
-		},
-		{
-			label: "Team",
+			label: "Our Team",
 			href: "/team",
 		},
 		{
-			label: "Calendar",
-			href: "/calendar",
+			label: "Resources",
+			href: "/resources",
+		}
+	],
+	navMenuItems: [
+		{
+			label: "Home",
+			href: "/",
 		},
 		{
-			label: "Settings",
-			href: "/settings",
+			label: "Services",
+			href: "/services",
 		},
 		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
+			label: "About Us",
+			href: "/about",
 		},
 		{
-			label: "Logout",
-			href: "/logout",
+			label: "Our Team",
+			href: "/team",
+		},
+		{
+			label: "Resources",
+			href: "/resources",
 		},
 	],
 	links: {
@@ -64,6 +52,6 @@ export const siteConfig = {
 		twitter: "https://twitter.com/getnextui",
 		docs: "https://nextui.org",
 		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
+		sponsor: "https://patreon.com/jrgarciadev"
 	},
 };
