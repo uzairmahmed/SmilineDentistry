@@ -17,7 +17,7 @@ export const Navbar = () => {
 		<NextUINavbar
 			isMenuOpen={isMenuOpen}
 			onMenuOpenChange={setIsMenuOpen}
-			className='bg-white w-4/5 self-center rounded-b-3xl py-2 shadow-md'
+			className='bg-white mx-auto max-w-7xl pt-16 px-10 flex-grow self-center rounded-b-3xl py-2 shadow-md'
 		>
 			<NavbarContent className="sm:hidden" justify="start">
 				<NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
