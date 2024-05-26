@@ -8,7 +8,7 @@ export const title = tv({
 			background: "text-background",
 			default: "text-default",
 			primary: "text-primary",
-			secondary:"text-secondary"	
+			secondary: "text-secondary"
 		},
 		size: {
 			xs: "text-xl lg:text-xl",
@@ -19,7 +19,7 @@ export const title = tv({
 		fullWidth: {
 			true: "w-full block",
 		},
-		alignment : {
+		alignment: {
 			left: "text-left",
 			center: "text-center",
 			right: "text-right"
@@ -27,7 +27,7 @@ export const title = tv({
 	},
 	defaultVariants: {
 		size: "lg",
-		color:'default'
+		color: 'default'
 	}
 });
 
@@ -39,19 +39,19 @@ export const subtitle = tv({
 			background: "text-background",
 			default: "text-default",
 			primary: "text-primary",
-			secondary:"text-secondary"
-			
+			secondary: "text-secondary"
+
 		},
 		weight: {
 			light: "font-light",
 			normal: "font-normal",
 			semibold: "font-semibold",
-			bold: "font-bold",			
+			bold: "font-bold",
 		},
 		fullWidth: {
 			true: "!w-full",
 		},
-		alignment : {
+		alignment: {
 			left: "text-left",
 			center: "text-center",
 			right: "text-right"
@@ -76,13 +76,20 @@ export const paragraph = tv({
 		fullWidth: {
 			true: "!w-full",
 		},
+		color: {
+			foreground: "text-foreground",
+			background: "text-background",
+			default: "text-default",
+			primary: "text-primary",
+			secondary: "text-secondary"
 
+		},
 		size: {
 			sm: "text-md lg:text-md",
 			md: "text-lg lg:text-lg leading-9",
 			lg: "text-xl lg:text-xl",
 		},
-		alignment : {
+		alignment: {
 			left: "text-left",
 			center: "text-center",
 			right: "text-right"
@@ -91,9 +98,14 @@ export const paragraph = tv({
 	defaultVariants: {
 		fullWidth: true,
 		size: "md",
+		color: "foreground",
 	}
 });
 
 export const button = tv({
 	base: "self-center rounded-full px-10"
+})
+
+export const pagecontent = tv({
+	base: "flex flex-col self-center max-w-6xl items-center py-28 gap-20"
 })

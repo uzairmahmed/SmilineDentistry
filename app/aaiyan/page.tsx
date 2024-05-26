@@ -5,11 +5,7 @@ import { title } from "@/components/primitives";
 export default function BlogPage() {
 	return (
 		<div className="flex flex-col h-full w-full">
-			<ServiceHero />
-			<FeaturesOne />
-			<FeaturesOne />
-			<FeaturesOne />
-			
+		
 		</div>
 	);
 }
