@@ -107,5 +107,5 @@ export const button = tv({
 })
 
 export const pagecontent = tv({
-	base: "flex flex-col self-center max-w-6xl items-center py-28 gap-20"
+	base: "flex flex-col self-center max-w-6xl items-center py-28 gap-32"
 })
