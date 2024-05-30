@@ -68,10 +68,10 @@ export default function CleaningPage() {
 
 						<div className="grid grid-cols-2 w-1/2 self-center">
 							<div className="relative h-full">
-								<Image src={invisalignprovider} fill={true} alt="invisalign provider logo" className="object-scale-down"/>
+								<Image src={invisalignprovider} fill={true} alt="invisalign provider logo" className="object-scale-down" />
 							</div>
 							<div className="relative h-full">
-								<Image src={iteropractice} alt="itero digital practice logo" className="object-scale-down"/>
+								<Image src={iteropractice} alt="itero digital practice logo" className="object-scale-down" />
 							</div>
 						</div>
 					</div>

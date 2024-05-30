@@ -61,6 +61,10 @@ export const subtitle = tv({
 			md: "text-xl lg:text-xl leading-9",
 			lg: "text-2xl lg:text-2xl",
 		},
+		margin:{
+			default:"my-2",
+			none:"my-0"
+		}
 	},
 	defaultVariants: {
 		fullWidth: true,

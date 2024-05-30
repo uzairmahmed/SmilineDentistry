@@ -2,19 +2,14 @@ import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
 import Image from "next/image";
 import { Button } from "@nextui-org/button";
-import ImageCard from "@/components/common/image-card";
 
-import heroimage from '../../assets/images/figmaadobestock_722965563_preview1.png'
-import card1image from '../../assets/icons/toothcracked.png'
-import card2image from '../../assets/icons/pliers.png'
-import card3image from '../../assets/icons/screw.png'
+import heroimage from '../../assets/images/Black.png'
+import invisalignAligner from '../../assets/heroimages/InvisalignHero2.png'
 import section1image from '../../assets/images/image9.png'
 import iteroimage from '../../assets/images/figmaadobestock_175504582_preview1.png'
 import invisalignbox from '../../assets/images/436508977_465908395983601_4226690687482878619_n1.png'
-import after from '../../assets/images/after.png'
-import before from '../../assets/images/before.png'
-import IconCard from "@/components/common/icon-card";
-import Timeline from "@/components/common/timeline";
+import after from '../../assets/before_afters/invisalign_after.png'
+import before from '../../assets/before_afters/invlisalign_before.png'
 
 import iteropractice from '../../assets/other-logos/IteroPractice.png'
 import invisalignprovider from '../../assets/other-logos/InvisalignProvider.png'
@@ -22,12 +17,14 @@ import BigTimeline from "@/components/common/bigTimeline";
 
 export default function InvisalignPage() {
 	return (
-		<div className="flex flex-col h-full w-full">
+		<div className="relative flex flex-col h-full w-full">
+			<Image src={invisalignAligner} width={1920} height={1920} alt="invisalign provider logo" className="absolute object-contain z-10 mix-blend-luminosity opacity-80" />
 			<ServiceHero
 				image={heroimage}
 				main_section={
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Invisalign</h1>
+						<h1 className={title({ size: 'sm', fullWidth: true, alignment: 'left' })}>At Smiline Family Dentistry </h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Transform Your Smile with Invisalign®, The Clear Path to Straighter Teeth.</h1>
 						<div className="grid grid-cols-2 w-1/2 self-start">
 							<div className="relative h-full">
@@ -53,8 +50,8 @@ export default function InvisalignPage() {
 			/>
 			<div className={pagecontent()}>
 				<div className="flex flex-col mt-28 justify-center w-1/2">
-					<h1 className={title({ size: 'md', alignment: 'center' })}>What is Invisalign?</h1>
-					<h1 className={paragraph({ size: 'lg' })}>Invisalign is a popular orthodontic treatment that uses clear, removable aligners to straighten teeth. These aligners are custom-made for each patient using our state-of-the-art Itero 3D imaging tool. Unlike traditional braces, Invisalign aligners are virtually invisible and can be easily removed for eating, brushing, and flossing.</h1>
+					<h1 className={title({ size: 'md', alignment: 'center' })}>What are FastBraces?</h1>
+					<h1 className={paragraph({ size: 'lg' })}>Fastbraces are an advanced triangular bracket and wire system that work to straighten teeth in a unique way. Unlike traditional braces that move teeth in two stages, Fastbraces use a patented design to move teeth in a single stage. This allows for a faster treatment time and can result in a more comfortable and affordable orthodontic experience.</h1>
 				</div>
 
 				<div className="flex flex-col lg:flex-row items-center w-full gap-20">
