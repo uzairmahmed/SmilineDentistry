@@ -61,9 +61,9 @@ export const subtitle = tv({
 			md: "text-xl lg:text-xl leading-9",
 			lg: "text-2xl lg:text-2xl",
 		},
-		margin:{
-			default:"my-2",
-			none:"my-0"
+		margin: {
+			default: "my-2",
+			none: "my-0"
 		}
 	},
 	defaultVariants: {
@@ -113,3 +113,13 @@ export const button = tv({
 export const pagecontent = tv({
 	base: "flex flex-col self-center max-w-6xl items-center py-28 gap-32"
 })
+
+export const navbarLink = tv({
+	base: "w-full my-2 block max-w-full text-center text-lg text-default hover:[text-shadow:_0.2px_0_#143D75] transition-all cursor-pointer",
+	variants: {
+		type: {
+			navbar: "w-full my-2 block max-w-full text-center text-lg text-default hover:[text-shadow:_0.2px_0_#143D75] transition-all cursor-pointer",
+			navmenu: "block m-0 text-left text-lg text-default hover:[text-shadow:_0.2px_0_#143D75] transition-all cursor-pointer ",
+		}
+	}
+});
