@@ -23,7 +23,7 @@ const NavbarMegamenu: React.FC<MegaMenuProps> = ({ item }) => {
                 className="w-full max-w-6xl p-10 font-semibold" // Apply the grid layout
                 classNames={{
                     base: "",
-                    list: "grid grid-cols-3 flex-wrap justify-center",
+                    list: "grid grid-cols-3 gap-10 flex-wrap justify-center",
 
                 }}
                 itemClasses={{

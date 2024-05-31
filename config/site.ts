@@ -7,22 +7,25 @@ export const siteConfig = {
 		{
 			type: 'supercategory',
 			label: "Services",
-			href:'/',
+			href: '/',
 			subcategories: [
 				{
-					name: "Orthodontics",
+					name: "Preventative Dentistry",
 					pages: [
 						{
-							label: "Invisalign",
-							href: "/invisalign",
+							label: "Dental Cleaning",
+							href: "/dental-cleaning",
 						},
 						{
-							label: "Fastbraces",
-							href: "/fastbraces",
+							label: "Dental Screening",
+							href: "/dental-screening",
+						},
+						{
+							label: "Children's Dentistry",
+							href: "/childrens",
 						},
 					]
-				},
-				{
+				},{
 					name: "Cosmetic Dentistry",
 					pages: [
 						{
@@ -38,8 +41,7 @@ export const siteConfig = {
 							href: "/cosmetic-dentistry",
 						},
 					]
-				},
-				{
+				},{
 					name: "Dental Surgical Procedures",
 					pages: [
 						{
@@ -55,21 +57,19 @@ export const siteConfig = {
 							href: "/surgical-procedures",
 						},
 					]
-				},
-				{
-					name: "Preventative Dentistry",
+				},{
+					name: "Orthodontics",
 					pages: [
 						{
-							label: "Dental Cleaning",
-							href: "/dental-cleaning",
+							label: "Invisalign",
+							href: "/invisalign",
 						},
 						{
-							label: "Dental Screening",
-							href: "/dental-screening",
+							label: "Fastbraces",
+							href: "/fastbraces",
 						},
 					]
-				},
-				{
+				},{
 					name: "Dental Scans",
 					pages: [
 						{
@@ -81,8 +81,7 @@ export const siteConfig = {
 							href: "/dental-scans",
 						},
 					]
-				},
-				{
+				},{
 					name: "Dental Appliances",
 					pages: [
 						{
@@ -94,20 +93,13 @@ export const siteConfig = {
 							href: "/mouthguards",
 						},
 					]
-				},{
-					name: "",
-					pages: [
-						{
-							label: "Emergency Dentistry",
-							href: "/emergency",
-						},
-						{
-							label: "Children's Dentistry",
-							href: "/childrens",
-						},
-					]
-				},
+				}
 			]
+		},
+		{
+			type: 'page',
+			label: "Emergency Dentistry",
+			href: "/emergency",
 		},
 		{
 			type: 'page',

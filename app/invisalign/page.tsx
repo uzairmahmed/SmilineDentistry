@@ -6,6 +6,7 @@ import { Button } from "@nextui-org/button";
 import heroimage from '../../assets/images/Black.png'
 import invisalignAligner from '../../assets/heroimages/InvisalignHero2.png'
 import section1image from '../../assets/images/image9.png'
+import section2image from '../../assets/images/figmaadobestock_234878450_preview1.png'
 import iteroimage from '../../assets/images/figmaadobestock_175504582_preview1.png'
 import invisalignbox from '../../assets/images/436508977_465908395983601_4226690687482878619_n1.png'
 import after from '../../assets/before_afters/invisalign_after.png'
@@ -13,6 +14,7 @@ import before from '../../assets/before_afters/invlisalign_before.png'
 
 import iteropractice from '../../assets/other-logos/IteroPractice.png'
 import invisalignprovider from '../../assets/other-logos/InvisalignProvider.png'
+import invisalignprovidewr from '../../assets/other-logos/a_fastbraces_logo_purple_r.png'
 import BigTimeline from "@/components/common/bigTimeline";
 
 export default function InvisalignPage() {
@@ -49,6 +51,15 @@ export default function InvisalignPage() {
 				}
 			/>
 			<div className={pagecontent()}>
+				<div className="flex flex-row mt-56 bg-white">
+						<Image src={section1image} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
+						<Image src={invisalignprovidewr} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
+						<Image src={iteropractice} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
+						<Image src={invisalignprovider} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
+
+
+				</div>
+
 				<div className="flex flex-col mt-28 justify-center w-1/2">
 					<h1 className={title({ size: 'md', alignment: 'center' })}>What are FastBraces?</h1>
 					<h1 className={paragraph({ size: 'lg' })}>Fastbraces are an advanced triangular bracket and wire system that work to straighten teeth in a unique way. Unlike traditional braces that move teeth in two stages, Fastbraces use a patented design to move teeth in a single stage. This allows for a faster treatment time and can result in a more comfortable and affordable orthodontic experience.</h1>

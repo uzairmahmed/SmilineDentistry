@@ -22,27 +22,25 @@ export const Navbar = () => {
 			onMenuOpenChange={setIsMenuOpen}
 			className='fixed bg-white mx-auto max-w-7xl pt-16 px-10 flex-grow self-center rounded-b-3xl py-2 shadow-md'
 		>
-			<NavbarContent className="sm:hidden" justify="start">
+			<NavbarContent className="flex md:hidden" justify="start">
 				<NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
 			</NavbarContent>
 
-			<NavbarContent className="sm:hidden pr-3" justify="center">
+			<NavbarContent className="flex md:hidden pr-3" justify="center">
 				<NavbarBrand>
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Logo />
-						<p className="font-bold text-inherit">ACME</p>
+						<Logo/>
 					</NextLink>
 				</NavbarBrand>
 			</NavbarContent>
 
-			<NavbarContent className="hidden sm:flex gap-4 w-full justify-between">
-				<NavbarBrand as="li" className="gap-3 max-w-fit">
+			<NavbarContent className="hidden md:flex" justify="center">
+				<NavbarBrand>
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						<Logo />
-						<p className="font-bold text-inherit ">ACME</p>
 					</NextLink>
 				</NavbarBrand>
-				<div className="flex flex-row w-full gap-5 justify-start">
+				<div className="flex flex-row w-auto gap-5 justify-start">
 					{siteConfig.navItems.map((item) => (
 						item.type === "page" ?
 							<NavbarItem key={item.href}>
