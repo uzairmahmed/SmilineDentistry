@@ -22,7 +22,7 @@ export const siteConfig = {
 						},
 						{
 							label: "Children's Dentistry",
-							href: "/childrens",
+							href: "/childrens-dentistry",
 						},
 					]
 				},{

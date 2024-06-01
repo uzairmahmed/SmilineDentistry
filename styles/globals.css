@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .mask-style {
+        -webkit-mask-image: url('/blorbimgs/blorb.svg');
+        mask-image: url('/blorbimgs/blorb.svg');
+        -webkit-mask-size: 100% auto; /* Auto for height maintains aspect ratio based on the width */
+        mask-size: 100% auto; /* Auto for height maintains aspect ratio based on the width */
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        }
+}

@@ -1,5 +1,3 @@
-import ServiceHero from "@/components/common/service-hero";
-
 export default function BlogLayout({
 	children,
 }: {
