@@ -96,16 +96,16 @@ export const siteConfig = {
 				}
 			]
 		},
-		{
-			type: 'page',
-			label: "Emergency Dentistry",
-			href: "/emergency",
-		},
-		{
-			type: 'page',
-			label: "Resources",
-			href: "/resources",
-		},
+		// {
+		// 	type: 'page',
+		// 	label: "Emergency Dentistry",
+		// 	href: "/emergency",
+		// },
+		// {
+		// 	type: 'page',
+		// 	label: "Resources",
+		// 	href: "/resources",
+		// },
 		{
 			type: 'page',
 			label: "About Us",
