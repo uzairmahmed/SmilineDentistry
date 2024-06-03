@@ -11,15 +11,15 @@ interface TimingRowProps {
 const TimingRow:React.FC<TimingRowProps> = ({day, times}) => {
     return (
         <div className='flex flex-row justify-between w-full'>
-            <h1 className={paragraph({alignment:'left'})}>{day}</h1>
-            <h1 className={paragraph({alignment:'right'})}>{times}</h1>
+            <h1 className={paragraph({alignment:'left', color:'background'})}>{day}</h1>
+            {/* <div className='border-b-1'></div> */}
+            <h1 className={paragraph({alignment:'right', color:'background'})}>{times}</h1>
         </div>
     )
 }
-const TimingMapGrid = () => {
+const TimingGrid = () => {
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 my-10 w-full'>
-            <div className='flex flex-col px-16 py-16 rounded-3xl bg-white items-center text-center gap-5'>
+            <div className='flex flex-col rounded-3xl items-center text-center gap-5 mt-10'>
                 <TimingRow day='Sunday' times='11:00AM - 4:00PM'/>
                 <TimingRow day='Monday' times='10:00AM - 7:00PM'/>
                 <TimingRow day='Tuesday' times='CLOSED'/>
@@ -28,15 +28,7 @@ const TimingMapGrid = () => {
                 <TimingRow day='Friday' times='CLOSED'/>
                 <TimingRow day='Saturday' times='10:00AM - 4:00PM'/>
             </div>
-
-            <div className={`flex flex-col px-16 py-16 rounded-3xl bg-white items-center text-center gap-5`}>
-                <div className='flex w-full h-full bg-slate-300 rounded-3xl'>
-
-                </div>
-                {/* <Image alt='map' height='200' width={300} src={"https://geology.com/world/the-united-states-of-america-map.gif"} /> */}
-            </div>
-        </div>
     );
 }
 
-export default TimingMapGrid;
+export default TimingGrid;

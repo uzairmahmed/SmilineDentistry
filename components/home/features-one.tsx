@@ -18,9 +18,7 @@ const FeaturesOne = () => {
     ]
 
     return (
-        <div className='flex flex-col items-center justify-center'>
             <FeatureGrid features={features} color='foreground'/>
-        </div>
     );
 }
 

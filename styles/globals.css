@@ -6,9 +6,77 @@
     .mask-style {
         -webkit-mask-image: url('/blorbimgs/blorb.svg');
         mask-image: url('/blorbimgs/blorb.svg');
-        -webkit-mask-size: 100% auto; /* Auto for height maintains aspect ratio based on the width */
-        mask-size: 100% auto; /* Auto for height maintains aspect ratio based on the width */
+        -webkit-mask-size: 100% auto;
+        /* Auto for height maintains aspect ratio based on the width */
+        mask-size: 100% auto;
+        /* Auto for height maintains aspect ratio based on the width */
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
-        }
+    }
 }
+
+.hour-2 {
+    left: calc(50% + 50% * 0.866);
+    top: calc(50% - 50% * 0.5);
+}
+
+.hour-1 {
+    left: calc(50% + 50% * 0.5);
+    top: calc(50% - 50% * 0.866);
+}
+
+.hour-11 {
+    left: calc(50% - 50% * 0.5);
+    top: calc(50% - 50% * 0.866);
+}
+
+.hour-10 {
+    left: calc(50% - 50% * 0.866);
+    top: calc(50% - 50% * 0.5);
+}
+
+.hour-8 {
+    left: calc(50% - 50% * 0.866);
+    top: calc(50% + 50% * 0.5);
+}
+
+.hour-7 {
+    left: calc(50% - 50% * 0.5);
+    top: calc(50% + 50% * 0.866);
+}
+
+.hour-5 {
+    left: calc(50% + 50% * 0.5);
+    top: calc(50% + 50% * 0.866);
+}
+
+.hour-4 {
+    left: calc(50% + 50% * 0.866);
+    top: calc(50% + 50% * 0.5);
+}
+
+/* Cardinal points */
+.hour-12 {
+    left: 50%;
+    top: 0%;
+}
+
+/* Adjust top position to keep inside the circle */
+.hour-3 {
+    left: 100%;
+    top: 50%;
+}
+
+/* Adjust left position */
+.hour-6 {
+    left: 50%;
+    top: 100%;
+}
+
+/* Adjust top position */
+.hour-9 {
+    left: 0%;
+    top: 50%;
+}
+
+/* Adjust left position */

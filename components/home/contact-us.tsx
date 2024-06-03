@@ -3,7 +3,7 @@ import { title, subtitle, button } from "@/components/primitives";
 import ServiceGrid from '../common/service-grid';
 import { Button } from "@nextui-org/react";
 import ContactGrid from '../common/contact-grid';
-import TimingMapGrid from '../common/timing-map-grid';
+import TimingGrid from '../common/timing-grid';
 
 const ContactUs = () => {
     return (
@@ -13,7 +13,7 @@ const ContactUs = () => {
                 <h1 className={subtitle({ fullWidth: true })}>Ready to transform your smile? Reach out and let's start the conversation.</h1>
             </div>
             <ContactGrid />
-            <TimingMapGrid />
+            <TimingGrid />
 
         </div>
     );

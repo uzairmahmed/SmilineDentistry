@@ -24,11 +24,6 @@ const Testimonials = () => {
             text: "I love my dentist she is so nice and very caring! I got my first filling today and it was a breeze but only because she made me feel so comfortable. I suggest anyone that cares about there dental health but is also nervous about it go here. Best dentist I’ve ever been to. 😃😃😃",
             name: "Matthew Wallace",
             rating: 5
-        },
-        {
-            text: "Dr. Asra is a phenomenal and incredibly knowledgeable dentist - the best one I’ve ever gone to! She never pushes any treatments on you like many other dentists do and she takes the time to explain everything thoroughly including all treatment options. She’s understanding and takes into account your level of comfort with each procedure. Always a pleasant experience coming here - I look forward to every appointment!",
-            name: "Travi",
-            rating: 5
         }
     ]
     return (

@@ -8,7 +8,9 @@ export const title = tv({
 			background: "text-background",
 			default: "text-default",
 			primary: "text-primary",
-			secondary: "text-secondary"
+			secondary: "text-secondary",
+			inherit: "text-inherit"
+
 		},
 		size: {
 			xs: "text-xl lg:text-xl",
@@ -39,7 +41,8 @@ export const subtitle = tv({
 			background: "text-background",
 			default: "text-default",
 			primary: "text-primary",
-			secondary: "text-secondary"
+			secondary: "text-secondary",
+			inherit: "text-inherit"
 
 		},
 		weight: {
@@ -85,7 +88,9 @@ export const paragraph = tv({
 			background: "text-background",
 			default: "text-default",
 			primary: "text-primary",
-			secondary: "text-secondary"
+			secondary: "text-secondary",
+			inherit: "text-inherit"
+
 
 		},
 		size: {
