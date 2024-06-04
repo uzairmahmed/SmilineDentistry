@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <footer className="w-full flex flex-col items-center justify-center py-2 bg-primary shadow-md">
             <div className='flex flex-col items-center'>
-                <Logo className='text-white w-36 h-36' />
+                <Logo />
                 <h1 className={title({ size: 'md', color: 'background' })}>Smiline Family Dentistry</h1>
             </div>
             <div className='flex gap-5 my-10'>
