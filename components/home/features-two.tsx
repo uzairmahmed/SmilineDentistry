@@ -5,13 +5,16 @@ import { RiToothFill } from 'react-icons/ri';
 const FeaturesTwo = () => {
     const features = [
         {
+            key:'invisalign-fastbraces',
             text: "Free Invisalign and FastBraces Consultation",
             icon: <RiToothFill className='w-16 h-16 text-background'/>,
         },
         {
+            key:'insurance-providers',
             text: "Direct Billing to all insurance Providers",
             icon: <RiToothFill className='w-16 h-16 text-background'/>,
         },        {
+            key:'milton-go',
             text: "Located steps from Milton Go",
             icon: <RiToothFill className='w-16 h-16 text-background'/>,
         },

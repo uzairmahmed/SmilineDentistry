@@ -13,7 +13,7 @@ const Timeline: React.FC<TimelineProps> = ({ listofItems, numItems, colortheme }
     return (
         <div className={`flex flex-col lg:flex-row items-start px-10 lg:px-0`}>
             {listofItems.map((item: any, index: number) => (
-                <div className='flex flex-col relative gap-1 w-auto lg:w-1/5 flex-wrap'>
+                <div key={index} className='flex flex-col relative gap-1 w-auto lg:w-1/5 flex-wrap'>
                     <div className={`flex w-14 h-14 items-center rounded-full bg-${colortheme} z-10`}>
                         <h1 className={subtitle({ size: 'lg', alignment: 'center', color: 'background' })}>{index+1}</h1>
                     </div>

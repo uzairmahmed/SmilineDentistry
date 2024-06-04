@@ -83,22 +83,27 @@ export default function InvisalignPage() {
 						numItems={5}
 						listofItems={[
 							{
+								key: 'invisalign-1',
 								title: "Scheduling a Consultation",
 								desc: "The Invisalign treatment process begins with a consultation with Dr. Asra Ahmed at Smiline Family Dentistry in Milton, Ontario."
 							},
 							{
+								key: 'invisalign-2',
 								title: "Scanning your teeth",
 								desc: "Dr. Ahmed will use the Itero 3D imaging tool to create a digital model of your teeth and jaw."
 							},
 							{
+								key: 'invisalign-3',
 								title: "Creating a Plan",
 								desc: "Your digital model is used to create a custom treatment plan that outlines the movement of your teeth and the length of your treatment."
 							},
 							{
+								key: 'invisalign-4',
 								title: "Ordering Your Aligners",
 								desc: "Once your treatment plan is created, your custom Invisalign aligners will be made to order based on your digital model."
 							},
 							{
+								key: 'invisalign-5',
 								title: "Using and Maintaining your Braces",
 								desc: "You will wear each set of aligners for 1-2 weeks before switching to the next set. This gradual movement of your teeth ensures that they move into their desired position over time. You will need to visit our office periodically during your treatment to ensure that your teeth are moving as planned."
 							},

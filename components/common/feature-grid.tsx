@@ -2,6 +2,7 @@ import React from 'react';
 import { subtitle } from "@/components/primitives";
 
 interface Feature {
+    key: string;
     text: string;
     icon: React.ReactElement;
 }

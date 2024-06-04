@@ -20,7 +20,7 @@ export const Navbar = () => {
 		<NextUINavbar
 			isMenuOpen={isMenuOpen}
 			onMenuOpenChange={setIsMenuOpen}
-			className='fixed bg-white mx-auto max-w-7xl pt-16 px-10 flex-grow self-center rounded-b-3xl py-2 shadow-md'
+			className='fixed bg-white mx-auto max-w-7xl flex-grow self-center rounded-b-3xl py-2 shadow-md'
 		>
 			<NavbarContent className="flex md:hidden" justify="start">
 				<NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
@@ -34,7 +34,7 @@ export const Navbar = () => {
 				</NavbarBrand>
 			</NavbarContent>
 
-			<NavbarContent className="hidden md:flex" justify="center">
+			<NavbarContent className="hidden md:flex bg-slate-500 w-full" justify="center">
 				<NavbarBrand>
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						<Logo />
@@ -63,6 +63,7 @@ export const Navbar = () => {
 					<Button variant='solid' radius="full" className='px-10'>
 						Book an Appointment
 					</Button>
+					
 				</div>
 			</NavbarContent>
 

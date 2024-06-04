@@ -37,7 +37,7 @@ const NavbarMegamenu: React.FC<MegaMenuProps> = ({ item }) => {
                 }}
             >
                 {item.subcategories.map((subcategory) => (
-                    <DropdownSection title={subcategory.name}>
+                    <DropdownSection key={subcategory.name} title={subcategory.name}>
                         {subcategory.pages.map((page) => (
                             <DropdownItem key={page.label} variant="light">
                                 <a className={navbarLink({ type: 'navmenu' })} href={page.href}>{page.label}</a>
