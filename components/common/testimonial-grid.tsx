@@ -16,10 +16,10 @@ const TestimonialGrid: React.FC<TestimonialGridProps> = ({ testimonials }) => {
         let icons = []
         
         for (let index = 0; index < stars; index++) {
-            icons.push(<RiStarFill />)
+            icons.push(<RiStarFill key={index}/>)
         }
         for (let index = 0; index < 5-stars; index++) {
-            icons.push(<RiStarLine/>)
+            icons.push(<RiStarLine key={index}/>)
         }
 
         return icons

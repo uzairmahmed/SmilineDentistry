@@ -9,18 +9,18 @@ import ContactUs from "@/components/home/contact-us";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
 import ServiceHero from "@/components/common/service-hero";
 import { Button } from "@nextui-org/button";
-import heroimage from '../assets/images/1000_F_420249849_qMOY6cE7ojERSxItVrsAJomqZ9bC3H2j.jpg'
 import section1image from '../assets/images/image13.png'
 import section2image from '../assets/images/adobestock_730499892_preview1.png'
 import section3image from '../assets/images/1000_F_420249849_qMOY6cE7ojERSxItVrsAJomqZ9bC3H2j.jpg'
 import Image from "next/image";
-import { RiCalendarEventFill, RiShakeHandsFill, RiToothFill } from "react-icons/ri";
+import { RiCalendarEventFill, RiMailFill, RiMapFill, RiPhoneFill, RiShakeHandsFill, RiToothFill } from "react-icons/ri";
 import TimingGrid from "@/components/common/timing-grid";
 import { Chip } from "@nextui-org/react";
+import HomepageHero from "@/components/common/homepage-hero";
 
 export default function Home() {
-	const weekday = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
-	const month = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+	const weekday = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+	const month = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
 	function isCurrentHour(hourDot: number) {
 		const today = new Date()
@@ -39,26 +39,7 @@ export default function Home() {
 				<main className="flex flex-col h-full w-full">
 					{/* <Hero /> */}
 					{/* <Spacer y={48} /> */}
-					<ServiceHero
-						image={heroimage}
-						main_section={
-							<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
-								<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Dental Surgical Procedures</h1>
-								<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</h1>
-								<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-									Book an Appointment
-								</Button>
-							</div>
-						}
-						bubbles={
-							<>
-								<div className='bubble absolute w-32 h-32 z-10 bottom-16 -left-24 bg-default rounded-full ' data-speed="0.1"></div>
-								<div className='bubble absolute w-20 h-20 z-20 -top-10 -right-10 bg-default rounded-full ' data-speed="0.1"></div>
-								<div className='bubble absolute w-12 h-12 z-10 bottom-10 -right-20 bg-default rounded-full ' data-speed="0.1"></div>
-								<div className='bubble absolute w-40 h-40 z-10 -bottom-24 -right-10 bg-default rounded-full ' data-speed="0.1"></div>
-							</>
-						}
-					/>
+					<HomepageHero />
 					<div className={pagecontent()}>
 						<OurServices />
 
@@ -103,7 +84,7 @@ export default function Home() {
 
 						<Testimonials />
 
-						<ContactUs />
+						{/* <ContactUs /> */}
 
 						<div className="flex w-full justify-center">
 							<div className='absolute object-cover w-[40vw] h-[800px] left-0 z-0 bg-default'></div>
@@ -144,6 +125,44 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
+
+						<div className="flex w-full justify-center py-16">
+							<img src={section2image.src} className='absolute object-cover w-screen h-[700px]  z-0' />
+							<div className="flex w-full z-10 justify-start ">
+								<div className="relative flex flex-col w-5/12 bg-default mt-72 p-20 rounded-3xl gap-5">
+									{/* <div className='bubble absolute w-32 h-32 z-20 top-32 -right-24 bg-secondary rounded-full ' data-speed="0.1"></div> */}
+									{/* <div className='bubble absolute w-14 h-14 z-20 top-20 right-24 bg-secondary rounded-full ' data-speed="0.1"></div> */}
+									{/* <div className='bubble absolute w-32 h-32 z-0 -bottom-48 -left-24 bg-secondary rounded-full ' data-speed="0.1"></div> */}
+
+									<h1 className={title({ size: 'lg', alignment: 'left', color: 'background' })}>Get in Touch</h1>
+									<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>
+										Ready to transform your smile? Reach out and let's start the conversation.
+									</h1>
+
+									<div>
+										<div className="flex flex-row w-full align-middle justify-center items-center gap-5">
+											<RiMailFill className='w-9 h-9 text-white'/>
+											<h1 className={subtitle({ size: 'md', color: 'background', alignment: 'left' })}>
+												contact@smilinedentistry.ca
+											</h1>
+										</div>
+										<div className="flex flex-row w-full align-middle justify-center items-center gap-5">
+											<RiPhoneFill className='w-9 h-9 text-white'/>
+											<h1 className={subtitle({ size: 'md', color: 'background', alignment: 'left' })}>
+												(905) 405-1786
+											</h1>
+										</div>
+										<div className="flex flex-row w-full align-middle justify-center items-center gap-5">
+											<RiMapFill className='w-9 h-9 text-white'/>
+											<h1 className={subtitle({ size: 'md', color: 'background', alignment: 'left' })}>
+												885 Main Street E. <br />Milton, ON L9T5A7
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</main>
 			</div>

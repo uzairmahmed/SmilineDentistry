@@ -34,7 +34,7 @@ export const Navbar = () => {
 				</NavbarBrand>
 			</NavbarContent>
 
-			<NavbarContent className="hidden md:flex bg-slate-500 w-full" justify="center">
+			<NavbarContent className="hidden md:flex w-full" justify="center">
 				<NavbarBrand>
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						<Logo />
