@@ -15,12 +15,15 @@ const HomepageHero = () => {
         <div className='relative h-[95vh] overflow-x-clip'>
             <Image alt='hero' src={heroimage} fill={true} className='object-cover' />
             <div className='
-                absolute flex flex-col top-[25%] 
-                right-0 lg:left-[7.5%]
-                left-0 lg:right-auto 
+                absolute flex flex-col gap-3
+                top-[25%] 
+                right-auto lg:right-auto 
+                left-[50%] lg:left-[7.5%] 
                 mx-5 sm:mx-auto lg:mx-auto 
                 w-auto lg:w-1/3 max-w-[500px] 
-                gap-3
+                bg-opacity-70 rounded-3xl 
+                bg-white lg:bg-transparent 
+                -translate-x-1/2 lg:translate-x-0
             '>
                 <div className='relative flex flex-col items-center lg:items-center p-16 z-20'>
                     <h1 className={
