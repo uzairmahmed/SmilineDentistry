@@ -118,7 +118,6 @@ export const button = tv({
 
 export const pagecontent = tv({
 	base: "flex flex-col self-center w-full \
-	bg-orange-400 sm:bg-pink-400 md:bg-green-300 lg:bg-blue-400 xl:bg-red-400 2xl:bg-yellow-300 \
 	min-w-none max-w-lg \
 	sm:min-w-lg sm:max-w-xl \
 	md:min-w-xl md:max-w-2xl \
