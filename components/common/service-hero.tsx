@@ -11,20 +11,23 @@ interface ServiceHeroProps {
     image: any;
     main_section: any;
     bubbles: any;
+    div_side: any;
 }
 
-const ServiceHero: React.FC<ServiceHeroProps> = ({ main_section, bubbles, image }) => {
+const ServiceHero: React.FC<ServiceHeroProps> = ({ main_section, bubbles, image, div_side }) => {
     return (
         <div className='relative h-[85vh] overflow-x-clip'>
             <Image alt='hero' src={image} fill={true} className='object-cover' />
-            <div className='
+            <div className={`
                 absolute flex flex-col bottom-20 
-                right-0 lg:right-[15%] 
-                left-0 lg:left-auto 
+                ${div_side === "right" ?
+                    "right-0 lg:right-[15%] left-0 lg:left-auto " :
+                    "right-0 lg:right-auto left-0 lg:left-[15%]"
+                }
                 mx-5 sm:mx-auto lg:mx-auto 
                 w-auto lg:w-1/3 max-w-[500px] 
                 gap-3
-            '>
+            `}>
                 {main_section}
                 {bubbles}
             </div>

@@ -13,10 +13,10 @@ export const title = tv({
 
 		},
 		size: {
-			xs: "text-xl lg:text-xl",
-			sm: "text-2xl lg:text-2xl",
-			md: "text-3xl lg:text-3xl",
-			lg: "text-4xl lg:text-4xl leading-9",
+			xs: "text-xl lg:text-lg xl:text-xl",
+			sm: "text-2xl lg:text-1xl xl:text-2xl",
+			md: "text-3xl lg:text-2xl xl:text-3xl",
+			lg: "text-4xl lg:text-3xl xl:text-4xl leading-9",
 			BIG: 'tracking-normal text-8xl font-cursive font-normal'
 		},
 		fullWidth: {
@@ -61,9 +61,9 @@ export const subtitle = tv({
 			right: "text-right"
 		},
 		size: {
-			sm: "text-lg lg:text-lg",
-			md: "text-xl lg:text-xl leading-9",
-			lg: "text-2xl lg:text-2xl",
+			sm: "text-lg lg:text-md xl:text-lg",
+			md: "text-xl lg:text-lg xl:text-xl",
+			lg: "text-2xl lg:text-xl xl:text-2xl",
 		},
 		margin: {
 			default: "my-2",
@@ -95,9 +95,9 @@ export const paragraph = tv({
 
 		},
 		size: {
-			sm: "text-md lg:text-md",
-			md: "text-lg lg:text-lg leading-9",
-			lg: "text-xl lg:text-xl",
+			sm: "text-md lg:text-sm xl:text-md",
+			md: "text-lg lg:text-md xl:text-lg",
+			lg: "text-xl lg:text-lg xl:text-xl",
 		},
 		alignment: {
 			left: "text-left",
@@ -117,7 +117,15 @@ export const button = tv({
 })
 
 export const pagecontent = tv({
-	base: "flex flex-col self-center max-w-6xl items-center py-28 gap-32"
+	base: "flex flex-col self-center w-full \
+	bg-orange-400 sm:bg-pink-400 md:bg-green-300 lg:bg-blue-400 xl:bg-red-400 2xl:bg-yellow-300 \
+	min-w-none max-w-lg \
+	sm:min-w-lg sm:max-w-xl \
+	md:min-w-xl md:max-w-2xl \
+	lg:min-w-2xl lg:max-w-4xl \
+	xl:min-w-4xl xl:max-w-5xl \
+	2xl:min-w-5xl 2xl:max-w-6xl \
+	items-center py-28 gap-32"
 })
 
 export const navbarLink = tv({

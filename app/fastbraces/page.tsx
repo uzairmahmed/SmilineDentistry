@@ -32,6 +32,7 @@ export default function InvisalignPage() {
 			{/* <Image src={invisalignAligner} width={1000} height={1000} alt="invisalign provider logo" className="absolute object-scale-down" /> */}
 			<ServiceHero
 				image={heroimage}
+				div_side={'left'}
 				main_section={
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<div className="relative w-24 h-24 mb-8">

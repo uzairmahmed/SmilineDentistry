@@ -14,6 +14,7 @@ export default function CleaningPage() {
 		<div className="flex flex-col h-full w-full">
 			<ServiceHero
 				image={heroimage}
+				div_side={'left'}
 				main_section={
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Mouthguards</h1>

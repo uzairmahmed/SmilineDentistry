@@ -22,6 +22,7 @@ export default function InvisalignPage() {
 		<div className="relative flex flex-col h-full w-full">
 			<Image src={invisalignAligner} width={1920} height={1920} alt="invisalign provider logo" className="absolute object-contain z-10 mix-blend-luminosity opacity-80" />
 			<ServiceHero
+				div_side={'left'}
 				image={heroimage}
 				main_section={
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>

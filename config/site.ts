@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
-	description: "Make beautiful websites regardless of your design experience.",
+	name: "Smiline Dentistry",
+	description: "Smiline Family Dentistry | Dentist in Milton",
 	navItems: [
 		{
 			type: 'supercategory',
