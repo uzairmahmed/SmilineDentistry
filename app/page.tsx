@@ -1,21 +1,11 @@
-import { Spacer } from "@nextui-org/spacer";
-
-import Hero from "@/components/home/hero";
 import OurServices from "@/components/home/our-services";
-import FeaturesOne from "@/components/home/features-one";
-import FeaturesTwo from "@/components/home/features-two";
 import Testimonials from "@/components/home/testimonials";
-import ContactUs from "@/components/home/contact-us";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
-import ServiceHero from "@/components/common/service-hero";
 import { Button } from "@nextui-org/button";
 import section1image from '../assets/images/image13.png'
 import section2image from '../assets/images/adobestock_730499892_preview1.png'
-import section3image from '../assets/images/1000_F_420249849_qMOY6cE7ojERSxItVrsAJomqZ9bC3H2j.jpg'
-import Image from "next/image";
 import { RiCalendarEventFill, RiMailFill, RiMapFill, RiPhoneFill, RiShakeHandsFill, RiToothFill } from "react-icons/ri";
 import TimingGrid from "@/components/common/timing-grid";
-import { Chip } from "@nextui-org/react";
 import HomepageHero from "@/components/common/homepage-hero";
 import PicText from "@/components/common/pic-text";
 import ImageRibbon from "@/components/common/image-ribbon";
