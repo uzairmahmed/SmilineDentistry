@@ -31,18 +31,23 @@ export const Navbar = () => {
 
 			{/* Mobile Menu */}
 			<NavbarMenu className="py-12">
-				{siteConfig.navMenuItems.map((item, index) => (
-					<NavbarMenuItem key={`${item}-${index}`}>
-						<Link
-							color={"foreground"}
-							href="#"
-							size="lg"
-						>
-							<h1 className={paragraph({ size: 'lg', color: 'foreground', fullWidth: true })}>{item.label}</h1>
-
-						</Link>
-					</NavbarMenuItem>
-				))}
+			{siteConfig.navItems.map((item) => (
+						item.type === "page" ?
+							<NavbarItem key={item.href}>
+								<NextLink
+									className={navbarLink()}
+									color="foreground"
+									href={item.href}
+								>
+									{item.label}
+								</NextLink>
+							</NavbarItem>
+							:
+							item.type === 'supercategory' ?
+								<NavbarMegamenu item={item} />
+								:
+								<></>
+					))}
 			</NavbarMenu>
 
 			{/* Mobile Logo */}

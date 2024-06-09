@@ -16,6 +16,9 @@ import iteropractice from '../../assets/other-logos/IteroPractice.png'
 import invisalignprovider from '../../assets/other-logos/InvisalignProvider.png'
 import invisalignprovidewr from '../../assets/other-logos/a_fastbraces_logo_purple_r.png'
 import BigTimeline from "@/components/common/bigTimeline";
+import TextHeaderSection from "@/components/common/text-header-section";
+import PicText from "@/components/common/pic-text";
+import BeforeAfter from "@/components/common/before-after";
 
 export default function InvisalignPage() {
 	return (
@@ -53,26 +56,18 @@ export default function InvisalignPage() {
 			/>
 			<div className={pagecontent()}>
 				<div className="flex flex-row mt-56 bg-white">
-						<Image src={section1image} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
-						<Image src={invisalignprovidewr} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
-						<Image src={iteropractice} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
-						<Image src={invisalignprovider} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
-
-
+					<Image src={section1image} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
+					<Image src={invisalignprovidewr} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
+					<Image src={iteropractice} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
+					<Image src={invisalignprovider} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
 				</div>
 
-				<div className="flex flex-col mt-28 justify-center w-1/2">
-					<h1 className={title({ size: 'md', alignment: 'center' })}>What are FastBraces?</h1>
-					<h1 className={paragraph({ size: 'lg' })}>Fastbraces are an advanced triangular bracket and wire system that work to straighten teeth in a unique way. Unlike traditional braces that move teeth in two stages, Fastbraces use a patented design to move teeth in a single stage. This allows for a faster treatment time and can result in a more comfortable and affordable orthodontic experience.</h1>
-				</div>
+				<TextHeaderSection header="What is Invisalign?"
+					text="Invisalign is a popular orthodontic treatment that uses clear, removable aligners to straighten teeth. These aligners are custom-made for each patient using our state-of-the-art Itero 3D imaging tool. Unlike traditional braces, Invisalign aligners are virtually invisible and can be easily removed for eating, brushing, and flossing."
+				/>
 
-				<div className="flex flex-col lg:flex-row items-center w-full gap-20">
-					<div className="relative w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] mr-10 rounded-full">
-						<Image src={section1image} alt="itero" fill={true} className="rounded-full object-cover z-20" />
-						<div className='bubble absolute w-32 h-32 z-10 top-32 -left-10 bg-default rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-20 h-20 z-10 -bottom-24 -right-10 bg-default rounded-full ' data-speed="0.1"></div>
-					</div>
-					<div className="flex flex-col w-1/2 justify-center text-left">
+				<PicText image={section1image} inside={
+					<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'default' })}>Why Choose Invisalign?</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Invisalign is a popular orthodontic treatment that uses clear, removable aligners to straighten teeth.
 							<br />
@@ -94,8 +89,9 @@ export default function InvisalignPage() {
 						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
 							Book an Appointment
 						</Button>
-					</div>
-				</div>
+					</>
+				} />
+
 				<div className="flex flex-col gap-10">
 					<h1 className={title({ size: 'md', alignment: 'center', color: 'default' })}>Root Canal Procedure</h1>
 					<BigTimeline
@@ -130,13 +126,8 @@ export default function InvisalignPage() {
 						]} />
 				</div>
 
-				<div className="flex flex-col lg:flex-row items-center w-full mt-28 gap-20">
-					<div className="relative w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] mr-10 rounded-full">
-						<Image src={iteroimage} alt="itero" fill={true} className="rounded-full object-cover z-20" />
-						<div className='bubble absolute w-32 h-32 z-10 top-32 -left-10 bg-default rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-20 h-20 z-10 -bottom-24 -right-10 bg-default rounded-full ' data-speed="0.1"></div>
-					</div>
-					<div className="flex flex-col w-1/2 justify-center text-left">
+				<PicText image={iteroimage} inside={
+					<>
 						<h1 className={title({ size: 'md', alignment: 'left' })}>Digital Impression through Invisalign Consultation</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Non ac fermentum scelerisque tempus. Diam sit diam lectus ornare morbi mauris. Posuere at pellentesque pellentesque arcu. A malesuada arcu nunc in. Lorem ipsum dolor sit amet consectetur. Non ac fermentum scelerisque tempus. Diam sit diam lectus ornare morbi mauris. Posuere at pellentesque pellentesque arcu. A malesuada arcu nunc in.Lorem ipsum dolor sit amet consectetur. Non ac fermentum scelerisque tempus. Diam sit diam </h1>
 
@@ -148,43 +139,40 @@ export default function InvisalignPage() {
 								<Image src={iteropractice} alt="itero digital practice logo" className="object-scale-down" />
 							</div>
 						</div>
-					</div>
-				</div>
-
+					</>
+				} />
 				<div className="flex flex-col items-center w-full mt-28 gap-20">
-					<h1 className={title({ size: 'md', alignment: 'center' })}>Experience the Difference</h1>
-					<div className="flex ">
-						<div className="flex flex-col">
-							<div className="relative self-center w-[300px] h-[200px] lg:w-[500px] lg:h-[300px] mr-10 mb-10 rounded-3xl">
-								<Image src={before} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />
-							</div>
-							<h1 className={title({ size: 'md', alignment: 'center' })}>Before</h1>
-							<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1>
-						</div>
-						<div className="flex flex-col">
-							<div className="relative self-center w-[300px] h-[200px] lg:w-[500px] lg:h-[300px] mr-10 mb-10 rounded-3xl">
-								<Image src={after} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />
-							</div>
-							<h1 className={title({ size: 'md', alignment: 'center' })}>After</h1>
-							<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1>
-						</div>
+					<h1 className={title({ size: 'md', alignment: 'center' })}>See the Results</h1>
+					<BeforeAfter
+						image1={<Image src={before} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
+						image2={<Image src={after} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
+						text1={
+							<>
+								<h1 className={title({ size: 'md', alignment: 'center' })}>Before</h1>
+								<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1>
+							</>
+						}
+						text2={
+							<>
+								<h1 className={title({ size: 'md', alignment: 'center' })}>After</h1>
+								<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1>
+							</>
+						}
+						bubble={
+							<></>
+						}
+					/>
 					</div>
-				</div>
 
-				<div className="flex flex-col lg:flex-row items-center w-full mt-28 gap-20">
-					<div className="relative w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] mr-10 rounded-full">
-						<Image src={invisalignbox} alt="itero" fill={true} className="object-cover z-20" />
-						<div className='bubble absolute w-32 h-32 z-10 top-32 -left-10 bg-default rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-20 h-20 z-10 -bottom-24 -right-10 bg-default rounded-full ' data-speed="0.1"></div>
-					</div>
-					<div className="flex flex-col w-1/2 justify-center text-center">
+				<PicText image={invisalignbox} inside={
+					<>
 						<h1 className={title({ size: 'md', alignment: 'center' })}>Get a Quote</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. Aenean arcu facilisi nisi elit lectus cursus dapibus. Quis feugiat ipsum gravida condimentum rhoncus. Sem egestas massa vulputate egestas proin donec vestibulum.</h1>
 						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
 							Book an Appointment
 						</Button>
-					</div>
-				</div>
+					</>
+				} />
 			</div>
 
 		</div >

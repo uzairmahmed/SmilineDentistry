@@ -14,6 +14,9 @@ import section3image from '../../assets/images/figmaadobestock_720403667_preview
 import cosmeticImage from '../../assets/images/figmaadobestock_393338639_preview1.png'
 import IconCard from "@/components/common/icon-card";
 import Timeline from "@/components/common/timeline";
+import PicText from "@/components/common/pic-text";
+import GreenCircleCard from "@/components/common/green-circle-card";
+import SplitCard from "@/components/common/card";
 
 export default function CleaningPage() {
 	return (
@@ -55,13 +58,8 @@ export default function CleaningPage() {
 					</div>
 				</div>
 
-				<div className="flex flex-col lg:flex-row items-center w-full gap-20">
-					<div className="relative w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] mr-10 rounded-full">
-						<Image src={section1image} alt="itero" fill={true} className="rounded-full object-cover z-20" />
-						<div className='bubble absolute w-32 h-32 z-10 top-32 -left-10 bg-primary rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-20 h-20 z-10 -bottom-24 -right-10 bg-primary rounded-full ' data-speed="0.1"></div>
-					</div>
-					<div className="flex flex-col w-1/2 justify-center text-left">
+				<PicText image={section1image} inside={
+					<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'primary' })}>Root Canal Treatment</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Root canal treatment, also known as endodontic treatment, is a dental procedure designed to remove infected or damaged tissue from the inside of a tooth. This tissue, known as the pulp, contains nerves and blood vessels that can become infected due to decay, cracks, trauma, or repeated dental procedures.
 							<br />
@@ -74,8 +72,9 @@ export default function CleaningPage() {
 						<Button variant="solid" color="primary" fullWidth={false} size='lg' radius='full' className='mt-8'>
 							Book an Appointment
 						</Button>
-					</div>
-				</div>
+					</>
+				} />
+
 				<div className="flex flex-col gap-10">
 					<h1 className={title({ size: 'md', alignment: 'center', color: 'primary' })}>Root Canal Procedure</h1>
 					<Timeline
@@ -90,31 +89,27 @@ export default function CleaningPage() {
 						]} />
 				</div>
 
-
-				<div className="flex flex-col lg:flex-row items-center w-full gap-20">
-					<div className="flex flex-col w-1/2 justify-center text-left">
+				<PicText image={section2image} inside={
+					<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'secondary' })}>Extractions</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Sometimes, a tooth may need to be removed due to decay, damage, or overcrowding. At Smiline Family Dentistry in Milton, Ontario, we offer gentle and effective extraction services to remove teeth that are causing problems.</h1>
 						<Button variant="solid" color="secondary" fullWidth={false} size='lg' radius='full' className='mt-8'>
 							Book an Appointment
 						</Button>
-					</div>
-					<div className="relative w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] mr-10 rounded-full">
-						<Image src={section2image} alt="itero" fill={true} className="rounded-full object-cover z-20" />
-						<div className='bubble absolute w-32 h-32 z-10 top-32 -left-10 bg-secondary rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-20 h-20 z-10 -bottom-24 -right-10 bg-secondary rounded-full ' data-speed="0.1"></div>
-					</div>
-				</div>
-				<div className="flex flex-col lg:flex-row items-center w-full gap-20">
-					<div className="flex flex-col p-20 rounded-3xl bg-secondary">
+					</>
+				} />
+
+				<SplitCard bgcolor={'secondary'}
+					left={<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'background' })}>Wisdom Teeth Extraction</h1>
 						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>Wisdom teeth, also known as third molars, often need to be removed due to impaction or other issues. At Smiline Family Dentistry in Milton, Ontario, we offer expert wisdom teeth removal services to ensure a smooth and comfortable procedure.</h1>
-					</div>
-					<div className="flex flex-col p-20 rounded-3xl bg-secondary">
+					</>}
+					right={<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'background' })}>Post-Operation</h1>
 						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>After your Invisalign treatment is complete, you will need to wear a retainer to ensure that your teeth do not shift back to their original position. It's also important to maintain good oral hygiene habits by brushing and flossing regularly.</h1>
-					</div>
-				</div>
+					</>}
+					separated={true}
+				/>
 
 				<div className="flex flex-col gap-10">
 					<h1 className={title({ size: 'md', alignment: 'center', color: 'secondary' })}>Extraction Procedure</h1>
@@ -130,26 +125,22 @@ export default function CleaningPage() {
 						]} />
 				</div>
 
-				<div className="flex flex-col lg:flex-row items-center w-full gap-20">
-					<div className="flex flex-col w-1/2 justify-center text-left">
+				<PicText image={section3image} inside={
+					<>
 						<h1 className={title({ size: 'md', alignment: 'left' })}>Implant Treatment</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Dental implants are a popular and effective way to replace missing teeth. They consist of a small titanium post that is surgically implanted into the jawbone, which serves as a replacement for the tooth root. Once the implant has fused with the jawbone, a custom-made dental crown is attached to the top of the post, creating a natural-looking replacement tooth.</h1>
 						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
 							Book an Appointment
 						</Button>
-					</div>
-					<div className="relative w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] mr-10 rounded-full">
-						<Image src={section3image} alt="itero" fill={true} className="rounded-full object-cover z-20" />
-						<div className='bubble absolute w-32 h-32 z-10 top-32 -left-10 bg-default rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-20 h-20 z-10 -bottom-24 -right-10 bg-default rounded-full ' data-speed="0.1"></div>
-					</div>
-				</div>
-				<div className="flex flex-col lg:flex-row items-center w-full rounded-3xl bg-default p-20 gap-10">
-					<div className="flex flex-col">
+					</>
+				} />
+
+				<SplitCard bgcolor={'default'}
+					left={<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'background' })}>Benefits of Dental Implants</h1>
 						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>There are several benefits to choosing dental implants as a tooth replacement option, including:</h1>
-					</div>
-					<div className="flex flex-col">
+					</>}
+					right={<>
 						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>
 							<ul className="list-disc list-outside">
 								<li>
@@ -163,8 +154,9 @@ export default function CleaningPage() {
 								</li>
 							</ul>
 						</h1>
-					</div>
-				</div>
+					</>}
+					separated={false}
+				/>
 
 				<div className="flex flex-col gap-10">
 					<h1 className={title({ size: 'md', alignment: 'center' })}>Root Canal Procedure</h1>
@@ -180,22 +172,11 @@ export default function CleaningPage() {
 						]} />
 				</div>
 
-
-				<div className="flex flex-col relative lg:flex-row items-center w-full mt-28 justify-between bg-primary py-24 px-28 rounded-3xl">
-					<div className="flex flex-col w-1/2 justify-center text-left">
-						<h1 className={title({ size: 'md', alignment: 'left', color: 'background' })}>Maintaining your smile</h1>
-						<h1 className={paragraph({ size: 'md', color: 'background' })}>After your professional teeth cleaning, it's important to maintain good oral hygiene habits to keep your teeth and gums healthy. This includes brushing and flossing regularly, using mouthwash, and visiting for regular dental checkups. <br /> <br /> Regular teeth cleanings can help prevent oral health issues and keep your smile looking its best.</h1>
-					</div>
-					<div className="absolute right-0">
-						<div className="relative w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] mr-10 rounded-full">
-							<Image src={cosmeticImage} alt="itero" fill={true} className="rounded-full object-cover z-20" />
-							<div className='bubble absolute w-48 h-48 z-10 top-0 right-0 bg-default rounded-full ' data-speed="0.1"></div>
-							<div className='bubble absolute w-20 h-20 z-10 top-0 right-0 bg-default rounded-full ' data-speed="0.1"></div>
-							<div className='bubble absolute w-20 h-20 z-10 -bottom-48 -left-10 bg-default rounded-full ' data-speed="0.1"></div>
-						</div>
-					</div>
-				</div>
-
+				<GreenCircleCard
+					header="Maintaining your smile"
+					image={cosmeticImage}
+					text="After your professional teeth cleaning, it's important to maintain good oral hygiene habits to keep your teeth and gums healthy. This includes brushing and flossing regularly, using mouthwash, and visiting for regular dental checkups. Regular teeth cleanings can help prevent oral health issues and keep your smile looking its best."
+				/>
 			</div>
 
 		</div >

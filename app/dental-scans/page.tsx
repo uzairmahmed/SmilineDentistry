@@ -13,6 +13,8 @@ import card3image from '../../assets/images/figmaadobestock_601235100_preview1.p
 import iteroimage from '../../assets/images/figmaadobestock_175504582_preview1.png'
 import iteropractice from '../../assets/other-logos/IteroPractice.png'
 import invisalignprovider from '../../assets/other-logos/InvisalignProvider.png'
+import PicText from "@/components/common/pic-text";
+import CardRibbon from "@/components/common/card-ribbon";
 
 export default function CleaningPage() {
 	return (
@@ -39,31 +41,21 @@ export default function CleaningPage() {
 				}
 			/>
 			<div className={pagecontent()}>
+
 				<div>
 					<h1 className={title({ size: 'md', alignment: 'center' })}>Learn more about out different dental imaging services.</h1>
-					<div className="grid grid-cols-3 gap-10 mt-10">
-						<ImageCard bg_color={'foreground'} txt_color={'background'} image={card1image}
-							header_text={'Bitewing X-rays'}
-							desc_text={'Lorem ipsum dolor sit amet consectetur. Pellentesque nisl lacus duis nulla nulla'}
-						/>
-						<ImageCard bg_color={'foreground'} txt_color={'background'} image={card2image}
-							header_text={'Panoramic X-rays'}
-							desc_text={'Lorem ipsum dolor sit amet consectetur. Pellentesque nisl lacus duis nulla nulla'}
-						/>
-						<ImageCard bg_color={'foreground'} txt_color={'background'} image={card3image}
-							header_text={'Digital Impressions'}
-							desc_text={'Lorem ipsum dolor sit amet consectetur. Pellentesque nisl lacus duis nulla nulla'}
-						/>
-					</div>
+					<CardRibbon
+						image1={card1image} header1={"Bitewing X-rays"}
+						text1={'Lorem ipsum dolor sit amet consectetur. Pellentesque nisl lacus duis nulla nulla'}
+						image2={card2image} header2={"Panoramic X-rays"}
+						text2={'Lorem ipsum dolor sit amet consectetur. Pellentesque nisl lacus duis nulla nulla'}
+						image3={card3image} header3={"Digital Impressions"}
+						text3={'Lorem ipsum dolor sit amet consectetur. Pellentesque nisl lacus duis nulla nulla'}
+					/>
 				</div>
 
-				<div className="flex flex-col lg:flex-row items-center w-full mt-28 gap-20">
-					<div className="relative w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] mr-10 rounded-full">
-						<Image src={iteroimage} alt="itero" fill={true} className="rounded-full object-cover z-20" />
-						<div className='bubble absolute w-32 h-32 z-10 top-32 -left-10 bg-default rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-20 h-20 z-10 -bottom-24 -right-10 bg-default rounded-full ' data-speed="0.1"></div>
-					</div>
-					<div className="flex flex-col w-1/2 justify-center text-left">
+				<PicText image={iteroimage} inside={
+					<>
 						<h1 className={title({ size: 'md', alignment: 'left' })}>Digital Impression through Invisalign Consultation</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Non ac fermentum scelerisque tempus. Diam sit diam lectus ornare morbi mauris. Posuere at pellentesque pellentesque arcu. A malesuada arcu nunc in. Lorem ipsum dolor sit amet consectetur. Non ac fermentum scelerisque tempus. Diam sit diam lectus ornare morbi mauris. Posuere at pellentesque pellentesque arcu. A malesuada arcu nunc in.Lorem ipsum dolor sit amet consectetur. Non ac fermentum scelerisque tempus. Diam sit diam </h1>
 
@@ -75,9 +67,8 @@ export default function CleaningPage() {
 								<Image src={iteropractice} alt="itero digital practice logo" className="object-scale-down" />
 							</div>
 						</div>
-					</div>
-				</div>
-
+					</>
+				} />
 			</div>
 
 		</div>

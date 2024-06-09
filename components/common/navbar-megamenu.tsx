@@ -8,13 +8,18 @@ interface MegaMenuProps {
 
 const NavbarMegamenu: React.FC<MegaMenuProps> = ({ item }) => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const handleInteraction = (event : any) => {
+        event.stopPropagation(); // Stop the event from bubbling up
+        event.preventDefault(); // Prevent default actions to ensure tap is handled explicitly
+        setIsOpen(prev => !prev); // Toggle dropdown state
+    };
+    
     return (
         <Dropdown
             isOpen={isOpen}
             onMouseLeave={() => setIsOpen(false)}>
             <NavbarItem>
-                <DropdownTrigger onMouseEnter={() => setIsOpen(true)}>
+                <DropdownTrigger onMouseEnter={() => setIsOpen(true)} onClick={handleInteraction} >
                     <h1 className={navbarLink()}>{item.label}</h1>
                 </DropdownTrigger>
             </NavbarItem>
