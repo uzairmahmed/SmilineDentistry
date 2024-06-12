@@ -66,7 +66,7 @@ export const Navbar = () => {
 						<Logo />
 					</NextLink>
 				</NavbarBrand>
-				<div className="flex flex-row gap-5 ">
+				<div className="flex flex-row gap-5">
 					{siteConfig.navItems.map((item) => (
 						item.type === "page" ?
 							<NavbarItem key={item.href}>

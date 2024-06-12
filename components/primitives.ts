@@ -124,7 +124,7 @@ export const pagecontent = tv({
 	lg:min-w-2xl lg:max-w-4xl \
 	xl:min-w-4xl xl:max-w-5xl \
 	2xl:min-w-5xl 2xl:max-w-6xl \
-	items-center py gap-0 lg:gap-32"
+	items-center py-32 gap-20 lg:gap-32"
 })
 
 export const navbarLink = tv({
@@ -132,7 +132,7 @@ export const navbarLink = tv({
 	variants: {
 		type: {
 			navbar: "w-full my-2 block max-w-full text-center text-lg text-default hover:[text-shadow:_0.2px_0_#143D75] transition-all cursor-pointer",
-			navmenu: "block m-0 text-left text-lg text-default hover:[text-shadow:_0.2px_0_#143D75] transition-all cursor-pointer ",
+			navmenu: "block m-0 text-left text-sm lg:text-lg text-default hover:[text-shadow:_0.2px_0_#143D75] transition-all cursor-pointer ",
 		}
 	}
 });

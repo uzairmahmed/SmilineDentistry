@@ -10,31 +10,29 @@ interface BeforeAfterProps {
 
 const BeforeAfter: React.FC<BeforeAfterProps> = ({ image1, image2, text1, text2, bubble }) => {
     return (
-        <div className="flex flex-col">
-            <div className="flex flex-row gap-10 relative justify-center">
-                <div className="flex flex-col">
-                    <div className="relative self-center w-[300px] h-[200px] lg:w-[500px] lg:h-[300px] rounded-3xl">
+        <div className="relative grid grid-rows-2 grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 grid-flow-col w-full gap-10 lg:gap-0">
+            <div className="grid grid-rows-2 lg:grid-rows-4 lg:flex-row relative justify-center items-center">
+                <div className="row-span-1 lg:row-span-3 flex flex-col">
+                    <div className="relative self-center w-[300px] h-[170px] lg:w-[400px] lg:h-[200px] xl:w-[500px] xl:h-[250px] rounded-3xl">
                         {image1}
                     </div>
                 </div>
-                <div className="flex flex-col">
-                    <div className="relative self-center w-[300px] h-[200px] lg:w-[500px] lg:h-[300px] rounded-3xl">
+                <div className="row-span-1 flex flex-col w-[300px] lg:w-[500px]">
+                    {text1}
+                </div>
+            </div>
+            <div className="grid grid-rows-2 lg:grid-rows-4 lg:flex-row relative justify-center items-center z-10">
+                <div className="row-span-1 lg:row-span-3 flex flex-col">
+                    <div className="relative self-center w-[300px] h-[170px] lg:w-[400px] lg:h-[200px] xl:w-[500px] xl:h-[250px] rounded-3xl">
                         {image2}
                     </div>
                 </div>
-
-                {bubble}
-            </div>
-
-            <div className="flex flex-row gap-10 mt-5">
-                <div className="flex flex-col  w-[300px] lg:w-[500px]">
-                    {text1}
-                </div>
-                <div className="flex flex-col  w-[300px] lg:w-[500px] ">
+                <div className="row-span-1 flex flex-col w-[300px] lg:w-[500px]">
                     {text2}
                 </div>
             </div>
-        </div>
+            {bubble}
+        </div >
 
     );
 }

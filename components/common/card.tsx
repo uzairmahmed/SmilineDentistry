@@ -10,7 +10,7 @@ interface SplitCardProps {
 
 const SplitCard: React.FC<SplitCardProps> = ({ left, right, separated, bgcolor }) => {
     return (
-        <div className={`flex flex-col lg:flex-row items-center w-full ${separated ? "gap-20 bg-opacity-0" : ` gap-10 p-20 rounded-3xl`} bg-${bgcolor}`}>
+        <div className={`flex flex-col lg:flex-row w-full ${separated ? " gap-16 bg-opacity-0" : ` gap-10 p-20 rounded-3xl`} bg-${bgcolor}`}>
             <div className={`flex flex-col ${separated ? "p-20 rounded-3xl" : ""} bg-${bgcolor}`}>
                 {left}
             </div>

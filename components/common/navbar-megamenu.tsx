@@ -25,10 +25,10 @@ const NavbarMegamenu: React.FC<MegaMenuProps> = ({ item }) => {
             </NavbarItem>
             <DropdownMenu
                 aria-label={item.label}
-                className="w-full max-w-6xl p-10 font-semibold" // Apply the grid layout
+                className="w-full max-w-6xl p-2 lg:p-10 font-semibold" // Apply the grid layout
                 classNames={{
                     base: "",
-                    list: "grid grid-cols-3 gap-10 flex-wrap justify-center",
+                    list: "grid grid:cols-1 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-10 flex-wrap justify-center",
 
                 }}
                 itemClasses={{

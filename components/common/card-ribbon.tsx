@@ -16,7 +16,7 @@ interface CardRibbonProps {
 
 const CardRibbon: React.FC<CardRibbonProps> = ({ image1, header1, text1, image2, header2, text2, image3, header3, text3 }) => {
     return (
-        <div className="grid grid-cols-3 gap-10 mt-10">
+        <div className="grid grid-rows-3 grid-cols-1 lg:grid-rows-1 lg:grid-cols-3 gap-10 mt-10">
             <ImageCard bg_color={'foreground'} txt_color={'background'} image={image1}
                 header_text={header1}
                 desc_text={text1}

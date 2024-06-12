@@ -111,7 +111,7 @@ export default function InvisalignPage() {
 						]} />
 				</div>
 
-				<div className="flex flex-col items-center w-full mt-28 gap-20">
+				<div className="flex flex-col items-center w-full gap-20">
 					<h1 className={title({ size: 'md', alignment: 'center' })}>See the Results</h1>
 					<BeforeAfter
 						image1={<Image src={before1} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
@@ -129,7 +129,7 @@ export default function InvisalignPage() {
 							</>
 						}
 						bubble={
-							<div className="absolute flex flex-col w-36 h-36 bg-default z-20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center">
+							<div className="absolute flex flex-col w-36 h-36 bg-default z-20 rounded-full top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center">
 								<h1 className={title({ size: 'lg', color: 'background' })}>98</h1>
 								<h1 className={subtitle({ size: 'md', color: 'background', margin: 'none' })}>days</h1>
 							</div>
@@ -151,7 +151,7 @@ export default function InvisalignPage() {
 							</>
 						}
 						bubble={
-							<div className="absolute flex flex-col w-36 h-36 bg-default z-20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center">
+							<div className="absolute flex flex-col w-36 h-36 bg-default z-20 rounded-full top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center">
 								<h1 className={title({ size: 'lg', color: 'background' })}>113</h1>
 								<h1 className={subtitle({ size: 'md', color: 'background', margin: 'none' })}>days</h1>
 							</div>
@@ -173,7 +173,7 @@ export default function InvisalignPage() {
 							</>
 						}
 						bubble={
-							<div className="absolute flex flex-col w-36 h-36 bg-default z-20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center">
+							<div className="absolute hidden lg:flex flex-col w-36 h-36 bg-default z-20 rounded-full top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center">
 								<h1 className={title({ size: 'lg', color: 'background' })}>152</h1>
 								<h1 className={subtitle({ size: 'md', color: 'background', margin: 'none' })}>days</h1>
 							</div>
@@ -181,7 +181,7 @@ export default function InvisalignPage() {
 					/>
 				</div>
 
-				<PicText image={<></>} inside={
+				<PicText image={null} inside={
 					<>
 						<h1 className={title({ size: 'md', alignment: 'center' })}>Get a Quote</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. Aenean arcu facilisi nisi elit lectus cursus dapibus. Quis feugiat ipsum gravida condimentum rhoncus. Sem egestas massa vulputate egestas proin donec vestibulum.</h1>

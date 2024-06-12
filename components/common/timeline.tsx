@@ -20,7 +20,7 @@ const Timeline: React.FC<TimelineProps> = ({ listofItems, numItems, colortheme }
                     <div className='ml-14 pb-5'>
                         <h1 className={paragraph({ size: 'md', alignment: 'left', color: 'foreground' })}>{item}</h1>
                     </div>
-                    <div className={`h-[120%] lg:h-1 w-1 lg:w-[120%] bg-${colortheme} absolute left-7 lg:left-0 top-0 lg:top-7 -z-0 rounded-full`}></div>
+                    <div className={`${index === listofItems.length - 1 ? "h-[100%] lg:h-1 w-1 lg:w-[100%]" : "h-[120%] lg:h-1 w-1 lg:w-[120%]"} bg-${colortheme} absolute left-7 lg:left-0 top-0 lg:top-7 -z-0 rounded-full`}></div>
                 </div>
             ))}
 

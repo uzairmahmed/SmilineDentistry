@@ -23,7 +23,11 @@ import BeforeAfter from "@/components/common/before-after";
 export default function InvisalignPage() {
 	return (
 		<div className="relative flex flex-col h-full w-full">
-			<Image src={invisalignAligner} width={1920} height={1920} alt="invisalign provider logo" className="absolute object-contain z-10 mix-blend-luminosity opacity-80" />
+			<div className="absolute w-screen h-screen">
+				<div className="relative w-full h-3/4 lg:h-full">
+					<Image src={invisalignAligner} fill={true} alt="invisalign provider logo" className="absolute object-cover z-10 mix-blend-luminosity opacity-80" />
+				</div>
+			</div>
 			<ServiceHero
 				div_side={'left'}
 				image={heroimage}
@@ -55,13 +59,6 @@ export default function InvisalignPage() {
 				}
 			/>
 			<div className={pagecontent()}>
-				<div className="flex flex-row mt-56 bg-white">
-					<Image src={section1image} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
-					<Image src={invisalignprovidewr} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
-					<Image src={iteropractice} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
-					<Image src={invisalignprovider} width={400} height={200} alt="itero" className="w-[400px] h-[200px] object-scale-down z-20" />
-				</div>
-
 				<TextHeaderSection header="What is Invisalign?"
 					text="Invisalign is a popular orthodontic treatment that uses clear, removable aligners to straighten teeth. These aligners are custom-made for each patient using our state-of-the-art Itero 3D imaging tool. Unlike traditional braces, Invisalign aligners are virtually invisible and can be easily removed for eating, brushing, and flossing."
 				/>
@@ -162,7 +159,7 @@ export default function InvisalignPage() {
 							<></>
 						}
 					/>
-					</div>
+				</div>
 
 				<PicText image={invisalignbox} inside={
 					<>

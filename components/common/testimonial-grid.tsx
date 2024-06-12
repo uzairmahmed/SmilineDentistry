@@ -28,7 +28,7 @@ const TestimonialGrid: React.FC<TestimonialGridProps> = ({ testimonials }) => {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 my-10'>
             {testimonials.map((testimonial, index) => (
-                <div key={index} className='flex flex-col px-16 py-16 rounded-3xl bg-white'>
+                <div key={index} className='flex flex-col p-10 md:p-16 rounded-3xl bg-white'>
                     <h1 className={paragraph({ size: 'sm' })}>
                         "{testimonial.text}"
                     </h1>

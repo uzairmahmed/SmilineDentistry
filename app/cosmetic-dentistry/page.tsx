@@ -1,8 +1,6 @@
 import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
-import Image from "next/image";
 import { Button } from "@nextui-org/button";
-import ImageCard from "@/components/common/image-card";
 
 import heroimage from '../../assets/images/figmaadobestock_333548204_preview1.png'
 import card1image from '../../assets/images/figmaadobestock_265971927_preview1.png'

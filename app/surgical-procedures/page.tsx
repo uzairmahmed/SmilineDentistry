@@ -1,8 +1,6 @@
 import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
-import Image from "next/image";
 import { Button } from "@nextui-org/button";
-import ImageCard from "@/components/common/image-card";
 
 import heroimage from '../../assets/images/figmaadobestock_722965563_preview1.png'
 import card1image from '../../assets/icons/toothcracked.png'
@@ -45,7 +43,7 @@ export default function CleaningPage() {
 			<div className={pagecontent()}>
 				<div className="flex flex-col gap-10">
 					<h1 className={title({ size: 'md', alignment: 'center' })}>Learn more about our different surgical procedures.</h1>
-					<div className="grid grid-cols-3 gap-10">
+					<div className="grid grid-rows-3 grid-cols-1 lg:grid-rows-1 lg:grid-cols-3 gap-10 mx-10 lg:mx-0">
 						<IconCard bg_color={'primary'} txt_color={'background'} image={card1image}
 							header_text={'Root Canal Treatment'}
 						/>

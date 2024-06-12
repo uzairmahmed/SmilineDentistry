@@ -16,7 +16,7 @@ interface ServiceHeroProps {
 
 const ServiceHero: React.FC<ServiceHeroProps> = ({ main_section, bubbles, image, div_side }) => {
     return (
-        <div className='relative h-[85vh] overflow-x-clip'>
+        <div className='relative h-screen lg:h-[85vh] overflow-x-clip'>
             <Image alt='hero' src={image} fill={true} className='object-cover' />
             <div className={`
                 absolute flex flex-col bottom-20 
