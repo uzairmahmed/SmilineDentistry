@@ -44,7 +44,7 @@ export const Navbar = () => {
 							</NavbarItem>
 							:
 							item.type === 'supercategory' ?
-								<NavbarMegamenu item={item} />
+								<NavbarMegamenu key={item.label} item={item} />
 								:
 								<></>
 					))}
@@ -80,7 +80,7 @@ export const Navbar = () => {
 							</NavbarItem>
 							:
 							item.type === 'supercategory' ?
-								<NavbarMegamenu item={item} />
+								<NavbarMegamenu key={item.label} item={item} />
 								:
 								<></>
 					))}

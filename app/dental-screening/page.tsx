@@ -19,7 +19,7 @@ export default function CleaningPage() {
 				main_section={
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Dental Screening</h1>
-						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</h1>
+						{/* <h1 className={subtitle({ size: 'md', alignment: 'left' })}>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</h1> */}
 						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
 							Book an Appointment
 						</Button>
@@ -38,8 +38,11 @@ export default function CleaningPage() {
 
 				<PicText image={iteroimage} inside={
 					<>
-						<h1 className={title({ size: 'md', alignment: 'left' })}>Why Oral Cancer Screening is Important</h1>
-						<h1 className={paragraph({ size: 'lg' })}>Oral cancer can affect anyone, regardless of age or gender. Early detection is key to successful treatment and can significantly improve the chances of recovery. Oral cancer screening is a painless and non-invasive way to detect early signs of the disease, such as white or red patches in the mouth or lips, sores that won't heal, or lumps or bumps in the mouth or neck.</h1>
+						<h1 className={title({ size: 'md', alignment: 'left' })}>Why is Oral Cancer Screening Important</h1>
+						<h1 className={paragraph({ size: 'lg' })}>Dental cancer screenings are crucial for early detection of oral cancers.
+							During these exams, dentists inspect your mouth, throat, and tongue for abnormal lesions or growths. Early diagnosis
+							significantly improves treatment outcomes. Regular screenings, combined with good oral hygiene, are vital for
+							maintaining overall health and catching potential issues early. </h1>
 					</>
 				} />
 
@@ -47,7 +50,9 @@ export default function CleaningPage() {
 					<>
 						<h1 className={title({ size: 'lg', alignment: 'left', color: 'background' })}>Our Oral Cancer Screening Process</h1>
 						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>
-							At Smiline Family Dentistry, our oral cancer screening process is quick, painless, and non-invasive. During your regular dental check-up, we will perform a visual and physical examination of your mouth and neck to check for any signs of cancer. We may also use specialized equipment, such as a VELscope, to help identify areas of concern.
+							Our oral cancer screening process includes a thorough examination of your mouth, throat, and tongue for any signs of
+							abnormalities. We use advanced tools to identify any lesion. The screening is quick, painless, and essential for
+							early detection. Regular screenings help ensure prompt treatment and better outcomes.
 						</h1>
 					</>
 				} />

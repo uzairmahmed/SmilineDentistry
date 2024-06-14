@@ -59,13 +59,16 @@ export default function CleaningPage() {
 				<PicText image={section1image} inside={
 					<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'primary' })}>Root Canal Treatment</h1>
-						<h1 className={paragraph({ size: 'lg' })}>Root canal treatment, also known as endodontic treatment, is a dental procedure designed to remove infected or damaged tissue from the inside of a tooth. This tissue, known as the pulp, contains nerves and blood vessels that can become infected due to decay, cracks, trauma, or repeated dental procedures.
-							<br />
-							<br />
-							Without treatment, this infection can spread to the surrounding teeth and gums, causing pain, swelling, and even tooth loss.
-							<br />
-							<br />
-							During root canal treatment, our dental team will remove the infected or damaged pulp, clean and disinfect the inside of the tooth, and fill it with a biocompatible material to help strengthen and protect the tooth. In most cases, a dental crown will be placed over the treated tooth to restore its shape, function, and appearance.
+						<h1 className={paragraph({ size: 'lg' })}>
+							If you're experiencing deep decay or tooth pain which is due to a severely infected or decayed - root canal treatment,
+							is a vital procedure designed to save the affected tooth. The treatment involves removing the damaged or infected pulp
+							from the inside of the tooth. The tooth's interior is then meticulously cleaned, disinfected, and shaped before being
+							filled and sealed to prevent further infection.
+							<br /><br />
+							A crown or filling is typically placed on the treated tooth to restore its strength and functionality. Root canal
+							treatment alleviates pain, prevents the spread of infection, and preserves the natural tooth, which is often preferable
+							to extraction. This procedure is crucial for maintaining oral health and can save teeth that might otherwise be lost,
+							ensuring patients can maintain their natural smile and optimal chewing ability.
 						</h1>
 						<Button variant="solid" color="primary" fullWidth={false} size='lg' radius='full' className='mt-8'>
 							Book an Appointment
@@ -79,18 +82,18 @@ export default function CleaningPage() {
 						colortheme='primary'
 						numItems={5}
 						listofItems={[
-							"Consultation to determine if a root canal is necessary.",
-							"Procedure begins with numbing the affected tooth and surrounded area using local anesthesua.",
-							"Create small hole and remove damaged/infected pulp from inside the tooth.",
-							"Clean and shape inside of tooth and a temporary filling may be placed.",
-							"Crown or other restorations may be suggested and regular cleanings and checkups."
+							"Diagnosis and Preparation: Dentist examines tooth, takes X-rays, and administers local anesthesia to numb the area.",
+							"Pulp Removal: A small opening is made, and the infected or damaged pulp is removed.",
+							"Cleaning and shaping: The tooth's interior is meticulously cleaned and shaped to prepare for the filling.",
+							"Filling and Sealing: The cleaned canals are filled and the opening is sealed.",
+							"Final Restoration: A permanent filling and later crown is placed to restore the tooth's strength and function."
 						]} />
 				</div>
 
 				<PicText image={section2image} inside={
 					<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'secondary' })}>Extractions</h1>
-						<h1 className={paragraph({ size: 'lg' })}>Sometimes, a tooth may need to be removed due to decay, damage, or overcrowding. At Smiline Family Dentistry in Milton, Ontario, we offer gentle and effective extraction services to remove teeth that are causing problems.</h1>
+						<h1 className={paragraph({ size: 'lg' })}>Tooth extractions are typically done to address various dental issues, including severe tooth decay, infection, crowding, and damage from trauma. It is also necessary for impacted wisdom teeth or to make space for orthodontic treatment. Removing the problematic tooth helps prevent further infection, alleviates pain, and improves overall oral health. </h1>
 						<Button variant="solid" color="secondary" fullWidth={false} size='lg' radius='full' className='mt-8'>
 							Book an Appointment
 						</Button>
@@ -100,16 +103,16 @@ export default function CleaningPage() {
 				<SplitCard bgcolor={'secondary'}
 					left={<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'background' })}>Wisdom Teeth Extraction</h1>
-						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>Wisdom teeth, also known as third molars, often need to be removed due to impaction or other issues. At Smiline Family Dentistry in Milton, Ontario, we offer expert wisdom teeth removal services to ensure a smooth and comfortable procedure.</h1>
+						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>Wisdom tooth removal is necessary for impacted, painful, or misaligned teeth. This procedure can cause anxiety, but our expert team at Smiline Dentistry ensures a comfortable, stress-free experience with expert care and personalized support. We prioritize patient comfort, using advanced techniques to make the process as smooth as possible. </h1>
 					</>}
 					right={<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'background' })}>Post-Operation</h1>
-						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>After your Invisalign treatment is complete, you will need to wear a retainer to ensure that your teeth do not shift back to their original position. It's also important to maintain good oral hygiene habits by brushing and flossing regularly.</h1>
+						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>After extractions, our team provides thorough post-op instructions, including guidelines for pain management, oral hygiene, and dietary restrictions. We take the time to explain these instructions, ensuring optimal healing and recovery.</h1>
 					</>}
 					separated={true}
 				/>
 
-				<div className="flex flex-col gap-10">
+				{/* <div className="flex flex-col gap-10">
 					<h1 className={title({ size: 'md', alignment: 'center', color: 'secondary' })}>Extraction Procedure</h1>
 					<Timeline
 						colortheme='secondary'
@@ -121,7 +124,7 @@ export default function CleaningPage() {
 							"If necessary, a small stitch will be placed to help heal the area.",
 							"Crown or other restoratiuons may be suggested and regular cleanings and checkups."
 						]} />
-				</div>
+				</div> */}
 
 				<PicText image={section3image} inside={
 					<>

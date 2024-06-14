@@ -26,8 +26,12 @@ export default function Home() {
 
 						<PicText image={section1image} inside={
 							<>
-								<h1 className={title({ size: 'md', alignment: 'left' })}>The Cosmetic Dentistry Consultation</h1>
-								<h1 className={paragraph({ size: 'lg' })}>During your cosmetic dentistry consultation at Smiline Family Dentistry in Milton, Ontario, Dr. Asra Ahmed will discuss your aesthetic concerns and goals, and recommend the best cosmetic dentistry services to achieve your ideal smile. Our cosmetic dentist will work with you to develop a personalized treatment plan that meets your unique needs and preferences.</h1>
+								<h1 className={title({ size: 'md', alignment: 'left' })}>More about Smiline Dentistry</h1>
+								<h1 className={paragraph({ size: 'lg' })}>We are committed to providing outstanding dental care with a personal touch. Our skilled team of dentists and hygienists offer comprehensive services, 
+								including preventive care, advanced restorative treatments, and cosmetic dentistry to enhance your smile. Utilizing cutting-edge technology, we ensure precise diagnostics and effective treatments. 
+								<br /><br />
+								Our office is designed with your comfort in mind, offering a warm and welcoming atmosphere. Whether you need routine check-ups, dental implants, Invisalign, or emergency care, we prioritize your 
+								oral health and overall well-being. Trust us for a gentle, caring, and professional dental experience. Visit Smiline Family Dentistry and let us help you achieve and maintain a healthy, beautiful smile. </h1>
 								<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
 									Book an Appointment
 								</Button>
@@ -60,7 +64,7 @@ export default function Home() {
 							<div className="w-full flex flex-col lg:flex-row h-full lg:h-[800px] bg-opacity-50 z-10 mr-5 lg:mr-0">
 								<div className="flex flex-col w-full lg:w-1/2 h-full pl-10 pr-5 py-20 lg:p-20 bg-default rounded-r-3xl">
 									<h1 className={title({ size: 'md', fullWidth: true, alignment: 'left', color: 'background' })}>Hours of Operation</h1>
-									<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left', })}>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et. ipsum dolor sit amet consectetur adipiscing elit Ut et.</h1>
+									<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left', })}>Conveniently serving your needs with flexible scheduling for your busy lifestyle. Open on evenings and weekends to serve you better.</h1>
 									<TimingGrid />
 								</div>
 

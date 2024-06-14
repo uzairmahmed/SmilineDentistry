@@ -20,7 +20,7 @@ export default function CleaningPage() {
 				main_section={
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Cosmetic Dentistry</h1>
-						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</h1>
+						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>With cosmetic dental treatments, you’ll have a reason to smile with confidence.</h1>
 						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
 							Book an Appointment
 						</Button>
@@ -40,18 +40,21 @@ export default function CleaningPage() {
 					<h1 className={title({ size: 'md', alignment: 'center' })}>Learn more about our different cosmetic dentistry services.</h1>
 					<CardRibbon
 						image1={card1image} header1={"Whitening"}
-						text1={'Our professional teeth whitening services can help remove stains and discoloration to leave your smile looking brighter and fresher.'}
+						text1={'Achieving a dazzling, white smile is a desire for many. Our team at Smiline Family Dentistry offer solutions for whiter, brighter smiles.'}
 						image2={card2image} header2={"Crowns"}
-						text2={'Dental crowns can be used to cover damaged or discolored teeth, improving their appearance and restoring their function.'}
+						text2={'Dental crowns cover damaged or discolored teeth, improving both appearance and function for a healthier, more confident smile.'}
 						image3={card3image} header3={"Verneers"}
-						text3={'Dental veneers are thin, custom-made shells that are placed over the front of your teeth to improve their appearance.'}
+						text3={'Dental veneers help to enhance the appearance of teeth by correcting imperfections like discoloration, chips, or gaps, for a stunning smile transformation.'}
 					/>
 				</div>
 
 				<PicText image={cosmeticImage} inside={
 					<>
-						<h1 className={title({ size: 'md', alignment: 'center' })}>The Cosmetic Dentistry Consultation</h1>
-						<h1 className={paragraph({ size: 'lg' })}>During your cosmetic dentistry consultation at Smiline Family Dentistry in Milton, Ontario, Dr. Asra Ahmed will discuss your aesthetic concerns and goals, and recommend the best cosmetic dentistry services to achieve your ideal smile. Our cosmetic dentist will work with you to develop a personalized treatment plan that meets your unique needs and preferences.</h1>
+						<h1 className={title({ size: 'md', alignment: 'left' })}>The Cosmetic Dentistry Consultation</h1>
+						<h1 className={paragraph({ size: 'lg' })}>At Smiline Family Dentistry, our cosmetic dentistry consultations are personalized experiences. Our skilled doctors listen attentively 
+						to your concerns and desires, understanding your smile goals. <br /><br /> During the consultation, we conduct a thorough examination, discussing various cosmetic services like dental 
+						veneers or teeth whitening. We explain treatment options, ensuring you're fully informed. With our expertise and your input, together we create a tailored plan for achieving 
+						the smile of your dreams. </h1>
 						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
 							Book an Appointment
 						</Button>
