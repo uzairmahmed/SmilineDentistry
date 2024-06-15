@@ -38,7 +38,7 @@ export default function Home() {
 							</>}
 						/>
 
-						<ImageRibbon type="fullwidth" image={section2image} inside={
+						<ImageRibbon image={section2image} inside={
 							<>
 								<div className={`flex flex-col px-16 py-16 rounded-3xl bg-default items-center text-center gap-10`}>
 									<RiShakeHandsFill className='w-16 h-16 text-background' />

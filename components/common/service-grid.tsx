@@ -43,16 +43,16 @@ const ServiceGrid = () => {
     ]
 
     return (
-        <div className='flex flex-row flex-wrap justify-center gap-5 my-10'>
+        <div className='flex flex-col lg:flex-row justify-center gap-5 my-10'>
             {featured_services.map((service, index) => (
                 <div key={service.key} onMouseEnter={() => setHoveredElement(index)} onMouseLeave={() => setHoveredElement(-1)}
-                    className={`flex flex-col bg-default rounded-3xl min-w-[375px] w-[25%] justify-center items-center p-10 basis-1/4`}>
+                    className={`flex flex-col ${hoveredElement == index ? 'bg-default text-white py-10' : 'bg-white text-default py-16'} rounded-3xl justify-center items-center px-10 basis-1/4 transition-colors`}>
                     <div className='flex flex-col items-center justify-center'>
                         {service.icon}
                         <h1 className={subtitle({ size: 'sm', color: 'inherit' })}>{service.title}</h1>
                         <h1 className={paragraph({ size: 'sm', color: 'inherit' })}>{service.description}</h1>
 
-                        <Button className={`${hoveredElement == index ? 'opacity-100' : 'opacity-10'} self-center rounded-full px-10 bg-background text-default transition-all mt-5`} size='lg'>
+                        <Button className={`${hoveredElement == index ? 'opacity-100 h-8' : 'opacity-10 h-0'} self-center rounded-full px-10 bg-background text-default transition-all mt-5`} size='lg'>
                             Learn More
                         </Button>
                     </div>
