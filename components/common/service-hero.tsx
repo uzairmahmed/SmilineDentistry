@@ -2,10 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Button } from '@nextui-org/button';
-import { subtitle, title } from '../primitives';
-
-import heroimg from '../../assets/heroimages/1.jpg';
 
 interface ServiceHeroProps {
     image: any;

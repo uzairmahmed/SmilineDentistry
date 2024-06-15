@@ -1,24 +1,19 @@
 "use client"
-import React, { useState } from "react";
+import React from "react";
 
-import { Navbar as NextUINavbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, DropdownSection } from "@nextui-org/react";
-import { link as linkStyles } from "@nextui-org/theme";
+import { Navbar as NextUINavbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarContent, NavbarItem } from "@nextui-org/react";
 
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
-import clsx from "clsx";
 
 import { Logo } from "@/components/icons";
-import { MdMenu } from "react-icons/md";
-import { navbarLink, paragraph, subtitle, title } from "./primitives";
+import { navbarLink } from "./primitives";
 import NavbarMegamenu from "./common/navbar-megamenu";
-import { useFormContext } from "@/hooks/useFormContext";
 import ContactForm from "./common/contact-form";
 import ContactFormButton from "./common/contact-form-button";
 
 export const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-	const { openContactForm } = useFormContext();
 
 	return (
 		<>

@@ -2,11 +2,9 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Button } from '@nextui-org/button';
 import { subtitle, title } from '../primitives';
 import { fontCursive } from "@/config/fonts";
 
-import heroimg from '../../assets/heroimages/1.jpg';
 import heroimage from '../../assets/stock_images/AdobeStock_420249849.png'
 import clsx from 'clsx';
 import ContactFormButton from './contact-form-button';
