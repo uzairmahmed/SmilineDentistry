@@ -3,7 +3,7 @@ import { useDisclosure } from '@nextui-org/react';
 
 interface FormContextProps {
   isOpen: boolean;
-  open: () => void;
+  openContactForm: () => void;
   close: () => void;
 }
 
@@ -13,7 +13,7 @@ export const FormProvider = ({ children }: { children: ReactNode }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <FormContext.Provider value={{ isOpen, open: onOpen, close: onClose }}>
+    <FormContext.Provider value={{ isOpen, openContactForm: onOpen, close: onClose }}>
       {children}
     </FormContext.Provider>
   );

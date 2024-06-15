@@ -15,6 +15,7 @@ import Timeline from "@/components/common/timeline";
 import PicText from "@/components/common/pic-text";
 import GreenCircleCard from "@/components/common/green-circle-card";
 import SplitCard from "@/components/common/card";
+import ContactFormButton from "@/components/common/contact-form-button";
 
 export default function CleaningPage() {
 	return (
@@ -26,9 +27,7 @@ export default function CleaningPage() {
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Dental Surgical Procedures</h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</div>
 				}
 				bubbles={
@@ -70,9 +69,7 @@ export default function CleaningPage() {
 							to extraction. This procedure is crucial for maintaining oral health and can save teeth that might otherwise be lost,
 							ensuring patients can maintain their natural smile and optimal chewing ability.
 						</h1>
-						<Button variant="solid" color="primary" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</>
 				} />
 
@@ -94,9 +91,7 @@ export default function CleaningPage() {
 					<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'secondary' })}>Extractions</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Tooth extractions are typically done to address various dental issues, including severe tooth decay, infection, crowding, and damage from trauma. It is also necessary for impacted wisdom teeth or to make space for orthodontic treatment. Removing the problematic tooth helps prevent further infection, alleviates pain, and improves overall oral health. </h1>
-						<Button variant="solid" color="secondary" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</>
 				} />
 
@@ -130,9 +125,7 @@ export default function CleaningPage() {
 					<>
 						<h1 className={title({ size: 'md', alignment: 'left' })}>Implant Treatment</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Dental implants are a popular and effective way to replace missing teeth. They consist of a small titanium post that is surgically implanted into the jawbone, which serves as a replacement for the tooth root. Once the implant has fused with the jawbone, a custom-made dental crown is attached to the top of the post, creating a natural-looking replacement tooth.</h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</>
 				} />
 

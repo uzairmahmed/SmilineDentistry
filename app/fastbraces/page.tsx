@@ -28,6 +28,7 @@ import BigTimeline from "@/components/common/bigTimeline";
 import TextHeaderSection from "@/components/common/text-header-section";
 import PicText from "@/components/common/pic-text";
 import BeforeAfter from "@/components/common/before-after";
+import ContactFormButton from "@/components/common/contact-form-button";
 
 export default function InvisalignPage() {
 	return (
@@ -44,9 +45,7 @@ export default function InvisalignPage() {
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left', color: 'primary' })}>Fast Braces® </h1>
 						<h1 className={title({ size: 'sm', fullWidth: true, alignment: 'left', color: 'primary' })}>At Smiline Family Dentistry </h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Transform Your Smile with Fast Braces®, Less Time. Less Expense. More Smile.</h1>
-						<Button variant="solid" color="primary" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</div>
 				}
 				bubbles={
@@ -71,9 +70,7 @@ export default function InvisalignPage() {
 							<h1 className={paragraph({ size: 'lg' })}>
 								Fastbraces offer several benefits over traditional braces. One of the main benefits is their short treatment time. While traditional braces can take up to 2-3 years to straighten teeth, Fastbraces can typically achieve the same results in just a few months to a year. This can save you time and money in the long run. <br /> <br />Fastbraces are also more comfortable than traditional braces. Because they use a lower amount of force to move teeth, patients experience less discomfort during the treatment process. In addition, Fastbraces can correct a wide range of orthodontic issues, including crooked teeth, gaps, and crowding.
 							</h1>
-							<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-								Book an Appointment
-							</Button>
+							<ContactFormButton />
 						</>
 					} />
 
@@ -185,9 +182,7 @@ export default function InvisalignPage() {
 					<>
 						<h1 className={title({ size: 'md', alignment: 'center' })}>Get a Quote</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. Aenean arcu facilisi nisi elit lectus cursus dapibus. Quis feugiat ipsum gravida condimentum rhoncus. Sem egestas massa vulputate egestas proin donec vestibulum.</h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</>
 				} />
 			</div>

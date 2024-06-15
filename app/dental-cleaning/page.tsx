@@ -8,6 +8,7 @@ import PicText from "@/components/common/pic-text";
 import GreenCircleCard from "@/components/common/green-circle-card";
 import cosmeticImage from '../../assets/images/figmaadobestock_601012084_preview1.png'
 import SplitCard from "@/components/common/card";
+import ContactFormButton from "@/components/common/contact-form-button";
 
 export default function CleaningPage() {
 	return (
@@ -19,9 +20,7 @@ export default function CleaningPage() {
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Dental Cleaning</h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Smiline Family offers professional teeth cleaning services to help you maintain optimal oral health</h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</div>
 				}
 				bubbles={

@@ -106,11 +106,11 @@ export const siteConfig = {
 		// 	label: "Resources",
 		// 	href: "/resources",
 		// },
-		{
-			type: 'page',
-			label: "About Us",
-			href: "/about",
-		},
+		// {
+		// 	type: 'page',
+		// 	label: "About Us",
+		// 	href: "/about",
+		// },
 		{
 			type: 'page',
 			label: "Contact",
@@ -126,10 +126,10 @@ export const siteConfig = {
 			label: "Services",
 			href: "/services",
 		},
-		{
-			label: "About Us",
-			href: "/about",
-		},
+		// {
+		// 	label: "About Us",
+		// 	href: "/about",
+		// },
 		{
 			label: "Resources",
 			href: "/resources",

@@ -14,10 +14,11 @@ import { navbarLink, paragraph, subtitle, title } from "./primitives";
 import NavbarMegamenu from "./common/navbar-megamenu";
 import { useFormContext } from "@/hooks/useFormContext";
 import ContactForm from "./common/contact-form";
+import ContactFormButton from "./common/contact-form-button";
 
 export const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-	const { open } = useFormContext();
+	const { openContactForm } = useFormContext();
 
 	return (
 		<>
@@ -53,8 +54,8 @@ export const Navbar = () => {
 								:
 								<></>
 					))}
-				<Button onClick={open}>Book an Appointment</Button>
-
+					{/* <Button onClick={open}>Book an Appointment</Button> */}
+					<ContactFormButton />
 				</NavbarMenu>
 
 				{/* Mobile Logo */}
@@ -91,14 +92,7 @@ export const Navbar = () => {
 									<></>
 						))}
 					</div>
-					{/* <div className="flex gap-5">
-					<Button variant='solid' radius="full" className='px-10'>
-						Book an Appointment
-					</Button>
-
-				</div> */}
-				<Button onClick={open}>Book an Appointment</Button>
-
+					<ContactFormButton navbar={true} />
 				</NavbarContent>
 			</NextUINavbar >
 		</>

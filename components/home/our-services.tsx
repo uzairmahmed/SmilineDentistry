@@ -12,9 +12,9 @@ const OurServices = () => {
                     dentistry, our team is here to support you every step of the way.</h1>
             </div>
             <ServiceGrid />
-            <Button className={button()} size='lg' color="default">
+            {/* <Button className={button()} size='lg' color="default">
                 Discover our full list of offerings
-            </Button>
+            </Button> */}
 
         </div>
     );

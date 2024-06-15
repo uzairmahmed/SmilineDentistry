@@ -11,6 +11,7 @@ import cosmeticImage from '../../assets/images/figmaadobestock_413893760_preview
 import PicText from "@/components/common/pic-text";
 import PicTextRibbon from "@/components/common/pic-text-ribbon";
 import GreenCircleCard from "@/components/common/green-circle-card";
+import ContactFormButton from "@/components/common/contact-form-button";
 
 export default function CleaningPage() {
 	return (
@@ -22,9 +23,7 @@ export default function CleaningPage() {
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Mouthguards</h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</div>
 				}
 				bubbles={
@@ -74,9 +73,7 @@ export default function CleaningPage() {
 									</li>
 								</ul></h1>
 
-							<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-								Book an Appointment
-							</Button>
+								<ContactFormButton />
 						</>
 					} />
 

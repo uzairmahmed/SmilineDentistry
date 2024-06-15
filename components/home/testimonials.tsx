@@ -34,7 +34,7 @@ const Testimonials = () => {
             </div>
             <TestimonialGrid testimonials={testimonials} />
 
-            <Button className={button()} size='lg' color="primary">
+            <Button className={button()} size='lg' color="primary" href='https://g.page/r/CZ4bE3loLRemEB0/review'>
                 Leave a review
             </Button>
 

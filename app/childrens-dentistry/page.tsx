@@ -9,6 +9,7 @@ import PicText from "@/components/common/pic-text";
 import ImageRibbonCard from "@/components/common/image-ribbon-card";
 import GreenCircleCard from "@/components/common/green-circle-card";
 import TextHeaderSection from "@/components/common/text-header-section";
+import ContactFormButton from "@/components/common/contact-form-button";
 
 export default function CleaningPage() {
 	return (
@@ -20,9 +21,7 @@ export default function CleaningPage() {
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Children's Dentistry</h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>At Smiline Dentistry, We offer gentle, fun-filled care, focusing on preventive treatments and creating cheerful experiences for your children.</h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</div>
 				}
 				bubbles={
@@ -67,9 +66,7 @@ export default function CleaningPage() {
 							We take every effort to make your child's first visit a pleasant and fun filled experience by turning on their favorite TV shows during
 							the treatment and rewarding them at the end of their treatment with a small gift. We want them to remember their visit as a fun and
 							rewarding experience. </h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+							<ContactFormButton />
 					</>} />
 
 				<ImageRibbonCard image={section2image} inside={

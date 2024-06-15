@@ -15,6 +15,8 @@
     }
 }
 
+
+
 .hour-2 {
     left: calc(50% + 50% * 0.866);
     top: calc(50% - 50% * 0.5);
@@ -80,3 +82,34 @@
 }
 
 /* Adjust left position */
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #143d75;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded corners of the scrollbar thumb */
+    border: 3px solid transparent;
+    /* Space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #143d75;
+    /* Darker color when hovering over the scrollbar thumb */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #143d75 transparent;
+}

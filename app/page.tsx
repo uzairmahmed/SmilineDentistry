@@ -11,6 +11,7 @@ import PicText from "@/components/common/pic-text";
 import ImageRibbon from "@/components/common/image-ribbon";
 import TimeClock from "@/components/common/time-clock";
 import ImageRibbonCard from "@/components/common/image-ribbon-card";
+import ContactFormButton from "@/components/common/contact-form-button";
 
 export default function Home() {
 
@@ -32,9 +33,8 @@ export default function Home() {
 								<br /><br />
 								Our office is designed with your comfort in mind, offering a warm and welcoming atmosphere. Whether you need routine check-ups, dental implants, Invisalign, or emergency care, we prioritize your 
 								oral health and overall well-being. Trust us for a gentle, caring, and professional dental experience. Visit Smiline Family Dentistry and let us help you achieve and maintain a healthy, beautiful smile. </h1>
-								<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-									Book an Appointment
-								</Button>
+								<br />
+								<ContactFormButton />
 							</>}
 						/>
 

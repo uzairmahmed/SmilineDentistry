@@ -19,6 +19,7 @@ import BigTimeline from "@/components/common/bigTimeline";
 import TextHeaderSection from "@/components/common/text-header-section";
 import PicText from "@/components/common/pic-text";
 import BeforeAfter from "@/components/common/before-after";
+import ContactFormButton from "@/components/common/contact-form-button";
 
 export default function InvisalignPage() {
 	return (
@@ -44,9 +45,7 @@ export default function InvisalignPage() {
 								<Image src={iteropractice} alt="itero digital practice logo" className="object-scale-down" />
 							</div>
 						</div>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</div>
 				}
 				bubbles={
@@ -83,9 +82,7 @@ export default function InvisalignPage() {
 							<br />
 							These aligners are custom-made for each patient using our state-of-the-art Itero 3D imaging tool. Unlike traditional braces, Invisalign aligners are virtually invisible and can be easily removed for eating, brushing, and flossing.
 						</h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</>
 				} />
 
@@ -165,9 +162,7 @@ export default function InvisalignPage() {
 					<>
 						<h1 className={title({ size: 'md', alignment: 'center' })}>Get a Quote</h1>
 						<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. Aenean arcu facilisi nisi elit lectus cursus dapibus. Quis feugiat ipsum gravida condimentum rhoncus. Sem egestas massa vulputate egestas proin donec vestibulum.</h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</>
 				} />
 			</div>

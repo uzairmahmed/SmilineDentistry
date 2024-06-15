@@ -31,14 +31,6 @@ const ServiceGrid = () => {
             advanced orthodontic solutions, including Invisalign and \
             Fastbraces for all ages.",
             icon: <RiToothFill className='w-16 h-16 text-inherit mb-5' />,
-        },
-        {
-            key: "oorthodontic",
-            title: "Orthodontic",
-            description: "Revitalize your oral health with treatments \
-            that repair and restore damaged teeth, ensuring functionality \
-            and aesthetic appeal.",
-            icon: <RiToothFill className='w-16 h-16 text-inherit mb-5' />,
         }
     ]
 
@@ -52,9 +44,9 @@ const ServiceGrid = () => {
                         <h1 className={subtitle({ size: 'sm', color: 'inherit' })}>{service.title}</h1>
                         <h1 className={paragraph({ size: 'sm', color: 'inherit' })}>{service.description}</h1>
 
-                        <Button className={`${hoveredElement == index ? 'opacity-100 h-8' : 'opacity-10 h-0'} self-center rounded-full px-10 bg-background text-default transition-all mt-5`} size='lg'>
+                        {/* <Button className={`${hoveredElement == index ? 'opacity-100 h-8' : 'opacity-10 h-0'} self-center rounded-full px-10 bg-background text-default transition-all mt-5`} size='lg'>
                             Learn More
-                        </Button>
+                        </Button> */}
                     </div>
                 </div>
             ))}

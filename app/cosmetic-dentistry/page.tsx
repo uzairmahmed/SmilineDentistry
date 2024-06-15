@@ -10,6 +10,7 @@ import cosmeticImage from '../../assets/images/figmaadobestock_601012084_preview
 import PicText from "@/components/common/pic-text";
 import GreenCircleCard from "@/components/common/green-circle-card";
 import CardRibbon from "@/components/common/card-ribbon";
+import ContactFormButton from "@/components/common/contact-form-button";
 
 export default function CleaningPage() {
 	return (
@@ -21,9 +22,7 @@ export default function CleaningPage() {
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Cosmetic Dentistry</h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>With cosmetic dental treatments, you’ll have a reason to smile with confidence.</h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</div>
 				}
 				bubbles={
@@ -55,9 +54,7 @@ export default function CleaningPage() {
 						to your concerns and desires, understanding your smile goals. <br /><br /> During the consultation, we conduct a thorough examination, discussing various cosmetic services like dental 
 						veneers or teeth whitening. We explain treatment options, ensuring you're fully informed. With our expertise and your input, together we create a tailored plan for achieving 
 						the smile of your dreams. </h1>
-						<Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-							Book an Appointment
-						</Button>
+						<ContactFormButton />
 					</>
 				} />
 

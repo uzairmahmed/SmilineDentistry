@@ -9,6 +9,7 @@ import { fontCursive } from "@/config/fonts";
 import heroimg from '../../assets/heroimages/1.jpg';
 import heroimage from '../../assets/stock_images/AdobeStock_420249849.png'
 import clsx from 'clsx';
+import ContactFormButton from './contact-form-button';
 
 const HomepageHero = () => {
     return (
@@ -34,9 +35,7 @@ const HomepageHero = () => {
                     }>Smiline</h1>
                     <h1 className={title({ size: 'md', fullWidth: true, alignment: 'center' })}>Family Dentistry</h1>
                     <h1 className={subtitle({ size: 'md', fullWidth: true, alignment: 'center' })}>Revitalize your smile, <br />Renew your confidence.</h1>
-                    <Button variant="solid" color="default" fullWidth={false} size='lg' radius='full' className='mt-8'>
-                        Book an Appointment
-                    </Button>
+                    <ContactFormButton />
                 </div>
                 {/* <div className='bubble absolute w-32 h-32 z-10 bottom-16 -left-24 bg-default rounded-full ' data-speed="0.1"></div> */}
                 {/* <div className='bubble absolute w-20 h-20 z-20 -top-10 -right-10 bg-default rounded-full ' data-speed="0.1"></div> */}
