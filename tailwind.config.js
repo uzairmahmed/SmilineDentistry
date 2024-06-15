@@ -75,10 +75,10 @@ module.exports = {
             large: "8px",
           },
           borderWidth: {
-            small: "10px",
-            medium: "20px",
-            large: "30px",
-            default: '100px',
+            small: "1px",
+            medium: "2px",
+            large: "3px",
+            default: '1px',
           },
         },
       }
