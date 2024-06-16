@@ -1,20 +1,18 @@
 import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
 import Image from "next/image";
-import { Button } from "@nextui-org/button";
 
 import heroimage from '../../assets/images/Black.png'
-import invisalignAligner from '../../assets/heroimages/InvisalignHero2.png'
-import section1image from '../../assets/images/image9.png'
-import section2image from '../../assets/images/figmaadobestock_234878450_preview1.png'
-import iteroimage from '../../assets/images/figmaadobestock_175504582_preview1.png'
-import invisalignbox from '../../assets/images/436508977_465908395983601_4226690687482878619_n1.png'
+import invisalignAligner from '../../assets/images/InvisalignHero.png'
+import section1image from '../../assets/images/diana-polekhina-fmB7IdFjhTM-unsplash.jpg'
+import iteroimage from '../../assets/images/AdobeStock_175504582.jpeg'
+import invisalignbox from '../../assets/images/InvisalignBox.png'
+import iteropractice from '../../assets/logos/itero.png'
+import invisalignprovider from '../../assets/logos/invisalign.png'
+
 import after from '../../assets/before_afters/invisalign_after.png'
 import before from '../../assets/before_afters/invlisalign_before.png'
 
-import iteropractice from '../../assets/other-logos/IteroPractice.png'
-import invisalignprovider from '../../assets/other-logos/InvisalignProvider.png'
-import invisalignprovidewr from '../../assets/other-logos/a_fastbraces_logo_purple_r.png'
 import BigTimeline from "@/components/common/bigTimeline";
 import TextHeaderSection from "@/components/common/text-header-section";
 import PicText from "@/components/common/pic-text";

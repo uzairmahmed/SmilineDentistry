@@ -1,11 +1,11 @@
 import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
-import heroimage from '../../assets/images/image14.png'
+import heroimage from '../../assets/images/SmilineReception.png'
 import { Button } from "@nextui-org/button";
 import profileimage from '../../assets/images/asra.png'
-import assc1 from '../../assets/other-logos/image19.png'
-import assc2 from '../../assets/other-logos/image20.png'
-import assc3 from '../../assets/other-logos/image21.png'
+import assc1 from '../../assets/logos/rcdso.png'
+import assc2 from '../../assets/logos/cda.png'
+import assc3 from '../../assets/logos/oda.png'
 
 import Image from "next/image";
 import { RiGraduationCapFill } from "react-icons/ri";

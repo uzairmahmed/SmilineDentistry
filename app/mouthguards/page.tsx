@@ -3,11 +3,11 @@ import { pagecontent, paragraph, subtitle, title } from "@/components/primitives
 import Image from "next/image";
 import { Button } from "@nextui-org/button";
 
-import heroimage from '../../assets/images/adobestock_248639029_preview1.png'
-import section1image from '../../assets/images/adobestock_226202899_preview1.png'
-import section2image from '../../assets/images/adobestock_399803335_preview1.png'
-import section3image from '../../assets/images/figmaadobestock_601012084_preview1.png'
-import cosmeticImage from '../../assets/images/figmaadobestock_413893760_preview1.png'
+import heroimage from '../../assets/images/AdobeStock_248639029.jpeg'
+import section1image from '../../assets/images/AdobeStock_226202899.jpeg'
+import section2image from '../../assets/images/AdobeStock_399803335.jpeg'
+import section3image from '../../assets/images/AdobeStock_601012084.jpeg'
+import cosmeticImage from '../../assets/images/AdobeStock_413893760.jpeg'
 import PicText from "@/components/common/pic-text";
 import PicTextRibbon from "@/components/common/pic-text-ribbon";
 import GreenCircleCard from "@/components/common/green-circle-card";

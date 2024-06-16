@@ -2,11 +2,11 @@ import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
 import { Button } from "@nextui-org/button";
 
-import heroimage from '../../assets/images/figmaadobestock_333548204_preview1.png'
-import card1image from '../../assets/images/figmaadobestock_265971927_preview1.png'
-import card2image from '../../assets/images/figmaadobestock_297258856_preview1.png'
-import card3image from '../../assets/images/figmaadobestock_126591916_preview1.png'
-import cosmeticImage from '../../assets/images/figmaadobestock_601012084_preview1.png'
+import heroimage from '../../assets/images/AdobeStock_333548204.jpeg'
+import card1image from '../../assets/images/AdobeStock_265971927.jpeg'
+import card2image from '../../assets/images/AdobeStock_297258856.jpeg'
+import card3image from '../../assets/images/AdobeStock_126591916.jpeg'
+import cosmeticImage from '../../assets/images/AdobeStock_601012084.jpeg'
 import PicText from "@/components/common/pic-text";
 import GreenCircleCard from "@/components/common/green-circle-card";
 import CardRibbon from "@/components/common/card-ribbon";

@@ -1,15 +1,14 @@
 import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
 import Image from "next/image";
-import { Button } from "@nextui-org/button";
 
-import heroimage from '../../assets/images/figmaadobestock_372286534_preview1.png'
-import card1image from '../../assets/images/figmaadobestock_435596284_preview1.png'
-import card2image from '../../assets/images/figmaadobestock_171096185_preview1.png'
-import card3image from '../../assets/images/figmaadobestock_601235100_preview1.png'
-import iteroimage from '../../assets/images/figmaadobestock_175504582_preview1.png'
-import iteropractice from '../../assets/other-logos/IteroPractice.png'
-import invisalignprovider from '../../assets/other-logos/InvisalignProvider.png'
+import heroimage from '../../assets/images/AdobeStock_372286534.jpeg'
+import card1image from '../../assets/images/AdobeStock_435596284.jpeg'
+import card2image from '../../assets/images/AdobeStock_171096185.jpeg'
+import card3image from '../../assets/images/AdobeStock_601012084.jpeg'
+import iteroimage from '../../assets/images/AdobeStock_175504582.jpeg'
+import iteropractice from '../../assets/logos/itero.png'
+import invisalignprovider from '../../assets/logos/invisalign.png'
 import PicText from "@/components/common/pic-text";
 import CardRibbon from "@/components/common/card-ribbon";
 import ContactFormButton from "@/components/common/contact-form-button";
