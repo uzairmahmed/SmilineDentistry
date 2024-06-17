@@ -1,3 +1,15 @@
+import { surgical_procedures_metadata } from "@/components/metadata";
+import { Metadata, Viewport } from "next";
+
+export const metadata: Metadata = surgical_procedures_metadata
+
+export const viewport: Viewport = {
+	themeColor: [
+		{ media: "(prefers-color-scheme: light)", color: "white" },
+		{ media: "(prefers-color-scheme: dark)", color: "white" },
+	],
+}
+
 export default function BlogLayout({
 	children,
 }: {

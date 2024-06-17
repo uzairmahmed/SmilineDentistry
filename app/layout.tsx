@@ -7,22 +7,14 @@ import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
 
 import clsx from "clsx";
+import { homepage_metadata } from "@/components/metadata";
 
-export const metadata: Metadata = {
-	title: {
-		default: siteConfig.name,
-		template: `%s - ${siteConfig.name}`,
-	},
-	description: siteConfig.description,
-	icons: {
-		icon: "/favicon.ico",
-	},
-};
+export const metadata: Metadata = homepage_metadata
 
 export const viewport: Viewport = {
 	themeColor: [
 		{ media: "(prefers-color-scheme: light)", color: "white" },
-		{ media: "(prefers-color-scheme: dark)", color: "black" },
+		{ media: "(prefers-color-scheme: dark)", color: "white" },
 	],
 }
 
