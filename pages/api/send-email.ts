@@ -9,7 +9,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
         try {
             await sendgrid.send({
-                to: 'contact@smilinedentistry.ca',
+                // to: 'contact@smilinedentistry.ca',
+                to: 'uzairmahmed@gmail.com',
                 from: 'uzair@smilinedentistry.ca',
                 templateId: 'd-8bf15c15d95b4ea0aebbd4f415daf186',
                 dynamicTemplateData: {
@@ -22,7 +23,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
             return res.status(200).json({ message: 'Message sent successfully!' });
         } catch (error) {
-            return res.status(500).json({ error: 'Failed to send message.' });
+            return res.status(500).json({ error: 'Failed to send message. Please Contact us Directly at contact@smilinedentistry.ca' });
         }
     } else {
         res.setHeader('Allow', ['POST']);
