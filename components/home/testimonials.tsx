@@ -6,13 +6,13 @@ import TestimonialGrid from '../common/testimonial-grid';
 const Testimonials = () => {
     const testimonials = [
         {
-            text: "No waiting time, excellent professional dentist, very helpful assistant doing the polishing etc. Definitely the best dentist, definitely recommend Dr. Asra. I am her patient for over two years. Excellent overall service.",
-            name: "Hasan Sherwani",
+            text: "Very nice staff and Doctor is amazing I had filling and after week i was not feeling good about that (my mistake i didnt care as she mentioned)went back to her and she did check up and fix it and later follow up with me (which surprised me because I never got call from any denist after any procedure )",
+            name: "Saima Hussain",
             rating: 5
         },
         {
-            text: "Dr. Asra has been my dentist for about 2-3 years now. Whether it was a routine cleaning, getting a nightguard to getting my wisdom teeth removed, each procedure was easy-going without any complications and Dr. Asra is a very reassuring dentist, always giving me the most feasible solutions. 100% recommend for any dental needs.",
-            name: "Samreen Ali",
+            text: "Dr. Asra is a phenomenal and incredibly knowledgeable dentist - the best one I've ever gone to! She never pushes any treatments on you like many other dentists do and she takes the time to explain everything thoroughly including all treatment options. She's understanding and takes into account your level of comfort with each procedure. Always a pleasant experience coming here - I look forward to every appointment!",
+            name: "Travi",
             rating: 5
         },
         {
@@ -21,7 +21,7 @@ const Testimonials = () => {
             rating: 5
         },
         {
-            text: "I love my dentist she is so nice and very caring! I got my first filling today and it was a breeze but only because she made me feel so comfortable. I suggest anyone that cares about there dental health but is also nervous about it go here. Best dentist I’ve ever been to. 😃😃😃",
+            text: "I love my dentist she is so nice and very caring! I got my first filling today and it was a breeze but only because she made me feel so comfortable. I suggest anyone that cares about there dental health but is also nervous about it go here. Best dentist I've ever been to. 😃😃😃",
             name: "Matthew Wallace",
             rating: 5
         }

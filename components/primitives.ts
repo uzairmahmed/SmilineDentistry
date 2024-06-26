@@ -65,6 +65,17 @@ export const subtitle = tv({
 			md: "text-xl lg:text-lg xl:text-xl",
 			lg: "text-2xl lg:text-xl xl:text-2xl",
 		},
+		lineClamp : {
+			1 :"line-clamp-1",
+			2 :"line-clamp-2",
+			3 :"line-clamp-3",
+			4 :"line-clamp-4",
+			5 :"line-clamp-5",
+			6 :"line-clamp-6",
+			7 :"line-clamp-7",
+			8 :"line-clamp-8",
+			9 :"line-clamp-9",
+		},
 		margin: {
 			default: "my-2",
 			none: "my-0"

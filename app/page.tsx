@@ -12,6 +12,7 @@ import ImageRibbon from "@/components/common/image-ribbon";
 import TimeClock from "@/components/common/time-clock";
 import ImageRibbonCard from "@/components/common/image-ribbon-card";
 import ContactFormButton from "@/components/common/contact-form-button";
+import TextText from "@/components/common/text-text";
 
 export default function Home() {
 
@@ -23,16 +24,38 @@ export default function Home() {
 					{/* <Spacer y={48} /> */}
 					<HomepageHero />
 					<div className={pagecontent()}>
+						<div className="flex flex-col lg:flex-col items-center w-5/6 mt-0 gap-2 lg:gap-2 ">
+							<div className={`flex flex-col w-full px-10 lg:p-0 lg:w-full justify-center text-left`}>
+								<h1 className={subtitle({ size: 'md', color: 'default', alignment: 'center' })}>
+									<span className="font-semibold">At Smiline Dentistry, we want you to feel confident about your smile.</span><br />
+								</h1>
+							</div>
+							<div className={`flex flex-col w-full px-10 md:p-0 md:w-full  align-middle justify-center text-center md:text-left`}>
+								<h1 className={paragraph({ size: 'md', color: 'default' })}>
+									We are here to support you every step of the way, setting ourselves apart through our core values.
+								</h1>
+								<h1 className={paragraph({ size: 'md', color: 'default' })}>
+									<ul className="list-none md:list-disc md:list-outside md:gap-0">
+										<li className="mb-5 md:mb-0"><span className="font-semibold">Compassionate Team</span> <br className="block md:hidden" /> We care deeply about our patients and their well-being.</li>
+										<li className="mb-5 md:mb-0"><span className="font-semibold">Exceptional Service</span> <br className="block md:hidden" /> We are committed to providing the highest quality dental care.</li>
+										<li className="mb-5 md:mb-0"><span className="font-semibold">Enjoyable Experience</span> <br className="block md:hidden" /> We strive to make every visit pleasant and stress-free.</li>
+									</ul>
+								</h1>
+							</div>
+						</div>
+
 						<OurServices />
+
+
 
 						<PicText image={section1image} inside={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'left' })}>More about Smiline Dentistry</h1>
-								<h1 className={paragraph({ size: 'lg' })}>We are committed to providing outstanding dental care with a personal touch. Our skilled team of dentists and hygienists offer comprehensive services, 
-								including preventive care, advanced restorative treatments, and cosmetic dentistry to enhance your smile. Utilizing cutting-edge technology, we ensure precise diagnostics and effective treatments. 
-								<br /><br />
-								Our office is designed with your comfort in mind, offering a warm and welcoming atmosphere. Whether you need routine check-ups, dental implants, Invisalign, or emergency care, we prioritize your 
-								oral health and overall well-being. Trust us for a gentle, caring, and professional dental experience. Visit Smiline Family Dentistry and let us help you achieve and maintain a healthy, beautiful smile. </h1>
+								<h1 className={paragraph({ size: 'lg' })}>We are committed to providing outstanding dental care with a personal touch. Our skilled team of dentists and hygienists offer comprehensive services,
+									including preventive care, advanced restorative treatments, and cosmetic dentistry to enhance your smile. Utilizing cutting-edge technology, we ensure precise diagnostics and effective treatments.
+									<br /><br />
+									Our office is designed with your comfort in mind, offering a warm and welcoming atmosphere. Whether you need routine check-ups, dental implants, Invisalign, or emergency care, we prioritize your
+									oral health and overall well-being. Trust us for a gentle, caring, and professional dental experience. Visit Smiline Family Dentistry and let us help you achieve and maintain a healthy, beautiful smile. </h1>
 								<br />
 								<ContactFormButton />
 							</>}
@@ -41,16 +64,16 @@ export default function Home() {
 						<ImageRibbon image={section2image} inside={
 							<>
 								<div className={`flex flex-col px-16 py-16 rounded-3xl bg-default items-center text-center gap-10`}>
+									<RiCalendarEventFill className='w-16 h-16 text-background' />
+									<h1 className={subtitle({ size: 'md', color: 'background' })}>Open on Saturdays and Sundays</h1>
+								</div>
+								<div className={`flex flex-col px-16 py-16 rounded-3xl bg-default items-center text-center gap-10`}>
 									<RiShakeHandsFill className='w-16 h-16 text-background' />
 									<h1 className={subtitle({ size: 'md', color: 'background' })}>Accepting new patients and families</h1>
 								</div>
 								<div className={`flex flex-col px-16 py-16 rounded-3xl bg-default items-center text-center gap-10`}>
 									<RiToothFill className='w-16 h-16 text-background' />
 									<h1 className={subtitle({ size: 'md', color: 'background' })}>Direct Billing to all insurance Providers</h1>
-								</div>
-								<div className={`flex flex-col px-16 py-16 rounded-3xl bg-default items-center text-center gap-10`}>
-									<RiCalendarEventFill className='w-16 h-16 text-background' />
-									<h1 className={subtitle({ size: 'md', color: 'background' })}>Open on Saturdays and Sundays</h1>
 								</div>
 							</>}
 						/>

@@ -66,32 +66,20 @@ export default function CleaningPage() {
 							We take every effort to make your child's first visit a pleasant and fun filled experience by turning on their favorite TV shows during
 							the treatment and rewarding them at the end of their treatment with a small gift. We want them to remember their visit as a fun and
 							rewarding experience. </h1>
-							<ContactFormButton />
+						<ContactFormButton />
 					</>} />
 
-				<ImageRibbonCard image={section2image} inside={
-					<>
-						<div className='bubble absolute w-32 h-32 z-20 top-32 -right-24 bg-primary rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-12 h-12 z-20 top-20 right-24 bg-secondary rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-32 h-32 z-0 -bottom-24 -left-24 bg-primary rounded-full ' data-speed="0.1"></div>
-						<h1 className={title({ size: 'lg', alignment: 'left', color: 'background' })}>Children's Dentistry Services</h1>
-						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>
-							<ul className="list-disc list-outside">
-								<li>We ensure your child understands each step of their treatment by explaining it in a child-friendly manner.</li>
-								<li>Emergency dental services for children</li>
-								<li>Dental check-ups</li>
-								<li>Dental sealants to help prevent cavities and decay</li>
-							</ul>
-						</h1>
-					</>
-				} />
 
-				<GreenCircleCard header={"Other Child Services"}
+				<GreenCircleCard header={"Children's Dentistry Services"}
 					text={
 						<ul className="list-disc list-outside">
+							<li>Child friendly treatment explanations</li>
+							<li>Emergency dental services</li>
+							<li>Dental check-ups</li>
+							<li>Dental sealants</li>
 							<li>Cavity fillings</li>
 							<li>Tooth extraction</li>
-							<li>We accept Healthy Smiles Ontario plan for children </li>
+							<li>Healthy Smiles of Ontario (HSO) Accepted</li>
 						</ul>
 
 					}

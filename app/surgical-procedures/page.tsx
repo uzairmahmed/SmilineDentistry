@@ -26,7 +26,7 @@ export default function CleaningPage() {
 				main_section={
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Dental Surgical Procedures</h1>
-						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</h1>
+						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Oral surgery includes procedures involving teeth, gums, jaw, and nearby structures such as extractions, implants, grafts, and jaw surgeries.</h1>
 						<ContactFormButton />
 					</div>
 				}
@@ -124,7 +124,7 @@ export default function CleaningPage() {
 				<PicText image={section3image} inside={
 					<>
 						<h1 className={title({ size: 'md', alignment: 'left' })}>Implant Treatment</h1>
-						<h1 className={paragraph({ size: 'lg' })}>Dental implants are a popular and effective way to replace missing teeth. They consist of a small titanium post that is surgically implanted into the jawbone, which serves as a replacement for the tooth root. Once the implant has fused with the jawbone, a custom-made dental crown is attached to the top of the post, creating a natural-looking replacement tooth.</h1>
+						<h1 className={paragraph({ size: 'lg' })}>Dental implants are a long-lasting, fixed option to replace missing teeth, offering a natural look and feel. The surgery replaces tooth roots with metal posts and damaged or missing teeth with artificial ones. Implants restore chewing function, improve oral health, and enhance your smile's aesthetics. <br /><br />Schedule a consultation today for a confident smile!</h1>
 						<ContactFormButton />
 					</>
 				} />
@@ -132,10 +132,14 @@ export default function CleaningPage() {
 				<SplitCard bgcolor={'default'}
 					left={<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'background' })}>Benefits of Dental Implants</h1>
-						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>There are several benefits to choosing dental implants as a tooth replacement option, including:</h1>
+						<h1 className={subtitle({ size: 'md', alignment: 'left', color: 'background' })}>Are implants better than bridges?</h1>
+						<h1 className={paragraph({ size: 'md', color: 'background', alignment: 'left' })}>The main advantage of implants over bridges for replacing missing teeth is that implants don't rely on surrounding healthy teeth for support. <br /><br /> Bridges require adjacent healthy teeth to be reshaped, which can increase the risk of tooth decay in those teeth. Implants, being standalone, avoid this issue and provide a more secure solution.</h1>
+						<h1 className={subtitle({ size: 'md', alignment: 'left', color: 'background' })}>How long do implants last?</h1>
+						<h1 className={paragraph({ size: 'md', color: 'background', alignment: 'left' })}>Dental implants should last a lifetime, when they are properly taken care of. </h1>
 					</>}
 					right={<>
-						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>
+						<h1 className={subtitle({ size: 'md', color: 'background', alignment: 'left' })}>There are several benefits to choosing dental implants:</h1>
+						<h1 className={paragraph({ size: 'md', color: 'background', alignment: 'left' })}>
 							<ul className="list-disc list-outside">
 								<li>
 									Improved appearance: Dental implants look and feel like natural teeth, providing a natural-looking smile.
@@ -153,16 +157,17 @@ export default function CleaningPage() {
 				/>
 
 				<div className="flex flex-col gap-10">
-					<h1 className={title({ size: 'md', alignment: 'center' })}>Root Canal Procedure</h1>
+					<h1 className={title({ size: 'md', alignment: 'center' })}>Dental Implant Procedure</h1>
 					<Timeline
 						colortheme='default'
-						numItems={5}
+						numItems={6}
 						listofItems={[
-							"Consultation to determine if an implant is necessary.",
-							"Procedure begins with numbing the affected tooth and surrounded area using local anesthesia.",
-							"Titanium post is surgically implanted into the jawbone. Followed by a several month healing period.",
-							"Attachment of the abutment: Once the implant has fused with the jawbone, an abutment is attached to the top of the post.",
-							"Placement of the crown: Finally, a custom-made dental crown is attached to the abutment, creating a natural-looking replacement tooth.",
+							"Initial Consultation and Treatment Planning: Your dentist or oral surgeon will assess your oral health, take X-rays and possibly 3D scans, review your medical history, and create a treatment plan tailored to your needs.",
+							"Medical History Review: Inform your doctor about medical conditions, medications (prescription, over-the-counter, and supplements), and any heart conditions or orthopedic implants. Antibiotics may be prescribed before or after surgery to prevent infection.",
+							"Treatment Plan: Customized based on your needs, considering the number of teeth to be replaced and the condition of your jawbone and remaining teeth.",
+							"Anesthesia Options: Choose from local anesthesia, sedation, or general anesthesia for pain control during surgery. Our dental team will advise the best option for you.",
+							"Dental Implant Procedure and Healing Process: The procedure for implant placement takes 1-2 hours, with a healing period of 3-6 months.",
+							"Crown Placement: The dentist confirms the implant is securely healed, Later measurements will be taken using 3D digital impression technique and the artificial crown will be prepared by a lab technician who will design a crown to match your natural teeth in color, shape, and size, Finally, the custom-made crown is attached to the implant in order to provide a natural appearance and restore function.",
 						]} />
 				</div>
 
