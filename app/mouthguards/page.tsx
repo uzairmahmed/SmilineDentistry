@@ -22,7 +22,7 @@ export default function CleaningPage() {
 				main_section={
 					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Mouthguards</h1>
-						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</h1>
+						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Mouth guards provide essential protection for teeth and gums during sports and prevent damage from nighttime grinding.</h1>
 						<ContactFormButton />
 					</div>
 				}

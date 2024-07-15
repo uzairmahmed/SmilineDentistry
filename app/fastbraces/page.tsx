@@ -10,6 +10,8 @@ import after1 from '../../assets/before_afters/98-78395-AFTER.png'
 import before1 from '../../assets/before_afters/98-78395-BEFORE.png'
 import after2 from '../../assets/before_afters/113-100216-AFTER.png'
 import before2 from '../../assets/before_afters/113-100216-BEFORE.png'
+import after3 from '../../assets/before_afters/152-8020-AFTER.png'
+import before3 from '../../assets/before_afters/152-8020-BEFORE.png'
 
 import BigTimeline from "@/components/common/bigTimeline";
 import TextHeaderSection from "@/components/common/text-header-section";
@@ -31,7 +33,7 @@ export default function InvisalignPage() {
 						</div>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left', color: 'primary' })}>Fast Braces® </h1>
 						<h1 className={title({ size: 'sm', fullWidth: true, alignment: 'left', color: 'primary' })}>At Smiline Family Dentistry </h1>
-						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Transform Your Smile with Fast Braces®, Less Time. Less Expense. More Smile.</h1>
+						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Fastbraces® technology speeds up tooth alignment, reducing treatment times compared to other orthodontic systems. Fastbraces® is a fast and effective orthodontic option. </h1>
 						<ContactFormButton />
 					</div>
 				}
@@ -47,7 +49,7 @@ export default function InvisalignPage() {
 			<div className={pagecontent()}>
 
 				<TextHeaderSection header="What are Fastbraces?"
-					text="Fastbraces are an advanced triangular bracket and wire system that work to straighten teeth in a unique way. Unlike traditional braces that move teeth in two stages, Fastbraces use a patented design to move teeth in a single stage. This allows for a faster treatment time and can result in a more comfortable and affordable orthodontic experience."
+					text="Fastbraces® employs a revolutionary technology that significantly accelerates the alignment of teeth, leading to notably shorter treatment durations compared to the average timelines reported for other orthodontic braces systems. Traditional braces often require lengthy treatment periods to achieve the desired alignment, but Fastbraces® technology streamlines this process. This innovative approach not only enhances the efficiency of tooth movement but also improves patient experience by reducing the overall time spent wearing braces. By utilizing advanced methods, Fastbraces® offers a quicker and more effective solution for those seeking orthodontic treatment, setting a new standard in the field of dental care."
 				/>
 
 				<PicText image={section1image}
@@ -55,7 +57,20 @@ export default function InvisalignPage() {
 						<>
 							<h1 className={title({ size: 'md', alignment: 'left', color: 'default' })}>Why Choose FastBraces?</h1>
 							<h1 className={paragraph({ size: 'lg' })}>
-								Fastbraces offer several benefits over traditional braces. One of the main benefits is their short treatment time. While traditional braces can take up to 2-3 years to straighten teeth, Fastbraces can typically achieve the same results in just a few months to a year. This can save you time and money in the long run. <br /> <br />Fastbraces are also more comfortable than traditional braces. Because they use a lower amount of force to move teeth, patients experience less discomfort during the treatment process. In addition, Fastbraces can correct a wide range of orthodontic issues, including crooked teeth, gaps, and crowding.
+								<ul className="list-decimal list-outside">
+									<li>
+										<span className="font-semibold">Faster Treatment:</span> One of the greatest advantages of Fastbraces® is the faster teeth straightening treatment. This advanced technology allows most patients to complete treatment in under a year, with many finishing in just a few months.
+									</li>
+									<li>
+										<span className="font-semibold">More Comfortable:</span> The continual pressure from Fastbraces® wire system is gentler than traditional braces, reducing painful post-visit side effects.
+									</li>
+									<li>
+										<span className="font-semibold">Effective and Safe:</span> Fastbraces® employs a unique triangular bracket design enabling faster movement of tooth roots right from the start, unlike traditional braces where this is done in two steps.
+									</li>
+									<li>
+										<span className="font-semibold">Affordable:</span> The reduced treatment time and fewer adjustment visits with Fastbraces® make it a cost-effective option.
+									</li>
+								</ul >
 							</h1>
 							<ContactFormButton />
 						</>
@@ -70,27 +85,31 @@ export default function InvisalignPage() {
 							{
 								key: 'invisalign-1',
 								title: "Scheduling a Consultation",
-								desc: "The Invisalign treatment process begins with a consultation with Dr. Asra Ahmed at Smiline Family Dentistry in Milton, Ontario."
-							},
-							{
+								desc: "The fastbraces treatment would first start with consultation with Dr. Asra Ahmed."
+							},{
 								key: 'invisalign-2',
 								title: "Scanning your teeth",
-								desc: "Dr. Ahmed will use the Itero 3D imaging tool to create a digital model of your teeth and jaw."
-							},
-							{
+								desc: "Dr. Asra will use the Itero 3D imaging tool to create a digital model of your teeth and jaw."
+							},{
 								key: 'invisalign-3',
 								title: "Creating a Plan",
 								desc: "Your digital model is used to create a custom treatment plan that outlines the movement of your teeth and the length of your treatment."
-							},
-							{
+							},{
 								key: 'invisalign-4',
-								title: "Ordering Your Aligners",
-								desc: "Once your treatment plan is created, your custom Invisalign aligners will be made to order based on your digital model."
-							},
-							{
+								title: "Attaching your brackets",
+								desc: "Brackets are placed on your teeth along with a wire"
+							},{
 								key: 'invisalign-5',
-								title: "Using and Maintaining your Braces",
-								desc: "You will wear each set of aligners for 1-2 weeks before switching to the next set. This gradual movement of your teeth ensures that they move into their desired position over time. You will need to visit our office periodically during your treatment to ensure that your teeth are moving as planned."
+								title: "Adjustments",
+								desc: "During your treatment, you visit our office regularly for adjustments, gradually moving your teeth closer to their ideal position."
+							},{
+								key: 'invisalign-6',
+								title: "At-Home Care",
+								desc: "To protect your brackets, avoid sticky or hard foods. Brush your teeth thoroughly for two minutes after each meal. Use special flossing tools to clean around brackets and wires. Consistent brushing and flossing are crucial for dental health."
+							},{
+								key: 'invisalign-7',
+								title: "Removal of brackets",
+								desc: "At completion of treatment brackets are removed and fixed retainer is placed."
 							},
 						]} />
 				</div>
@@ -103,13 +122,13 @@ export default function InvisalignPage() {
 						text1={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>Before</h1>
-								<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1>
+								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						text2={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>After</h1>
-								<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1>
+								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						bubble={
@@ -120,18 +139,18 @@ export default function InvisalignPage() {
 						}
 					/>
 					<BeforeAfter
-						image1={<Image src={before1} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
-						image2={<Image src={after1} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
+						image1={<Image src={before2} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
+						image2={<Image src={after2} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
 						text1={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>Before</h1>
-								<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1>
+								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						text2={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>After</h1>
-								<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1>
+								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						bubble={
@@ -142,18 +161,18 @@ export default function InvisalignPage() {
 						}
 					/>
 					<BeforeAfter
-						image1={<Image src={before2} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
-						image2={<Image src={after2} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
+						image1={<Image src={before3} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
+						image2={<Image src={after3} alt="itero" fill={true} className="object-cover z-20 rounded-3xl" />}
 						text1={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>Before</h1>
-								<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1>
+								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						text2={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>After</h1>
-								<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1>
+								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						bubble={
@@ -168,7 +187,7 @@ export default function InvisalignPage() {
 				<PicText image={null} inside={
 					<>
 						<h1 className={title({ size: 'md', alignment: 'center' })}>Get a Quote</h1>
-						<h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. Aenean arcu facilisi nisi elit lectus cursus dapibus. Quis feugiat ipsum gravida condimentum rhoncus. Sem egestas massa vulputate egestas proin donec vestibulum.</h1>
+						<h1 className={paragraph({ size: 'lg' })}>Discover the transformative benefits of Fastbraces®. Achieve a straighter smile in less time with our efficient treatment. Book a free consultation with Dr. Asra Ahmed today to learn how Fastbraces® can help enhance your dental health and confidence quickly and effectively.</h1>
 						<ContactFormButton />
 					</>
 				} />

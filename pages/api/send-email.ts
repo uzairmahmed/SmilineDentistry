@@ -10,7 +10,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         try {
             await sendgrid.send({
                 // to: 'contact@smilinedentistry.ca',
-                to: 'uzairmahmed@gmail.com',
+                to: 'contact@smilinedentistry.ca',
                 from: 'uzair@smilinedentistry.ca',
                 templateId: 'd-8bf15c15d95b4ea0aebbd4f415daf186',
                 dynamicTemplateData: {
