@@ -16,23 +16,23 @@ export default function AboutPage() {
 			picture: defaultimage
 		}, {
 			name: "UZMA JATOI",
-			position: 'Associate Dentist',
+			position: 'Hygenist',
 			picture: defaultimage
 		}, {
 			name: "GURPREET BHAMRAH",
-			position: 'Associate Dentist',
+			position: 'Office Manager',
 			picture: defaultimage
 		}, {
 			name: "HINA AHMAR",
-			position: 'Associate Dentist',
+			position: 'Dental Assistant',
 			picture: defaultimage
 		}, {
 			name: "SYEDA MUBARIKA",
-			position: 'Associate Dentist',
+			position: 'Dental Assistant',
 			picture: defaultimage
 		}, {
 			name: "AQLEEMA REHAMAN",
-			position: 'Associate Dentist',
+			position: 'Dental Assistant',
 			picture: defaultimage
 		},
 	]
