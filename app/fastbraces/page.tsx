@@ -27,7 +27,7 @@ export default function InvisalignPage() {
 				image={heroimage}
 				div_side={'left'}
 				main_section={
-					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
+					<div className='relative flex flex-col items-center lg:items-start p-12 lg:p-16 z-20 rounded-3xl bg-white'>
 						<div className="relative w-24 h-24 mb-8">
 							<Image src={fastbraceslogo} fill={true} alt="invisalign provider logo" className="object-scale-down" />
 						</div>

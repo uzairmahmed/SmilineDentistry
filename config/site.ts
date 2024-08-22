@@ -106,11 +106,11 @@ export const siteConfig = {
 		// 	label: "Resources",
 		// 	href: "/resources",
 		// },
-		// {
-		// 	type: 'page',
-		// 	label: "About Us",
-		// 	href: "/about",
-		// },
+		{
+			type: 'page',
+			label: "About Us",
+			href: "/about",
+		},
 		{
 			type: 'page',
 			label: "Contact",

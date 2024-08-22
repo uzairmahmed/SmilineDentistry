@@ -12,9 +12,9 @@ export default function BlogPage() {
 
 			<ServiceHero
 				image={heroimage}
-				div_side={'left'}
+				div_side={'right'}
 				main_section={
-					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
+					<div className='relative flex flex-col items-center lg:items-start p-12 lg:p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Contact Us</h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Ready to transform your smile? Reach out and let's start the conversation.</h1>
 					</div>
@@ -29,7 +29,7 @@ export default function BlogPage() {
 				}
 			/>
 			<div className={pagecontent()}>
-				<div className="grid grid-rows-3 grid-cols-1 lg:grid-rows-1 lg:grid-cols-3 gap-10 w-full">
+				<div className="grid grid-rows-3 grid-cols-1 lg:grid-rows-1 lg:grid-cols-3 gap-10 w-full px-2 lg:px-0">
 					<div className="flex flex-col py-20 items-center justify-center align-middle bg-secondary rounded-3xl gap-5">
 						<RiMailFill className='w-12 h-12 text-white' />
 						<h1 className={subtitle({ size: 'sm', color: 'background', alignment: 'center' })}>
@@ -49,8 +49,8 @@ export default function BlogPage() {
 						</h1>
 					</div>
 				</div>
-				<div className="flex flex-col lg:flex-row gap-20">
-					<div className="flex flex-col bg-white rounded-3xl p-20 w-full lg:w-1/2">
+				<div className="flex flex-col lg:flex-row gap-20 px-2 lg:px-0">
+					<div className="flex flex-col bg-white rounded-3xl p-10 lg:p-20 w-full lg:w-1/2">
 						<h1 className={title({ size: 'md', fullWidth: true, alignment: 'left', color: 'primary' })}>Contact Us</h1>
 						<h1 className={paragraph({ size: 'lg', color: 'primary', alignment: 'left', })}>Leave us a message, and we'll get back to you as soon as possible.</h1>
 						<ContactFormStandalone />

@@ -31,7 +31,7 @@ export default function InvisalignPage() {
 				div_side={'left'}
 				image={heroimage}
 				main_section={
-					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
+					<div className='relative flex flex-col items-center lg:items-start p-12 lg:p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Invisalign</h1>
 						<h1 className={title({ size: 'sm', fullWidth: true, alignment: 'left' })}>At Smiline Family Dentistry </h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Transform Your Smile with Invisalign®, The Clear Path to Straighter Teeth.</h1>

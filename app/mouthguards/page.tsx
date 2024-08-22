@@ -20,7 +20,7 @@ export default function CleaningPage() {
 				image={heroimage}
 				div_side={'left'}
 				main_section={
-					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
+					<div className='relative flex flex-col items-center lg:items-start p-12 lg:p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Mouthguards</h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Mouth guards provide essential protection for teeth and gums during sports and prevent damage from nighttime grinding.</h1>
 						<ContactFormButton />
@@ -36,8 +36,7 @@ export default function CleaningPage() {
 				}
 			/>
 			<div className={pagecontent()}>
-				<div className="flex flex-col gap-10">
-					<div>
+					<div className="px-2 lg:px-0">
 						<h1 className={title({ size: 'md', alignment: 'center' })}>Learn more about our different surgical procedures.</h1>
 						<div className="flex flex-col gap-10 mt-10">
 							<PicTextRibbon imagefirst={true} image={section1image} header={"Sports Mouth guard"}
@@ -80,9 +79,6 @@ export default function CleaningPage() {
 					<GreenCircleCard header={"Maintaining your smile"}
 						text={"After your professional teeth cleaning, it's important to maintain good oral hygiene habits to keep your teeth and gums healthy. This includes brushing and flossing regularly, using mouthwash, and visiting for regular dental checkups. Regular teeth cleanings can help prevent oral health issues and keep your smile looking its best."}
 						image={cosmeticImage} />
-
-
-				</div>
 			</div>
 		</div >
 	);

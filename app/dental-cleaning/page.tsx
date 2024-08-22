@@ -16,7 +16,7 @@ export default function CleaningPage() {
 				image={heroimage}
 				div_side={'right'}
 				main_section={
-					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
+					<div className='relative flex flex-col items-center lg:items-start p-12 lg:p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Dental Cleaning</h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>Smiline Family offers professional teeth cleaning services to help you maintain optimal oral health</h1>
 						<ContactFormButton />

@@ -11,7 +11,7 @@ interface GreenCircleCardProps {
 
 const GreenCircleCard: React.FC<GreenCircleCardProps> = ({ header, image, text }) => {
     return (
-        <div className="flex flex-col lg:flex-row items-center w-full justify-between bg-primary rounded-3xl">
+        <div className="flex flex-col lg:flex-row items-center w-full justify-between bg-primary rounded-none lg:rounded-3xl">
             <div className="flex flex-col w-full justify-center text-left py-10 lg:py-20 px-10 lg:px-20">
                 <h1 className={title({ size: 'md', alignment: 'left', color: 'background' })}>{header}</h1>
                 <h1 className={paragraph({ size: 'lg', color: 'background' })}>{text}</h1>

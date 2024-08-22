@@ -35,7 +35,7 @@ const ServiceGrid = () => {
     ]
 
     return (
-        <div className='flex flex-col lg:flex-row justify-center gap-5 my-10'>
+        <div className='flex flex-col lg:flex-row justify-center gap-5 my-10 px-2 lg:px-0'>
             {featured_services.map((service, index) => (
                 <div key={service.key}
                     className={`flex flex-col bg-default text-white py-10 rounded-3xl justify-start items-center px-10 basis-1/4 transition-colors`}>

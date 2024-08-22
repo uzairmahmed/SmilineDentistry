@@ -19,7 +19,7 @@ export default function CleaningPage() {
 				image={heroimage}
 				div_side={'left'}
 				main_section={
-					<div className='relative flex flex-col items-center lg:items-start p-16 z-20 rounded-3xl bg-white'>
+					<div className='relative flex flex-col items-center lg:items-start p-12 lg:p-16 z-20 rounded-3xl bg-white'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Cosmetic Dentistry</h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>With cosmetic dental treatments, you’ll have a reason to smile with confidence.</h1>
 						<ContactFormButton />
