@@ -4,7 +4,6 @@ import heroimage from '../../assets/images/SmilineReception.png'
 import defaultimage from '../../assets/profiles/default.png'
 
 import junaidimg from '../../assets/profiles/junaid.jpg'
-import asraimage from '../../assets/profiles/asra.JPG'
 
 import Image from "next/image";
 import { RiGraduationCapFill } from "react-icons/ri";
