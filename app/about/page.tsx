@@ -1,8 +1,10 @@
 import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
 import heroimage from '../../assets/images/SmilineReception.png'
-import profileimage from '../../assets/images/asra.png'
 import defaultimage from '../../assets/profiles/default.png'
+
+import asraimage from '../../assets/profiles/asra.jpg'
+import junaidimg from '../../assets/profiles/junaid.jpg'
 
 import Image from "next/image";
 import { RiGraduationCapFill } from "react-icons/ri";
@@ -13,7 +15,7 @@ export default function AboutPage() {
 		{
 			name: "DR. JUNAID AHMED",
 			position: 'Associate Dentist',
-			picture: defaultimage
+			picture: junaidimg
 		}, {
 			name: "UZMA JATOI",
 			position: 'Hygenist',
@@ -63,7 +65,7 @@ export default function AboutPage() {
 					<FullProfileCard header={"Dr. Asra Ahmed"}
 						subheader="BDS, M.SC"
 						text={"Dr. Asra Ahmed has over ten years of experience in the field of dentistry, she believes in providing high quality innovative dental care to all her patients. After graduating from dental school, Dr. Asra's dedication towards oral health care enabled her to continue her studies at University of Manitoba where she graduated with a Master's Degree in Oral Biology. A firm believer in continuous learning, she went on to complete continuing education programs in Invisalign, FastBraces, 3D Impression Techniques, and Root Canal Treatments. With the goal of giving her patients a reason to smile with confidence she established her practice, Smiline Family Dentistry in Milton, where patients of all ages and emergencies are always welcome."}
-						image={profileimage} />
+						image={asraimage} />
 				</div>
 
 				<div className="flex flex-col lg:flex-row w-full gap-10 px-2 lg:px-0">
@@ -73,7 +75,7 @@ export default function AboutPage() {
 						</div>
 						<h1 className={title({ color: 'background', size: 'sm', alignment: 'center' })}>Education</h1>
 						<h1 className={paragraph({ color: 'background', size: 'sm', alignment: 'center' })}>
-							<ul className="list-disc list-inside"><li>Bachelor's of Dental Surgery</li><li>University of Manitoba (M.Sc)</li></ul>
+							<ul className=""><li>Bachelor's of Dental Surgery</li><li>University of Manitoba (M.Sc)</li></ul>
 						</h1>
 					</div>
 
@@ -83,7 +85,7 @@ export default function AboutPage() {
 						</div>
 						<h1 className={title({ color: 'background', size: 'sm', alignment: 'center' })}>Professional Associations</h1>
 						<h1 className={paragraph({ color: 'background', size: 'sm', alignment: 'center' })}>
-							<ul className="list-disc list-inside"><li>Ontario Dental Association</li><li>Royal College of Dental Surgeons of Ontario</li><li>Canadian Dental Association</li></ul>
+							<ul className=""><li>Ontario Dental Association</li><li>Royal College of Dental Surgeons of Ontario</li><li>Canadian Dental Association</li></ul>
 						</h1>
 					</div>
 				</div>
@@ -94,7 +96,7 @@ export default function AboutPage() {
 						{team.map((member) => (
 							<div className="flex flex-col bg-white rounded-2xl gap-5 p-5 items-center flex-1 basis-[30%]">
 								<div className="relative w-[200px] h-[200px]">
-									<Image src={member.picture} alt="itero" fill={true} className="rounded-3xl object-cover" />
+									<Image src={member.picture} alt="itero" fill={true} className="rounded-full object-cover" />
 								</div>
 								<div className="gap-2">
 									<h1 className={title({ color: 'default', size: 'sm', alignment: 'center' })}>{member.name}</h1>

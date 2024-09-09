@@ -19,7 +19,7 @@ const GreenCircleCard: React.FC<GreenCircleCardProps> = ({ header, image, text }
             <div>
                 <div className="relative w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] rounded-full">
                     <Image src={image} alt="itero" fill={true} className="rounded-full object-cover z-20" />
-                    <div className='bubble absolute w-48 h-48 z-10 top-48 right-0 bg-default rounded-full ' data-speed="0.1"></div>
+                    <div className='bubble absolute w-48 h-48 z-10 top-40 right-0 bg-default rounded-full ' data-speed="0.1"></div>
                     <div className='bubble absolute w-20 h-20 z-10 top-80 -right-48 bg-default rounded-full ' data-speed="0.1"></div>
                     <div className='bubble absolute w-20 h-20 z-10 -bottom-48 -left-10 bg-default rounded-full ' data-speed="0.1"></div>
                 </div>
