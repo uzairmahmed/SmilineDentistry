@@ -94,7 +94,7 @@ export default function AboutPage() {
 				<h1 className={title({ size: 'md', alignment: 'center' })}>Meet our team</h1>
 					<div className="flex flex-wrap w-full justify-between gap-10 px-2 lg:px-0">
 						{team.map((member) => (
-							<div className="flex flex-col bg-white rounded-2xl gap-5 p-5 items-center flex-1 basis-[30%]">
+							<div key={member.name} className="flex flex-col bg-white rounded-2xl gap-5 p-5 items-center flex-1 basis-[30%]">
 								<div className="relative w-[200px] h-[200px]">
 									<Image src={member.picture} alt="itero" fill={true} className="rounded-full object-cover" />
 								</div>
