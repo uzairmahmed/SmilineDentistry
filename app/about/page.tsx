@@ -3,8 +3,8 @@ import { pagecontent, paragraph, subtitle, title } from "@/components/primitives
 import heroimage from '../../assets/images/SmilineReception.png'
 import defaultimage from '../../assets/profiles/default.png'
 
-import junaidimg from '../../assets/profiles/default.png'
-import asraimage from '../../assets/profiles/default.png'
+import junaidimg from '../../assets/profiles/junaid.jpg'
+import asraimage from '../../assets/profiles/asra.jpg'
 
 import Image from "next/image";
 import { RiGraduationCapFill } from "react-icons/ri";
