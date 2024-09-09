@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 
-import { Navbar as NextUINavbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarContent, NavbarItem } from "@nextui-org/react";
+import { Navbar as NextUINavbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarContent, NavbarItem } from "@nextui-org/navbar";
 
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";

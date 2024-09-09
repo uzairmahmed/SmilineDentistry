@@ -1,4 +1,5 @@
-import { Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger, NavbarItem } from '@nextui-org/react';
+import { Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger } from '@nextui-org/dropdown';
+import { NavbarItem } from '@nextui-org/navbar';
 import React, { useState } from 'react';
 import { navbarLink } from '../primitives';
 
@@ -8,12 +9,12 @@ interface MegaMenuProps {
 
 const NavbarMegamenu: React.FC<MegaMenuProps> = ({ item }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const handleInteraction = (event : any) => {
+    const handleInteraction = (event: any) => {
         event.stopPropagation(); // Stop the event from bubbling up
         event.preventDefault(); // Prevent default actions to ensure tap is handled explicitly
         setIsOpen(prev => !prev); // Toggle dropdown state
     };
-    
+
     return (
         <Dropdown
             isOpen={isOpen}

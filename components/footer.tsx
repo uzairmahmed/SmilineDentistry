@@ -4,7 +4,6 @@ import { Logo } from "@/components/icons";
 import { paragraph, title } from './primitives';
 import { siteConfig } from '@/config/site';
 import NextLink from "next/link";
-import { link as linkStyles } from "@nextui-org/theme";
 
 const Footer = () => {
     return (

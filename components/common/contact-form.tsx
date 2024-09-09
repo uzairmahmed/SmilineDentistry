@@ -1,4 +1,6 @@
-import { Modal, Button, Input, Textarea, ModalHeader, ModalBody, ModalFooter, ModalContent } from '@nextui-org/react';
+import {Modal, ModalBody, ModalHeader, ModalFooter, ModalContent} from '@nextui-org/modal';
+import {Button} from '@nextui-org/button';
+import {Input, Textarea} from '@nextui-org/input';
 import { useFormContext } from '../../hooks/useFormContext';
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';

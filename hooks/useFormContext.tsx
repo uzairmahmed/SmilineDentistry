@@ -1,5 +1,5 @@
 import { createContext, useContext, ReactNode } from 'react';
-import { useDisclosure } from '@nextui-org/react';
+import { useDisclosure } from '@nextui-org/modal';
 
 interface FormContextProps {
   isOpen: boolean;

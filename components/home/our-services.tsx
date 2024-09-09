@@ -1,7 +1,6 @@
 import React from 'react';
 import { title, subtitle, button } from "@/components/primitives";
 import ServiceGrid from '../common/service-grid';
-import { Button } from "@nextui-org/react";
 
 const OurServices = () => {
     return (

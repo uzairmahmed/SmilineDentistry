@@ -1,7 +1,5 @@
 import React from 'react';
-import { title, subtitle, button } from "@/components/primitives";
-import ServiceGrid from '../common/service-grid';
-import { Button } from "@nextui-org/react";
+import { title, subtitle } from "@/components/primitives";
 import ContactGrid from '../common/contact-grid';
 import TimingGrid from '../common/timing-grid';
 
