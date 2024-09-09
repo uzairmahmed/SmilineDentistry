@@ -7,9 +7,10 @@ const useParallax = () => {
             const scrollTop = window.pageYOffset;
 
             elements.forEach((element) => {
-                const speed = element.getAttribute('data-speed');
-                const yPos = -(scrollTop * speed);
-                element.style.transform = `translateY(${yPos}px)`;
+                const htmlElement = element as HTMLElement; // Cast element to HTMLElement
+                const speed = parseFloat(htmlElement.getAttribute('data-speed') || '0'); // Convert string to number
+                const yPos = -(scrollTop * speed); // Now speed is a number
+                htmlElement.style.transform = `translateY(${yPos}px)`; // Apply parallax effect
             });
         };
 
