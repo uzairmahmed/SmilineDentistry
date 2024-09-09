@@ -3,7 +3,7 @@ import { pagecontent, paragraph, subtitle, title } from "@/components/primitives
 import heroimage from '../../assets/images/SmilineReception.png'
 import defaultimage from '../../assets/profiles/default.png'
 
-import asraimage from '../../assets/profiles/asra.JPG'
+import asraimage from '../../assets/profiles/asra.jpg'
 import junaidimg from '../../assets/profiles/junaid.jpg'
 
 import Image from "next/image";
