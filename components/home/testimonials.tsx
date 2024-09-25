@@ -1,4 +1,5 @@
-import { Button } from '@nextui-org/button';
+import { Button } from "@nextui-org/button";
+import {Link} from "@nextui-org/link";
 import React from 'react';
 import { button, subtitle, title } from '../primitives';
 import TestimonialGrid from '../common/testimonial-grid';
@@ -29,12 +30,19 @@ const Testimonials = () => {
     return (
         <div className='flex flex-col items-center justify-center p-10 lg:p-0'>
             <div className='w-full px-5'>
-                <h1 className={title({ size: 'sm', color:'primary', fullWidth: true })}>What Our Patients Say</h1>
+                <h1 className={title({ size: 'sm', color: 'primary', fullWidth: true })}>What Our Patients Say</h1>
                 <h1 className={subtitle({ fullWidth: true })}>Discover the Smiles We've Transformed and the Stories Behind Them</h1>
             </div>
             <TestimonialGrid testimonials={testimonials} />
-
-            <Button className={button()} size='lg' color="primary" href='https://g.page/r/CZ4bE3loLRemEB0/review'>
+            <Button
+            className={button()}
+            size='lg'
+                href="https://g.page/r/CZ4bE3loLRemEAE/review"
+                as={Link}
+                color="primary"
+                showAnchorIcon={true}
+                variant="solid"
+            >
                 Leave a review
             </Button>
 

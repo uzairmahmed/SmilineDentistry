@@ -5,6 +5,8 @@ import defaultimage from '../../assets/profiles/default.png'
 
 import junaidimg from '../../assets/profiles/junaid.jpg'
 import asraimage from '../../assets/profiles/asra.jpg'
+import hinaimg from '../../assets/profiles/hina.jpg'
+import aqleemaimg from '../../assets/profiles/aqleema.jpg'
 
 import Image from "next/image";
 import { RiGraduationCapFill } from "react-icons/ri";
@@ -27,7 +29,7 @@ export default function AboutPage() {
 		}, {
 			name: "HINA AHMAR",
 			position: 'Dental Assistant',
-			picture: defaultimage
+			picture: hinaimg
 		}, {
 			name: "SYEDA MUBARIKA",
 			position: 'Dental Assistant',
@@ -35,7 +37,7 @@ export default function AboutPage() {
 		}, {
 			name: "AQLEEMA REHAMAN",
 			position: 'Dental Assistant',
-			picture: defaultimage
+			picture: aqleemaimg
 		},
 	]
 	return (
@@ -96,7 +98,7 @@ export default function AboutPage() {
 						{team.map((member,idx) => (
 							<div key={idx} className="flex flex-col bg-white rounded-2xl gap-5 p-5 items-center flex-1 basis-[30%]">
 								<div className="relative w-[200px] h-[200px]">
-									<Image src={member.picture} alt="itero" fill={true} className="rounded-full object-cover" />
+									<Image src={member.picture} alt={member.name} fill={true} className="rounded-full object-cover" />
 								</div>
 								<div className="gap-2">
 									<h1 className={title({ color: 'default', size: 'sm', alignment: 'center' })}>{member.name}</h1>
