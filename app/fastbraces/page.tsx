@@ -39,10 +39,10 @@ export default function InvisalignPage() {
 				}
 				bubbles={
 					<>
-						<div className='bubble absolute w-32 h-32 z-10 bottom-16 -left-24 bg-primary rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-20 h-20 z-20 -top-10 -right-10 bg-primary rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-12 h-12 z-10 bottom-10 -right-20 bg-primary rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-40 h-40 z-10 -bottom-24 -right-10 bg-primary rounded-full ' data-speed="0.1"></div>
+						<div className='bubble absolute w-32 h-32 z-10 bottom-16 -left-24 bg-primary rounded-full ' data-speed="0"></div>
+						<div className='bubble absolute w-20 h-20 z-20 -top-10 -right-10 bg-primary rounded-full ' data-speed="0"></div>
+						<div className='bubble absolute w-12 h-12 z-10 bottom-10 -right-20 bg-primary rounded-full ' data-speed="0"></div>
+						<div className='bubble absolute w-40 h-40 z-10 -bottom-24 -right-10 bg-primary rounded-full ' data-speed="0"></div>
 					</>
 				}
 			/>
@@ -186,8 +186,8 @@ export default function InvisalignPage() {
 
 				<PicText image={null} inside={
 					<>
-						<h1 className={title({ size: 'md', alignment: 'center' })}>Get a Quote</h1>
-						<h1 className={paragraph({ size: 'lg' })}>Discover the transformative benefits of Fastbraces®. Achieve a straighter smile in less time with our efficient treatment. Book a free consultation with Dr. Asra Ahmed today to learn how Fastbraces® can help enhance your dental health and confidence quickly and effectively.</h1>
+						<h1 className={title({ size: 'md', alignment: 'center' })}>Get a Quote for Your Perfect Smile</h1>
+						<h1 className={paragraph({ size: 'lg' })}>Ready to experience the speed and efficiency of Fastbraces? At Smiline Dentistry, we're here to make your orthodontic journey quick and effective. Visit our clinic or give us a call to learn more about how Fastbraces can transform your smile. Let us provide you with a personalized quote and guide you through your options for a straighter smile, faster than ever.</h1>
 						<ContactFormButton />
 					</>
 				} />

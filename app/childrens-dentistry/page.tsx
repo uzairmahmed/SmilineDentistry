@@ -32,14 +32,14 @@ export default function CleaningPage() {
 						<div className='bubble absolute w-10 h-10 z-10 -top-20 right-20 bg-white rounded-full ' data-speed="0"></div>
 						<div className='bubble absolute w-10 h-10 z-10 top-20 -right-20 bg-white rounded-full ' data-speed="0"></div>
 
-						<div className='bubble absolute w-32 h-32 z-10 top-16 -left-24 bg-secondary rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-20 h-20 z-20 -top-10 -left-10 bg-secondary rounded-full ' data-speed="0.2"></div>
-						<div className='bubble absolute w-10 h-10 z-20 -bottom-28 -right-16 bg-secondary rounded-full ' data-speed="0.3"></div>
-						<div className='bubble absolute w-20 h-20 z-10 -bottom-36 -right-32 bg-default rounded-full ' data-speed="0.2"></div>
-						<div className='bubble absolute w-20 h-20 z-10 -top-32 -left-20 bg-default rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-40 h-40 z-10 -bottom-24 -right-10 bg-secondary rounded-full ' data-speed="0.3"></div>
-						<div className='bubble absolute w-32 h-32 z-10 -top-20 left-6 bg-primary rounded-full ' data-speed="0.1"></div>
-						<div className='bubble absolute w-32 h-32 z-10 -bottom-36 right-6 bg-primary rounded-full ' data-speed="0.2"></div>
+						<div className='bubble absolute w-32 h-32 z-10 top-16 -left-24 bg-secondary rounded-full ' data-speed="0"></div>
+						<div className='bubble absolute w-20 h-20 z-20 -top-10 -left-10 bg-secondary rounded-full ' data-speed="0"></div>
+						<div className='bubble absolute w-10 h-10 z-20 -bottom-28 -right-16 bg-secondary rounded-full ' data-speed="0"></div>
+						{/* <div className='bubble absolute w-20 h-20 z-10 -bottom-36 -right-32 bg-default rounded-full ' data-speed="0"></div> */}
+						<div className='bubble absolute w-20 h-20 z-10 -top-32 -left-20 bg-default rounded-full ' data-speed="0"></div>
+						<div className='bubble absolute w-40 h-40 z-10 -bottom-24 -right-10 bg-secondary rounded-full ' data-speed="0"></div>
+						<div className='bubble absolute w-32 h-32 z-10 -top-20 left-6 bg-primary rounded-full ' data-speed="0"></div>
+						{/* <div className='bubble absolute w-32 h-32 z-10 -bottom-36 right-6 bg-primary rounded-full ' data-speed="0"></div> */}
 					</>
 				}
 			/>

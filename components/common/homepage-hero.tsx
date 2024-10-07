@@ -35,12 +35,13 @@ const HomepageHero = () => {
                     <h1 className={subtitle({ size: 'md', fullWidth: true, alignment: 'center' })}>Revitalize your smile, <br />Renew your confidence.</h1>
                     <ContactFormButton />
                 </div>
-                {/* <div className='bubble absolute w-32 h-32 z-10 bottom-16 -left-24 bg-default rounded-full ' data-speed="0.1"></div> */}
-                {/* <div className='bubble absolute w-20 h-20 z-20 -top-10 -right-10 bg-default rounded-full ' data-speed="0.1"></div> */}
-                {/* <div className='bubble absolute w-12 h-12 z-10 bottom-10 -right-20 bg-default rounded-full ' data-speed="0.1"></div> */}
-                {/* <div className='bubble absolute w-40 h-40 z-10 -bottom-24 -right-10 bg-default rounded-full ' data-speed="0.1"></div> */}
 
             </div>
+            <div className='hidden md:flex bubble absolute w-[450px] h-[450px] z-10 -bottom-48 -left-48 bg-background rounded-full border-5 border-default border-solid' data-speed="0"></div>
+            <div className='hidden xl:flex bubble absolute w-48 h-48 z-10 bottom-32 left-14 bg-default rounded-full ' data-speed="0"></div>
+            <div className='hidden md:flex bubble absolute w-12 h-12 z-10 bottom-80 left-10 bg-default rounded-full ' data-speed="0"></div>
+            <div className='hidden xl:flex bubble absolute w-56 h-56 z-20 top-32 -right-24 bg-default rounded-full ' data-speed="0"></div>
+            <div className='hidden md:flex bubble absolute w-72 h-72 z-10 -bottom-24 -right-24 bg-background rounded-full border-5 border-default border-solid ' data-speed="0"></div>
         </div>
     );
 }

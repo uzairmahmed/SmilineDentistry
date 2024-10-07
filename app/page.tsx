@@ -61,6 +61,7 @@ export default function Home() {
 							</>}
 						/>
 
+
 						<ImageRibbon image={section2image} inside={
 							<>
 								<div className={`flex flex-col px-16 py-16 rounded-3xl bg-default items-center text-center gap-10`}>
@@ -85,23 +86,23 @@ export default function Home() {
 						<div className="flex w-full justify-center">
 							<div className='hidden lg:flex lg:absolute object-cover w-[40vw] h-[800px] left-0 z-0 bg-default'></div>
 							<div className="w-full flex flex-col lg:flex-row h-full lg:h-[800px] bg-opacity-50 z-10 mr-5 lg:mr-0">
-								<div className="flex flex-col w-full lg:w-1/2 h-full pl-10 pr-5 py-20 lg:p-20 bg-default rounded-r-3xl">
+								<div className="flex flex-col w-full lg:w-1/2 h-full pl-10 pr-5 py-20 lg:p-20 bg-default rounded-3xl lg:rounded-r-3xl">
 									<h1 className={title({ size: 'md', fullWidth: true, alignment: 'left', color: 'background' })}>Hours of Operation</h1>
 									<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left', })}>Conveniently serving your needs with flexible scheduling for your busy lifestyle. Open on evenings and weekends to serve you better.</h1>
 									<TimingGrid />
 								</div>
-
 								<div className="flex flex-col w-full lg:w-1/2 h-full p-10 lg:p-20 justify-center items-center gap-2">
 									<h1 className={subtitle({ size: 'lg', color: 'default', alignment: 'center', })}>TODAY</h1>
 									<TimeClock />
 								</div >
 							</div>
+
 						</div>
 
 						<ImageRibbonCard image={section2image} inside={<>
-							{/* <div className='bubble absolute w-32 h-32 z-20 top-32 -right-24 bg-secondary rounded-full ' data-speed="0.1"></div> */}
-							{/* <div className='bubble absolute w-14 h-14 z-20 top-20 right-24 bg-secondary rounded-full ' data-speed="0.1"></div> */}
-							{/* <div className='bubble absolute w-32 h-32 z-0 -bottom-48 -left-24 bg-secondary rounded-full ' data-speed="0.1"></div> */}
+							<div className='bubble absolute w-32 h-32 z-20 -top-16 -right-16 bg-secondary rounded-full ' data-speed="0"></div>
+							<div className='bubble absolute w-14 h-14 z-20 -top-20 right-20 bg-secondary rounded-full ' data-speed="0"></div>
+							<div className='bubble absolute w-32 h-32 -z-10 -bottom-16 -left-16 bg-secondary rounded-full ' data-speed="0"></div>
 
 							<h1 className={title({ size: 'lg', alignment: 'left', color: 'background' })}>Get in Touch</h1>
 							<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>
