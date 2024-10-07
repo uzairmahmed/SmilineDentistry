@@ -1,7 +1,7 @@
 "use client"
 import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
-import heroimage from '../../assets/images/SmilineExterior.png'
+import heroimage from '../../assets/images/SmilineExterior.jpg'
 import { RiMailFill, RiMapFill, RiPhoneFill } from "react-icons/ri";
 import TimingGrid from "@/components/common/timing-grid";
 import ContactFormStandalone from "@/components/common/contact-form-standalone";

@@ -1,10 +1,10 @@
 import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
 
-import heroimage from '../../assets/images/AdobeStock_372286534.jpeg'
-import section2image from '../../assets/images/AdobeStock_730499892.jpeg'
-import section3image from '../../assets/images/AdobeStock_413893760.jpeg'
-import iteroimage from '../../assets/images/AdobeStock_601012084.jpeg'
+import heroimage from '../../assets/images/AdobeStock_372286534.jpg'
+import section2image from '../../assets/images/AdobeStock_730499892.jpg'
+import section3image from '../../assets/images/AdobeStock_413893760.jpg'
+import iteroimage from '../../assets/images/AdobeStock_601012084.jpg'
 import PicText from "@/components/common/pic-text";
 import ImageRibbonCard from "@/components/common/image-ribbon-card";
 import GreenCircleCard from "@/components/common/green-circle-card";

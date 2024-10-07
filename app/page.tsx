@@ -2,8 +2,8 @@ import OurServices from "@/components/home/our-services";
 import Testimonials from "@/components/home/testimonials";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
 import { Button } from "@nextui-org/button";
-import section1image from '../assets/images/SmilineOperatory.png'
-import section2image from '../assets/images/AdobeStock_730499892.jpeg'
+import section1image from '../assets/images/SmilineOperatory.jpg'
+import section2image from '../assets/images/AdobeStock_730499892.jpg'
 import { RiCalendarEventFill, RiMailFill, RiMapFill, RiPhoneFill, RiShakeHandsFill, RiToothFill } from "react-icons/ri";
 import TimingGrid from "@/components/common/timing-grid";
 import HomepageHero from "@/components/common/homepage-hero";

@@ -5,13 +5,13 @@ import Image from "next/image";
 import heroimage from '../../assets/images/Black.png'
 import invisalignAligner from '../../assets/images/InvisalignHero.png'
 import section1image from '../../assets/images/diana-polekhina-fmB7IdFjhTM-unsplash.jpg'
-import iteroimage from '../../assets/images/AdobeStock_175504582.jpeg'
+import iteroimage from '../../assets/images/AdobeStock_175504582.jpg'
 import invisalignbox from '../../assets/images/InvisalignBox.png'
 import iteropractice from '../../assets/logos/itero.png'
 import invisalignprovider from '../../assets/logos/invisalign.png'
 
-import after from '../../assets/before_afters/invisalign_after.png'
-import before from '../../assets/before_afters/invlisalign_before.png'
+import after from '../../assets/before_afters/invisalign_after.jpg'
+import before from '../../assets/before_afters/invlisalign_before.jpg'
 
 import BigTimeline from "@/components/common/bigTimeline";
 import TextHeaderSection from "@/components/common/text-header-section";

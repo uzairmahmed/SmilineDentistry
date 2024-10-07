@@ -2,14 +2,14 @@ import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
 import { Button } from "@nextui-org/button";
 
-import heroimage from '../../assets/images/AdobeStock_722965563.jpeg'
+import heroimage from '../../assets/images/AdobeStock_722965563.jpg'
 import card1image from '../../assets/icons/toothcracked.png'
 import card2image from '../../assets/icons/pliers.png'
 import card3image from '../../assets/icons/screw.png'
-import section1image from '../../assets/images/AdobeStock_720403667.jpeg'
-import section2image from '../../assets/images/AdobeStock_720403667.jpeg'
-import section3image from '../../assets/images/AdobeStock_720403667.jpeg'
-import cosmeticImage from '../../assets/images/AdobeStock_393338639.jpeg'
+import section1image from '../../assets/images/AdobeStock_720403667.jpg'
+import section2image from '../../assets/images/AdobeStock_720403667.jpg'
+import section3image from '../../assets/images/AdobeStock_720403667.jpg'
+import cosmeticImage from '../../assets/images/AdobeStock_393338639.jpg'
 import IconCard from "@/components/common/icon-card";
 import Timeline from "@/components/common/timeline";
 import PicText from "@/components/common/pic-text";

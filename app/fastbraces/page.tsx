@@ -6,12 +6,12 @@ import heroimage from '../../assets/images/FastbracesHero.png'
 import section1image from '../../assets/images/diana-polekhina-fmB7IdFjhTM-unsplash.jpg'
 import fastbraceslogo from '../../assets/logos/fastbraces.png'
 
-import after1 from '../../assets/before_afters/98-78395-AFTER.png'
-import before1 from '../../assets/before_afters/98-78395-BEFORE.png'
-import after2 from '../../assets/before_afters/113-100216-AFTER.png'
-import before2 from '../../assets/before_afters/113-100216-BEFORE.png'
-import after3 from '../../assets/before_afters/152-8020-AFTER.png'
-import before3 from '../../assets/before_afters/152-8020-BEFORE.png'
+import after1 from '../../assets/before_afters/98-78395-AFTER.jpg'
+import before1 from '../../assets/before_afters/98-78395-BEFORE.jpg'
+import after2 from '../../assets/before_afters/113-100216-AFTER.jpg'
+import before2 from '../../assets/before_afters/113-100216-BEFORE.jpg'
+import after3 from '../../assets/before_afters/152-8020-AFTER.jpg'
+import before3 from '../../assets/before_afters/152-8020-BEFORE.jpg'
 
 import BigTimeline from "@/components/common/bigTimeline";
 import TextHeaderSection from "@/components/common/text-header-section";

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { subtitle, title } from '../primitives';
 import { fontCursive } from "@/config/fonts";
 
-import heroimage from '../../assets/images/AdobeStock_420249849_Hero.jpeg'
+import heroimage from '../../assets/images/AdobeStock_420249849_Hero.jpg'
 import clsx from 'clsx';
 import ContactFormButton from './contact-form-button';
 

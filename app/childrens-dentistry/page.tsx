@@ -2,9 +2,9 @@ import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
 import { Button } from "@nextui-org/button";
 
-import heroimage from '../../assets/images/AdobeStock_656058193.jpeg'
-import section2image from '../../assets/images/AdobeStock_474781498.jpeg'
-import section3image from '../../assets/images/AdobeStock_531330525.jpeg'
+import heroimage from '../../assets/images/AdobeStock_656058193.jpg'
+import section2image from '../../assets/images/AdobeStock_474781498.jpg'
+import section3image from '../../assets/images/AdobeStock_531330525.jpg'
 import PicText from "@/components/common/pic-text";
 import ImageRibbonCard from "@/components/common/image-ribbon-card";
 import GreenCircleCard from "@/components/common/green-circle-card";
@@ -58,7 +58,7 @@ export default function CleaningPage() {
 					positive experience." />
 				<PicText image={section2image} hasCustomImage={true}
 					customImageDiv={
-						<div className="w-full h-full bg-left bg-contain mask-style z-20" style={{ backgroundImage: "url('/blorbimgs/image.png')" }}></div>
+						<div className="w-full h-full bg-left bg-contain mask-style z-20" style={{ backgroundImage: "url('/blorbimgs/image.jpg')" }}></div>
 					}
 					inside={<>
 						<h1 className={title({ size: 'md', alignment: 'left', color: 'default' })}>Your child's first dental visit</h1>

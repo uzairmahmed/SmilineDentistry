@@ -1,6 +1,6 @@
 import ServiceHero from "@/components/common/service-hero";
 import { pagecontent, paragraph, subtitle, title } from "@/components/primitives";
-import heroimage from '../../assets/images/SmilineReception.png'
+import heroimage from '../../assets/images/SmilineReception.jpg'
 import defaultimage from '../../assets/profiles/default.png'
 
 import junaidimg from '../../assets/profiles/junaid.jpg'
