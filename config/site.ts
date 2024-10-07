@@ -7,7 +7,7 @@ export const siteConfig = {
 		{
 			type: 'supercategory',
 			label: "Services",
-			href: '/',
+			href: '/services',
 			subcategories: [
 				{
 					name: "Preventative Dentistry",

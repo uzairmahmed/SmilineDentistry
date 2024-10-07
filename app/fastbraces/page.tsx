@@ -122,13 +122,11 @@ export default function InvisalignPage() {
 						text1={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>Before</h1>
-								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						text2={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>After</h1>
-								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						bubble={
@@ -144,13 +142,11 @@ export default function InvisalignPage() {
 						text1={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>Before</h1>
-								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						text2={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>After</h1>
-								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						bubble={
@@ -166,13 +162,11 @@ export default function InvisalignPage() {
 						text1={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>Before</h1>
-								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						text2={
 							<>
 								<h1 className={title({ size: 'md', alignment: 'center' })}>After</h1>
-								{/* <h1 className={paragraph({ size: 'lg' })}>Lorem ipsum dolor sit amet consectetur. Sed viverra vestibulum velit rhoncus erat sagittis molestie cursus. </h1> */}
 							</>
 						}
 						bubble={

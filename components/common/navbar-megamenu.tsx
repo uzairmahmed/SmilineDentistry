@@ -51,7 +51,6 @@ const NavbarMegamenu: React.FC<MegaMenuProps> = ({ item }) => {
                         ))}
                     </DropdownSection>
                 ))}
-
             </DropdownMenu>
         </Dropdown>
     );
