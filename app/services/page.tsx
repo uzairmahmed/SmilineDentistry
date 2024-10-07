@@ -155,7 +155,7 @@ export default function ServicesPage() {
 			<div className="mt-20"></div>
 			<div className={pagecontent()}>
 				{sections.map((section) => (
-					<div className="flex flex-col w-full gap-5 p-5">
+					<div key={section.name} className="flex flex-col w-full gap-5 p-5">
 						<div className="flex flex-col md:flex-row justify-between">
 							<div className="flex flex-col justify-start">
 								<h1 className={title({ size: 'md', alignment: 'left', color: 'default' })}>{section.name}</h1>
@@ -175,7 +175,7 @@ export default function ServicesPage() {
 						</div>
 						<div className='grid grid-rows-2 md:grid-rows-1 grid-cols-1 md:grid-cols-3 gap-5 w-full'>
 							{services.filter((service) => (service.page === section.id)).map((service) => (
-								<Link href={service.url}>
+								<Link key={service.name} href={service.url}>
 									<div className="flex flex-col h-60 bg-white hover:bg-default-50 hover:shadow-sm rounded-3xl hover:underline decoration-default transition-all">
 										<div className="flex w-full h-5/6 relative ">
 											<Image alt='service' src={service.picture} fill={true} className='object-cover rounded-t-3xl' />
