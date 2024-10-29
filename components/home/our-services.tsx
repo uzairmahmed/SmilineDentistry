@@ -8,7 +8,7 @@ const OurServices = () => {
     return (
         <div className='flex flex-col items-center justify-center'>
             <div className='w-full px-5'>
-                <h1 className={title({ size: 'sm', fullWidth: true })}>Our Services</h1>
+                <h1 className={title({ size: 'md', fullWidth: true, color:'primary' })}>Our Services</h1>
                 {/* <h1 className={subtitle({ fullWidth: true })}>Whether you're seeking a permanent solution for missing teeth with dental implants or looking to enhance your smile with veneers and cosmetic */}
                 {/* dentistry, our team is here to support you every step of the way.</h1> */}
             </div>
@@ -19,7 +19,7 @@ const OurServices = () => {
                 size='md'
                 href={'/services'}
                 as={Link}
-                color="default"
+                color="primary"
                 variant="solid"
             >
                 Discover our full list of offerings

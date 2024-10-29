@@ -1,10 +1,18 @@
 import * as React from "react";
 import { IconSvgProps } from "@/types";
 import Image from "next/image";
+import LogoLightHorizontal from '../assets/LogoLightHorizontal.svg'
+import LogoLightVertical from '../assets/LogoLightVertical.svg'
+import LogoLightVerticalAlt from '../assets/LogoLightVerticalAlt.svg'
 
-export const Logo = ({ altText = "Smiline Logo", width = 250, height = 120 }) => (
-	<Image src="/LogoFullMed.png" alt={altText} width={width} height={height} />
+export const Logo = ({ altText = "Smiline Logo", width = 200 }) => (
+	<Image src={LogoLightHorizontal} alt={altText} width={width} />
 );
+
+export const AltLogo = ({ altText = "Smiline Logo", width = 200 }) => (
+	<Image src={LogoLightVerticalAlt} alt={altText} width={width} />
+);
+
 
 export const DEFAULTLogo: React.FC<IconSvgProps> = ({
 	size = 36,

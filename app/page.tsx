@@ -13,6 +13,7 @@ import TimeClock from "@/components/common/time-clock";
 import ImageRibbonCard from "@/components/common/image-ribbon-card";
 import ContactFormButton from "@/components/common/contact-form-button";
 import TextText from "@/components/common/text-text";
+import InsuranceGrid from "@/components/common/insurance-grid";
 
 export default function Home() {
 
@@ -61,6 +62,7 @@ export default function Home() {
 							</>}
 						/>
 
+						<InsuranceGrid />
 
 						<ImageRibbon image={section2image} inside={
 							<>

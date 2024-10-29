@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from "clsx";
-import { Logo } from "@/components/icons";
+import { AltLogo } from "@/components/icons";
 import { paragraph, title } from './primitives';
 import { siteConfig } from '@/config/site';
 import NextLink from "next/link";
@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="w-full flex flex-col items-center justify-center py-2 bg-primary shadow-md">
             <div className='grid grid-cols-1 lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 w-full max-w-6xl items-center py-10'>
                 <div className='flex flex-col items-center'>
-                    <Logo width={350} height={350} />
+                    <AltLogo width={250} />
                     {/* <h1 className={title({ size: 'md', color: 'background' })}>Smiline Family Dentistry</h1> */}
                 </div>
                 <div className='flex flex-col gap-5 items-center lg:items-start order-none lg:order-first'>
