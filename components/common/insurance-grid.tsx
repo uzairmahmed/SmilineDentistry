@@ -61,7 +61,7 @@ const InsuranceGrid: React.FC<InsuranceGridProps> = ({ }) => {
                 <h1 className={title({ size: 'sm', alignment: 'center' })}>Accepted Insurance Providers</h1>
                 <div className='flex flex-wrap gap-10 justify-center'>
                     {providers.map(provider => (
-                        <Link href={provider.url}>
+                        <Link key={provider.name} href={provider.url}>
                             <Image
                                 src={provider.logo}
                                 alt={provider.name}
