@@ -134,13 +134,13 @@ export default function ServicesPage() {
 
 	return (
 		<div className="flex flex-col h-full w-full">
-			<div className='relative h-screen lg:h-[40vh] overflow-x-clip'>
+			<div className='relative h-[50vh] lg:h-[40vh] overflow-x-clip'>
 				<Image alt='hero' src={heroimage} fill={true} className='object-cover' />
 				<div className={`
                 absolute flex flex-col
 
 				ml-auto mr-auto left-0 right-0
-				-bottom-28
+				-bottom-28 lg:-bottom-28
 
                 w-auto lg:w-1/3 max-w-[500px] 
                 gap-3

@@ -143,7 +143,8 @@ export const navbarLink = tv({
 	variants: {
 		type: {
 			navbar: "w-full my-2 block max-w-full text-center text-lg text-default hover:[text-shadow:_0.2px_0_#143D75] transition-all cursor-pointer",
-			navmenu: "block m-0 text-left text-sm lg:text-lg text-default hover:[text-shadow:_0.2px_0_#143D75] transition-all cursor-pointer ",
+			navmenu: "flex m-0 text-left text-sm lg:text-lg text-default hover:[text-shadow:_0.2px_0_#143D75] transition-all cursor-pointer ",
+			navmenusub: "flex m-0 text-left text-sm lg:text-lg text-default hover:[text-shadow:_0.2px_0_#143D75] transition-all cursor-pointer ",
 		}
 	}
 });

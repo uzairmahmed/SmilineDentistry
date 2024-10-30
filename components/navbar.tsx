@@ -3,17 +3,18 @@ import React from "react";
 
 import { Navbar as NextUINavbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarContent, NavbarItem } from "@nextui-org/navbar";
 
-import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 
 import { Logo } from "@/components/icons";
-import { navbarLink } from "./primitives";
-import NavbarMegamenu from "./common/navbar-megamenu";
 import ContactForm from "./common/contact-form";
 import ContactFormButton from "./common/contact-form-button";
+import NavmenuLink from "./common/navmenu-link";
+import NavmenuServiceDropdown from "./common/navmenu-service-dropdown";
+import { usePathname } from 'next/navigation'
 
 export const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+	const pathname = usePathname()
 
 	return (
 		<>
@@ -32,24 +33,10 @@ export const Navbar = () => {
 
 				{/* Mobile Menu */}
 				<NavbarMenu className="py-12">
-					{siteConfig.navItems.map((item) => (
-						item.type === "page" ?
-							<NavbarItem key={item.href}>
-								<NextLink
-									className={navbarLink()}
-									color="foreground"
-									href={item.href}
-								>
-									{item.label}
-								</NextLink>
-							</NavbarItem>
-							:
-							item.type === 'supercategory' ?
-								<NavbarMegamenu key={item.label} item={item} />
-								:
-								<></>
-					))}
-					{/* <Button onClick={open}>Book an Appointment</Button> */}
+					<NavmenuLink name='Services' _key='services-page' href='/services' currentPage={pathname} closeMenu={() => setIsMenuOpen(false)}/>
+					<NavmenuLink name='About Us' _key='about-page' href='/about' currentPage={pathname} closeMenu={() => setIsMenuOpen(false)}/>
+					<NavmenuLink name='Contact' _key='contact-page' href='/contact' currentPage={pathname} closeMenu={() => setIsMenuOpen(false)}/>
+
 					<ContactFormButton />
 				</NavbarMenu>
 
@@ -61,6 +48,7 @@ export const Navbar = () => {
 						</NextLink>
 					</NavbarBrand>
 				</NavbarContent>
+
 				<NavbarContent className="hidden lg:flex">
 					{/* Desktop Logo */}
 					<NavbarBrand className="flex flex-row ">
@@ -68,24 +56,11 @@ export const Navbar = () => {
 							<Logo />
 						</NextLink>
 					</NavbarBrand>
+
 					<div className="flex flex-row gap-5">
-						{siteConfig.navItems.map((item) => (
-							item.type === "page" ?
-								<NavbarItem key={item.href}>
-									<NextLink
-										className={navbarLink()}
-										color="foreground"
-										href={item.href}
-									>
-										{item.label}
-									</NextLink>
-								</NavbarItem>
-								:
-								item.type === 'supercategory' ?
-									<NavbarMegamenu key={item.label} item={item} />
-									:
-									<></>
-						))}
+						<NavmenuServiceDropdown />
+						<NavmenuLink name='About Us' _key='about-page' href='/about' currentPage={pathname} closeMenu={() => { }}/>
+						<NavmenuLink name='Contact' _key='contact-page' href='/contact' currentPage={pathname} closeMenu={() => { }}/>
 					</div>
 					<ContactFormButton navbar={true} />
 				</NavbarContent>

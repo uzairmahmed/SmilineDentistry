@@ -15,7 +15,7 @@ const ServiceHero: React.FC<ServiceHeroProps> = ({ main_section, bubbles, image,
         <div className='relative h-screen lg:h-[85vh] overflow-x-clip'>
             <Image alt='hero' src={image} fill={true} className='object-cover' />
             <div className={`
-                absolute flex flex-col bottom-0 lg:bottom-20 
+                absolute flex flex-col bottom-20 lg:bottom-20 
                 ${div_side === "right" ?
                     "right-0 lg:right-[15%] left-0 lg:left-auto " :
                     "right-0 lg:right-auto left-0 lg:left-[15%]"

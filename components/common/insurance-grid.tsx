@@ -66,7 +66,7 @@ const InsuranceGrid: React.FC<InsuranceGridProps> = ({ }) => {
                                 src={provider.logo}
                                 alt={provider.name}
                                 width={0}
-                                height={60}
+                                height={40}
                             />
                         </Link>
                     ))}
