@@ -49,10 +49,10 @@ export default function CdcpPage(): JSX.Element {
 							<h4 className={paragraph({ size: 'lg' })}>
 								You may qualify if you:
 							</h4>
-							<ul className="mt-3 ml-6 list-disc list-outside">
-								<li className={paragraph({ size: 'md' })}>Do not have private or workplace dental insurance</li>
-								<li className={paragraph({ size: 'md' })}>Have an adjusted household net income under <strong>$90,000</strong></li>
-								<li className={paragraph({ size: 'md' })}>Are a Canadian resident for tax purposes and filed last year’s taxes</li>
+							<ul className="ml-6 list-disc list-outside text-foreground"> 
+								<li>Do not have private or workplace dental insurance</li>
+								<li>Have an adjusted household net income under <strong>$90,000</strong></li>
+								<li>Are a Canadian resident for tax purposes and filed last year’s taxes</li>
 							</ul>
 
 							<h4 className={paragraph({ size: 'lg' }) + " mt-4"}>
@@ -124,7 +124,7 @@ export default function CdcpPage(): JSX.Element {
 							</p>
 
 							<h4 className={paragraph({ size: 'md' }) + " mt-4"}>What to bring to your appointment</h4>
-							<ul className="ml-6 list-disc list-outside">
+							<ul className="ml-6 list-disc list-outside text-foreground">
 								<li>Sun Life CDCP member card (once received)</li>
 								<li>Government-issued photo ID</li>
 								<li>Any relevant medical/dental history or recent X‑rays</li>
@@ -140,6 +140,9 @@ export default function CdcpPage(): JSX.Element {
 						<h1 className={title({ size: 'lg', alignment: 'left', color: 'background' })}>Questions about CDCP?</h1>
 						<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>
 							Contact us — our team is happy to help you check eligibility, walk through the application process, and book your first appointment.
+							<br />
+							<br />
+							Alternatively, you can visit the official <a href="https://www.canada.ca/en/services/benefits/dental/dental-care-plan.html" className="underline text-secondary">CDCP website</a> for more information.
 						</h1>
 					</>
 				} />
