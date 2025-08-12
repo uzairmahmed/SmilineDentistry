@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from 'react';
-import { RiToothFill } from "react-icons/ri";
 import { title, subtitle, paragraph, button } from "@/components/primitives";
 import { Button } from '@nextui-org/button';
+import { ToothIcon } from './icons';
 
 const ServiceGrid = () => {
     const [hoveredElement, setHoveredElement] = useState(-1);
@@ -12,30 +12,30 @@ const ServiceGrid = () => {
             key: "emergency",
             title: "Emergency Dentistry",
             description: "If you experience a dental emergency, contact us for immediate attention. We offer same-day appointments to address your urgent needs",
-            icon: <RiToothFill className='w-16 h-16 text-inherit mb-5' />,
+            icon: <ToothIcon className='w-16 h-16 mb-5 text-inherit' />,
         },
         {
             key: "orthodontic",
             title: "Braces and Invisalign",
             description: "Looking to straighten your teeth? We offer free consultations for braces and Invisalign. Book an appointment to explore your options today!",
-            icon: <RiToothFill className='w-16 h-16 text-inherit mb-5' />,
+            icon: <ToothIcon className='w-16 h-16 mb-5 text-inherit' />,
         },
         {
             key: "cosmetic",
             title: "Cosmetic Dentistry",
             description: "Enhance your smile with services designed to improve dental aesthetics, including whitening, veneers, and shaping.",
-            icon: <RiToothFill className='w-16 h-16 text-inherit mb-5' />,
+            icon: <ToothIcon className='w-16 h-16 mb-5 text-inherit' />,
         },
         {
             key: "implants",
             title: "Implant Dentistry",
             description: "Implants restore chewing function, boost oral health, and enhance your smile's appearance. Schedule a free consultation today!",
-            icon: <RiToothFill className='w-16 h-16 text-inherit mb-5' />,
+            icon: <ToothIcon className='w-16 h-16 mb-5 text-inherit' />,
         }
     ]
 
     return (
-        <div className='flex flex-col lg:flex-row justify-center gap-5 my-10 px-2 lg:px-0'>
+        <div className='flex flex-col justify-center gap-5 px-2 my-10 lg:flex-row lg:px-0'>
             {featured_services.map((service, index) => (
                 <div key={service.key}
                     className={`flex flex-col bg-primary text-white py-10 rounded-3xl justify-start items-center px-10 basis-1/4 transition-colors`}>
@@ -55,7 +55,7 @@ const ServiceGrid = () => {
 export default ServiceGrid;
 
 
-{/* <div className='flex flex-col lg:flex-row justify-center gap-5 my-10'>
+{/* <div className='flex flex-col justify-center gap-5 my-10 lg:flex-row'>
     {featured_services.map((service, index) => (
         <div key={service.key} onMouseEnter={() => setHoveredElement(index)} onMouseLeave={() => setHoveredElement(-1)}
             className={`flex flex-col ${hoveredElement == index ? 'bg-default text-white py-10' : 'bg-white text-default py-16'} rounded-3xl justify-center items-center px-10 basis-1/4 transition-colors`}>

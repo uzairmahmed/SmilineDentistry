@@ -2,7 +2,7 @@ import { Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger 
 import type { FC } from 'react';
 import { navbarLink } from '../primitives';
 import { NavbarItem } from '@nextui-org/navbar';
-import { RiArrowDropRightFill } from "react-icons/ri";
+import { ArrowDropRightIcon } from './icons';
 
 interface NavmenuServiceDropdownProps { }
 
@@ -174,7 +174,7 @@ const NavmenuServiceDropdown: FC<NavmenuServiceDropdownProps> = ({ }) => {
 
 			<DropdownMenu
 				aria-label={"Services Dropdown"}
-				className="w-full max-w-6xl p-2 lg:p-10 font-semibold font-" // Apply the grid layout
+				className="w-full max-w-6xl p-2 font-semibold lg:p-10 font-" // Apply the grid layout
 				classNames={{
 					base: "",
 					list: "grid grid:cols-1 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-10 flex-wrap justify-center",
@@ -215,7 +215,7 @@ const NavmenuServiceDropdown: FC<NavmenuServiceDropdownProps> = ({ }) => {
 								variant="light"
 								key={page.key}
 								href={page.href}
-								startContent={<RiArrowDropRightFill />}
+								startContent={<ArrowDropRightIcon />}
 							>
 								{page.label}
 							</DropdownItem>

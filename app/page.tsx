@@ -4,7 +4,6 @@ import { pagecontent, paragraph, subtitle, title } from "@/components/primitives
 import { Button } from "@nextui-org/button";
 import section1image from '../assets/images/SmilineOperatory.jpg'
 import section2image from '../assets/images/AdobeStock_730499892.jpg'
-import { RiCalendarEventFill, RiMailFill, RiMapFill, RiPhoneFill, RiShakeHandsFill, RiToothFill } from "react-icons/ri";
 import TimingGrid from "@/components/common/timing-grid";
 import HomepageHero from "@/components/common/homepage-hero";
 import PicText from "@/components/common/pic-text";
@@ -14,18 +13,19 @@ import ImageRibbonCard from "@/components/common/image-ribbon-card";
 import ContactFormButton from "@/components/common/contact-form-button";
 import TextText from "@/components/common/text-text";
 import InsuranceGrid from "@/components/common/insurance-grid";
+import { CalendarEventIcon, MailIcon, MapIcon, PhoneIcon, ShakeHandsIcon, ToothIcon } from "@/components/common/icons";
 
 export default function Home() {
 
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 w-screen">
-			<div className="inline-block text-center justify-center w-full">
-				<main className="flex flex-col h-full w-full">
+		<section className="flex flex-col items-center justify-center w-screen gap-4">
+			<div className="justify-center inline-block w-full text-center">
+				<main className="flex flex-col w-full h-full">
 					{/* <Hero /> */}
 					{/* <Spacer y={48} /> */}
 					<HomepageHero />
 					<div className={pagecontent()}>
-						<div className="flex flex-col lg:flex-col items-center w-5/6 mt-0 gap-2 lg:gap-2 ">
+						<div className="flex flex-col items-center w-5/6 gap-2 mt-0 lg:flex-col lg:gap-2 ">
 							<div className={`flex flex-col w-full px-10 lg:p-0 lg:w-full justify-center text-left`}>
 								<h1 className={subtitle({ size: 'md', color: 'default', alignment: 'center' })}>
 									<span className="font-semibold">At Smiline Dentistry, we want you to feel confident about your smile.</span><br />
@@ -67,15 +67,15 @@ export default function Home() {
 						<ImageRibbon image={section2image} inside={
 							<>
 								<div className={`flex flex-col px-16 py-16 rounded-3xl bg-default items-center text-center gap-10`}>
-									<RiCalendarEventFill className='w-16 h-16 text-background' />
+									<CalendarEventIcon className='w-16 h-16 text-background' />
 									<h1 className={subtitle({ size: 'md', color: 'background' })}>Open on Saturdays and Sundays</h1>
 								</div>
 								<div className={`flex flex-col px-16 py-16 rounded-3xl bg-default items-center text-center gap-10`}>
-									<RiShakeHandsFill className='w-16 h-16 text-background' />
+									<ShakeHandsIcon className='w-16 h-16 text-background' />
 									<h1 className={subtitle({ size: 'md', color: 'background' })}>Accepting new patients and families</h1>
 								</div>
 								<div className={`flex flex-col px-16 py-16 rounded-3xl bg-default items-center text-center gap-10`}>
-									<RiToothFill className='w-16 h-16 text-background' />
+									<ToothIcon className='w-16 h-16 text-background' />
 									<h1 className={subtitle({ size: 'md', color: 'background' })}>Direct Billing to all insurance Providers</h1>
 								</div>
 							</>}
@@ -85,15 +85,15 @@ export default function Home() {
 
 						{/* <ContactUs /> */}
 
-						<div className="flex w-full justify-center">
+						<div className="flex justify-center w-full">
 							<div className='hidden lg:flex lg:absolute object-cover w-[40vw] h-[800px] left-0 z-0 bg-default'></div>
 							<div className="w-full flex flex-col lg:flex-row h-full lg:h-[800px] bg-opacity-50 z-10 mr-5 lg:mr-0">
-								<div className="flex flex-col w-full lg:w-1/2 h-full pl-10 pr-5 py-20 lg:p-20 bg-default rounded-3xl lg:rounded-r-3xl">
+								<div className="flex flex-col w-full h-full py-20 pl-10 pr-5 lg:w-1/2 lg:p-20 bg-default rounded-3xl lg:rounded-r-3xl">
 									<h1 className={title({ size: 'md', fullWidth: true, alignment: 'left', color: 'background' })}>Hours of Operation</h1>
 									<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left', })}>Conveniently serving your needs with flexible scheduling for your busy lifestyle. Open on evenings and weekends to serve you better.</h1>
 									<TimingGrid />
 								</div>
-								<div className="flex flex-col w-full lg:w-1/2 h-full p-10 lg:p-20 justify-center items-center gap-2">
+								<div className="flex flex-col items-center justify-center w-full h-full gap-2 p-10 lg:w-1/2 lg:p-20">
 									<h1 className={subtitle({ size: 'lg', color: 'default', alignment: 'center', })}>TODAY</h1>
 									<TimeClock />
 								</div >
@@ -102,9 +102,9 @@ export default function Home() {
 						</div>
 
 						<ImageRibbonCard image={section2image} inside={<>
-							<div className='bubble absolute w-32 h-32 z-20 -top-16 -right-16 bg-secondary rounded-full ' data-speed="0"></div>
-							<div className='bubble absolute w-14 h-14 z-20 -top-20 right-20 bg-secondary rounded-full ' data-speed="0"></div>
-							<div className='bubble absolute w-32 h-32 -z-10 -bottom-16 -left-16 bg-secondary rounded-full ' data-speed="0"></div>
+							<div className='absolute z-20 w-32 h-32 rounded-full bubble -top-16 -right-16 bg-secondary ' data-speed="0"></div>
+							<div className='absolute z-20 rounded-full bubble w-14 h-14 -top-20 right-20 bg-secondary ' data-speed="0"></div>
+							<div className='absolute w-32 h-32 rounded-full bubble -z-10 -bottom-16 -left-16 bg-secondary ' data-speed="0"></div>
 
 							<h1 className={title({ size: 'lg', alignment: 'left', color: 'background' })}>Get in Touch</h1>
 							<h1 className={paragraph({ size: 'lg', color: 'background', alignment: 'left' })}>
@@ -112,20 +112,20 @@ export default function Home() {
 							</h1>
 
 							<div className="">
-								<div className="flex flex-col sm:flex-row w-full align-middle justify-center items-center gap-5">
-									<RiMailFill className='w-9 h-9 text-white' />
+								<div className="flex flex-col items-center justify-center w-full gap-5 align-middle sm:flex-row">
+									<MailIcon className='text-white w-9 h-9' />
 									<h1 className={subtitle({ size: 'sm', color: 'background', alignment: 'left' })}>
 										contact@smilinedentistry.ca
 									</h1>
 								</div>
-								<div className="flex flex-col sm:flex-row  w-full align-middle justify-center items-center gap-5">
-									<RiPhoneFill className='w-9 h-9 text-white' />
+								<div className="flex flex-col items-center justify-center w-full gap-5 align-middle sm:flex-row">
+									<PhoneIcon className='text-white w-9 h-9' />
 									<h1 className={subtitle({ size: 'sm', color: 'background', alignment: 'left' })}>
 										(905) 405-1786
 									</h1>
 								</div>
-								<div className="flex flex-col sm:flex-row  w-full align-middle justify-center items-center gap-5">
-									<RiMapFill className='w-9 h-9 text-white' />
+								<div className="flex flex-col items-center justify-center w-full gap-5 align-middle sm:flex-row">
+									<MapIcon className='text-white w-9 h-9' />
 									<h1 className={subtitle({ size: 'sm', color: 'background', alignment: 'left' })}>
 										885 Main Street E. <br />Milton, ON L9T5A7
 									</h1>
