@@ -7,13 +7,13 @@ import NextLink from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="w-full flex flex-col items-center justify-center py-2 bg-primary shadow-md">
-            <div className='grid grid-cols-1 lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 w-full max-w-6xl items-center py-10'>
+        <footer className="flex flex-col items-center justify-center w-full py-2 shadow-md bg-primary">
+            <div className='grid items-center w-full max-w-6xl grid-cols-1 grid-rows-3 py-10 lg:grid-cols-3 lg:grid-rows-1'>
                 <div className='flex flex-col items-center'>
                     <AltLogo width={250} />
                     {/* <h1 className={title({ size: 'md', color: 'background' })}>Smiline Family Dentistry</h1> */}
                 </div>
-                <div className='flex flex-col gap-5 items-center lg:items-start order-none lg:order-first'>
+                <div className='flex flex-col items-center order-none gap-5 lg:items-start lg:order-first'>
                     {siteConfig.navItems.map((item) => (
                         <NextLink
                             key={item.label}
@@ -27,14 +27,14 @@ const Footer = () => {
                         </NextLink>
                     ))}
                 </div>
-                <div className='grid grid-rows-3 max-w-7xl text-center lg:text-right items-center lg:items-end'>
+                <div className='grid items-center grid-rows-3 text-center max-w-7xl lg:text-right lg:items-end'>
                     <h1 className={paragraph({ size: 'sm', color: 'background' })}>(905) 405-1786</h1>
                     <h1 className={paragraph({ size: 'sm', color: 'background' })}>1-885 Main St. E, Milton ON L9T5A7</h1>
-                    <h1 className={paragraph({ size: 'sm', color: 'background' })}>contact@smilinedentistry.com</h1>
+                    <h1 className={paragraph({ size: 'sm', color: 'background' })}>contact@smilinedentistry.ca</h1>
                 </div>
             </div>
 
-            <div className='flex flex-col my-10 items-center max-w-7xl text-center'>
+            <div className='flex flex-col items-center my-10 text-center max-w-7xl'>
                 <h1 className={paragraph({ size: 'sm', color: 'background' })}>®2024 Smiline Family Dentistry</h1>
                 <h1 className={paragraph({ size: 'sm', color: 'background' })}>Invisalign®, the Invisalign logo, and iTero®, among others, are trademarks and/ or service marks of Align Technology, Inc. or one of its subsidiaries or affiliated companies and may be registered in the U.S. and/or other countries.</h1>
                 <NextLink
