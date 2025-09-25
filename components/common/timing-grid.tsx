@@ -1,7 +1,5 @@
 import React from 'react';
-import { RiMailFill, RiMapFill, RiPhoneFill } from 'react-icons/ri';
 import { paragraph, subtitle, title } from '../primitives';
-import Image from 'next/image';
 
 interface TimingRowProps {
     day: string;
@@ -22,7 +20,7 @@ const TimingRow: React.FC<TimingRowProps> = ({ day, times }) => {
 }
 const TimingGrid = () => {
     return (
-        <div className='flex flex-col rounded-3xl items-center text-center gap-5 mt-10'>
+        <div className='flex flex-col items-center gap-5 mt-10 text-center rounded-3xl'>
             <TimingRow day='Sunday' times='11:00AM - 4:00PM' />
             <TimingRow day='Monday' times='10:00AM - 7:00PM' />
             <TimingRow day='Tuesday' times='CLOSED' />

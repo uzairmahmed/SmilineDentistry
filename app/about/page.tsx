@@ -9,8 +9,10 @@ import hinaimg from '../../assets/profiles/hina.jpg'
 import aqleemaimg from '../../assets/profiles/aqleema.jpg'
 
 import Image from "next/image";
-import { RiGraduationCapFill } from "react-icons/ri";
 import FullProfileCard from "@/components/common/full-profile-card";
+
+import { GraduationIcon } from "@/components/common/icons";
+
 
 export default function AboutPage() {
 	const team = [
@@ -41,12 +43,12 @@ export default function AboutPage() {
 		},
 	]
 	return (
-		<div className="flex flex-col h-full w-full">
+		<div className="flex flex-col w-full h-full">
 			<ServiceHero
 				image={heroimage}
 				div_side={'left'}
 				main_section={
-					<div className='relative flex flex-col items-center lg:items-start p-12 lg:p-16 z-20 rounded-3xl bg-white'>
+					<div className='relative z-20 flex flex-col items-center p-12 bg-white lg:items-start lg:p-16 rounded-3xl'>
 						<h1 className={title({ size: 'lg', fullWidth: true, alignment: 'left' })}>Smiline Family Dentistry</h1>
 						<h1 className={subtitle({ size: 'md', alignment: 'left' })}>At Smiline Family Dentistry in Milton, we are committed to providing the highest quality of care to meet the dental needs of every member of your family. We aim to provide you with optimal oral health care and give you a reason to smile with confidence.</h1>
 
@@ -54,10 +56,10 @@ export default function AboutPage() {
 				}
 				bubbles={
 					<>
-						<div className='bubble absolute w-32 h-32 z-10 bottom-16 -left-24 bg-default rounded-full ' data-speed="0"></div>
-						<div className='bubble absolute w-20 h-20 z-20 -top-10 -right-10 bg-default rounded-full ' data-speed="0"></div>
-						<div className='bubble absolute w-12 h-12 z-10 bottom-10 -right-20 bg-default rounded-full ' data-speed="0"></div>
-						<div className='bubble absolute w-40 h-40 z-10 -bottom-24 -right-10 bg-default rounded-full ' data-speed="0"></div>
+						<div className='absolute z-10 w-32 h-32 rounded-full bubble bottom-16 -left-24 bg-default ' data-speed="0"></div>
+						<div className='absolute z-20 w-20 h-20 rounded-full bubble -top-10 -right-10 bg-default ' data-speed="0"></div>
+						<div className='absolute z-10 w-12 h-12 rounded-full bubble bottom-10 -right-20 bg-default ' data-speed="0"></div>
+						<div className='absolute z-10 w-40 h-40 rounded-full bubble -bottom-24 -right-10 bg-default ' data-speed="0"></div>
 					</>
 				}
 			/>
@@ -70,10 +72,10 @@ export default function AboutPage() {
 						image={asraimage} />
 				</div>
 
-				<div className="flex flex-col lg:flex-row w-full gap-10 px-2 lg:px-0">
-					<div className="flex flex-col bg-default p-10 rounded-xl items-center w-full">
+				<div className="flex flex-col w-full gap-10 px-2 lg:flex-row lg:px-0">
+					<div className="flex flex-col items-center w-full p-10 bg-default rounded-xl">
 						<div className="w-20 h-20 p-5 rounded-full">
-							<RiGraduationCapFill className="w-full h-full text-background" />
+							<GraduationIcon className="w-full h-full text-background" />
 						</div>
 						<h1 className={title({ color: 'background', size: 'sm', alignment: 'center' })}>Education</h1>
 						<h1 className={paragraph({ color: 'background', size: 'sm', alignment: 'center' })}>
@@ -81,9 +83,9 @@ export default function AboutPage() {
 						</h1>
 					</div>
 
-					<div className="flex flex-col bg-default p-10 rounded-xl items-center w-full">
+					<div className="flex flex-col items-center w-full p-10 bg-default rounded-xl">
 						<div className="w-20 h-20 p-5 rounded-full">
-							<RiGraduationCapFill className="w-full h-full text-background" />
+							<GraduationIcon className="w-full h-full text-background" />
 						</div>
 						<h1 className={title({ color: 'background', size: 'sm', alignment: 'center' })}>Professional Associations</h1>
 						<h1 className={paragraph({ color: 'background', size: 'sm', alignment: 'center' })}>
@@ -94,11 +96,11 @@ export default function AboutPage() {
 
 				<div className="flex flex-col gap-10">
 				<h1 className={title({ size: 'md', alignment: 'center' })}>Meet our team</h1>
-					<div className="flex flex-wrap w-full justify-between gap-10 px-2 lg:px-0">
+					<div className="flex flex-wrap justify-between w-full gap-10 px-2 lg:px-0">
 						{team.map((member,idx) => (
 							<div key={idx} className="flex flex-col bg-white rounded-2xl gap-5 p-5 items-center flex-1 basis-[30%]">
 								<div className="relative w-[200px] h-[200px]">
-									<Image src={member.picture} alt={member.name} fill={true} className="rounded-full object-cover" />
+									<Image src={member.picture} alt={member.name} fill={true} className="object-cover rounded-full" />
 								</div>
 								<div className="gap-2">
 									<h1 className={title({ color: 'default', size: 'sm', alignment: 'center' })}>{member.name}</h1>
