@@ -80,7 +80,7 @@ export default function AboutPage() {
 				<div className="flex">
 					<FullProfileCard header={"Dr. Asra Ahmed"}
 						subheader="BDS, M.SC"
-						text={"Dr. Asra Ahmed has over ten years of experience in the field of dentistry, she believes in providing high quality innovative dental care to all her patients. After graduating from dental school, Dr. Asra's dedication towards oral health care enabled her to continue her studies at University of Manitoba where she graduated with a Master's Degree in Oral Biology. A firm believer in continuous learning, she went on to complete continuing education programs in Invisalign, FastBraces, 3D Impression Techniques, and Root Canal Treatments. With the goal of giving her patients a reason to smile with confidence she established her practice, Smiline Family Dentistry in Milton, where patients of all ages and emergencies are always welcome."}
+						text={"Dr. Asra Ahmed is the founder of Smiline Family Dentistry, where she is committed to helping patients achieve healthy, confident smiles. She holds a Master's Degree in Oral Biology from the University of Manitoba and has completed advanced training in Invisalign, FastBraces, 3D Impression Techniques, and Root Canal Treatments. A passionate advocate for lifelong learning and excellence in dental care, Dr. Ahmed is an active member of the Ontario Dental Association, the Royal College of Dental Surgeons of Ontario. Beyond her practice, she is deeply committed to giving back to the community and supporting initiatives that enhance health, education, and overall well being."}
 						image={asraimage} />
 				</div>
 
