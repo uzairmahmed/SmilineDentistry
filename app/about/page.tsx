@@ -6,7 +6,7 @@ import defaultimage from '../../assets/profiles/default.png'
 import junaidimg from '../../assets/profiles/junaid.jpg'
 import asraimage from '../../assets/profiles/asra.jpg'
 import hinaimg from '../../assets/profiles/hina.jpg'
-import aqleemaimg from '../../assets/profiles/aqleema.jpg'
+import kleinimg from '../../assets/profiles/klein.jpeg'
 
 import Image from "next/image";
 import FullProfileCard from "@/components/common/full-profile-card";
@@ -20,6 +20,10 @@ export default function AboutPage() {
 			name: "DR. JUNAID AHMED",
 			position: 'Associate Dentist',
 			picture: junaidimg
+		}, {
+			name: "DR. KLEIN CHANG",
+			position: 'Associate Dentist',
+			picture: kleinimg
 		}, {
 			name: "UZMA JATOI",
 			position: 'Hygenist',
@@ -37,9 +41,17 @@ export default function AboutPage() {
 			position: 'Dental Assistant',
 			picture: defaultimage
 		}, {
-			name: "AQLEEMA REHAMAN",
+			name: "Keysa Fatima",
 			position: 'Dental Assistant',
-			picture: aqleemaimg
+			picture: defaultimage
+		}, {
+			name: "Quratul Ain",
+			position: 'Dental Assistant',
+			picture: defaultimage
+		}, {
+			name: "Jana Farag",
+			position: 'Receptionist',
+			picture: defaultimage
 		},
 	]
 	return (

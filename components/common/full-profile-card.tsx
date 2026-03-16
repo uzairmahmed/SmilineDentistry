@@ -14,8 +14,13 @@ interface FullProfileCardProps {
 const FullProfileCard: React.FC<FullProfileCardProps> = ({ header, image, text, subheader }) => {
     return (
         <div className="flex flex-col lg:flex-row items-center w-full justify-between bg-white rounded-3xl mx-2 lg:mx-0 px-10 py-14 gap-10">
-            <div className='relative h-[250px] lg:h-full w-full lg:w-1/2'>
-                <Image src={image} alt="itero" fill={true} className="rounded-3xl object-cover" />
+            <div className='relative h-[250px] lg:h-full w-full lg:w-1/3'>
+                <Image
+                    src={image}
+                    alt="itero"
+                    fill={true}
+                    className="rounded-3xl object-cover object-[center_70%]"
+                />
                 {/* <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full">
                     <div className='bubble absolute w-48 h-48 z-10 top-48 right-0 bg-default rounded-full ' data-speed="0.1"></div>
                     <div className='bubble absolute w-20 h-20 z-10 top-80 -right-48 bg-default rounded-full ' data-speed="0.1"></div>
